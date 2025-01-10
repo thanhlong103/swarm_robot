@@ -14,7 +14,7 @@ import rclpy
 def main():
     # Get input arguments from user
     parser = argparse.ArgumentParser(description='Spawn Robot into Gazebo with navigation2')
-    parser.add_argument('-urdf', '--robot_urdf', type=str, default='robot.urdf.xacro',
+    parser.add_argument('-urdf', '--robot_urdf', type=str, default='/home/ntlong/swarm_robot/simulation_ws/src/robot_bringup/descriptions/robot.urdf',
                         help='Name of the robot to spawn')
     parser.add_argument('-n', '--robot_name', type=str, default='dummy_robot',
                         help='Name of the robot to spawn')
@@ -56,11 +56,12 @@ def main():
     # remapping rule, i.e. /tf -> /<robot_id>/tf
     tree = ET.parse(urdf_file_path)
     root = tree.getroot()
+    print(root)
     diff_drive_plugin = None 
+
     for plugin in root.iter('plugin'):
-        if 'diff_drive' in plugin.attrib.values():  # Match 'diff_drive'
+        if 'differential_drive_controller' in plugin.attrib.values():
             diff_drive_plugin = plugin
-            break
 
     # We change the namespace to the robots corresponding one
     tag_diff_drive_ros_params = diff_drive_plugin.find('ros')

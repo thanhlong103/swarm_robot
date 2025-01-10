@@ -23,9 +23,9 @@ def gen_robot_list(number_of_robots):
 
 def generate_launch_description():
 
-    urdf = os.path.join(get_package_share_directory('robot_bringup'), 'descriptions/', 'robot.urdf.xacro')
-    pkg_box_bot_description = get_package_share_directory('robot_bringup')
-    assert os.path.exists(urdf), "Thebox_bot.urdf doesnt exist in "+str(urdf)
+    urdf = os.path.join(get_package_share_directory('robot_bringup'), 'descriptions/', 'robot.urdf')
+    pkg_robot_description = get_package_share_directory('robot_bringup')
+    assert os.path.exists(urdf), "The robot.urdf doesnt exist in "+str(urdf)
 
     # Names and poses of the robots
     robots = gen_robot_list(3)
@@ -35,7 +35,7 @@ def generate_launch_description():
     for robot in robots:
         spawn_robots_cmds.append(
             IncludeLaunchDescription(
-                PythonLaunchDescriptionSource(os.path.join(pkg_box_bot_description, 'launch',
+                PythonLaunchDescriptionSource(os.path.join(pkg_robot_description, 'launch',
                                                            'spawn_robot_launch.py')),
                 launch_arguments={
                                   'robot_urdf': urdf,
