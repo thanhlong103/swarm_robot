@@ -15,20 +15,22 @@ def generate_launch_description():
     y = launch.substitutions.LaunchConfiguration('y')
     z = launch.substitutions.LaunchConfiguration('z')
 
-    # Process the URDF file using xacro
-    pkg_path = os.path.join(get_package_share_directory('robot_bringup'))
-    xacro_file = os.path.join(pkg_path, 'descriptions', 'robot.urdf.xacro')
-    robot_description_config = xacro.process_file(xacro_file).toxml()
+    # Path to your URDF file
+    urdf_file_path = '/home/ntlong/swarm_robot/simulation_ws/src/robot_bringup/descriptions/robot_swarm.urdf'
+
+    # Load URDF content into a variable
+    with open(urdf_file_path, 'r') as urdf_file:
+        robot_description_content = urdf_file.read()
 
     # Robot State Publisher node
     robot_state_publisher_node = launch_ros.actions.Node(
         package='robot_state_publisher',
         executable='robot_state_publisher',
+        name='robot_state_publisher',
         output='screen',
         namespace=robot_namespace,  # Unique namespace for each robot
-        parameters=[{'robot_description': robot_description_config}]
+        parameters=[{'use_sim_time': True, 'robot_description': robot_description_content}]
     )
-
 
     # Spawn Robot node
     spawn_robot_node = launch_ros.actions.Node(
@@ -45,6 +47,16 @@ def generate_launch_description():
         ]
     )
 
+    # Joint State Publisher node
+    joint_state_publisher_node = launch_ros.actions.Node(
+        package='joint_state_publisher',
+        executable='joint_state_publisher',
+        name='joint_state_publisher',
+        output='screen',
+        namespace=robot_namespace,  # Same namespace as robot
+        parameters=[{'use_sim_time': True}]
+    )
+
     return LaunchDescription([
         # Declare parameters
         launch.actions.DeclareLaunchArgument('robot_urdf', description='Path to robot URDF file'),
@@ -56,5 +68,6 @@ def generate_launch_description():
 
         # Nodes
         robot_state_publisher_node,
-        spawn_robot_node
+        spawn_robot_node,
+        joint_state_publisher_node  # Add the joint_state_publisher node here
     ])

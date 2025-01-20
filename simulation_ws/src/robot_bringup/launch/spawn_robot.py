@@ -14,7 +14,7 @@ import rclpy
 def main():
     # Get input arguments from user
     parser = argparse.ArgumentParser(description='Spawn Robot into Gazebo with navigation2')
-    parser.add_argument('-urdf', '--robot_urdf', type=str, default='/home/ntlong/swarm_robot/simulation_ws/src/robot_bringup/descriptions/robot.urdf',
+    parser.add_argument('-urdf', '--robot_urdf', type=str, default='/home/ntlong/swarm_robot/simulation_ws/src/robot_bringup/descriptions/swarm_robot.urdf',
                         help='Name of the robot to spawn')
     parser.add_argument('-n', '--robot_name', type=str, default='dummy_robot',
                         help='Name of the robot to spawn')

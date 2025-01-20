@@ -23,7 +23,7 @@ def gen_robot_list(number_of_robots):
 
 def generate_launch_description():
 
-    urdf = os.path.join(get_package_share_directory('robot_bringup'), 'descriptions/', 'robot.urdf')
+    urdf = os.path.join(get_package_share_directory('robot_bringup'), 'descriptions/', 'robot_swarm.urdf')
     pkg_robot_description = get_package_share_directory('robot_bringup')
     assert os.path.exists(urdf), "The robot.urdf doesnt exist in "+str(urdf)
 
