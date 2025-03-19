@@ -16,7 +16,7 @@ def generate_launch_description():
     z = launch.substitutions.LaunchConfiguration('z')
 
     # Path to your URDF file
-    urdf_file_path = '/home/ntlong/swarm_robot/simulation_ws/src/robot_bringup/descriptions/robot_swarm.urdf'
+    urdf_file_path = '/home/irs/swarm_robot/simulation_ws/src/robot_bringup/descriptions/robot_swarm.urdf'
 
     # Load URDF content into a variable
     with open(urdf_file_path, 'r') as urdf_file:

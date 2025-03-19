@@ -1,9 +1,7 @@
 import serial
 import time
 
-# Replace 'COM3' with your Arduino's COM port
-# You can find this in Arduino IDE or Device Manager
-ser = serial.Serial('COM6', 9600, timeout=1)
+ser = serial.Serial('/dev/ttyUSB0', 9600, timeout=1)
 time.sleep(2)  # Wait for serial connection to establish
 
 def send_velocities(left_vel, right_vel):
@@ -20,7 +18,6 @@ def send_velocities(left_vel, right_vel):
 def main():
     try:
         while True:
-            # Example: Sending different velocity commands
             print("Sending velocities: 0.3, 0.3")
             send_velocities(0.3, 0.3)
             time.sleep(2)  # Wait for 2 seconds
@@ -33,12 +30,8 @@ def main():
             send_velocities(0, 0)
             time.sleep(2)
             
-            # You can modify this to take user input instead
-            # left = float(input("Enter left velocity: "))
-            # right = float(input("Enter right velocity: "))
-            # send_velocities(left, right)
-            
     except KeyboardInterrupt:
+        send_velocities(0, 0)
         print("\nProgram terminated by user")
     finally:
         ser.close()  # Close the serial connection
