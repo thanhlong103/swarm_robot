@@ -1,0 +1,114 @@
+<?xml version="1.0"?>
+<robot name="swarm_bot">
+    
+    <!-- Base -->
+    <link name="base_link">
+        <visual>
+            <geometry>
+                <!-- unit: meter -->
+                <cylinder radius="0.107" length="0.15"/> 
+            </geometry>
+            <material name="gray">
+                <color rgba="0.5 0.5 0.5 1.0"/>
+            </material>
+        </visual>
+    </link>
+    
+    <!-- Left Wheel -->
+    <link name="left_wheel">
+        <visual>
+            <geometry>
+                <cylinder radius="0.0325" length="0.03"/>
+            </geometry>
+            <material name="black">
+                <color rgba="0.0 0.0 0.0 1.0"/>
+            </material>
+        </visual>
+    </link>
+    
+    <!-- Right Wheel -->
+    <link name="right_wheel">
+        <visual>
+            <geometry>
+                <cylinder radius="0.0325" length="0.03"/>
+            </geometry>
+            <material name="black">
+                <color rgba="0.0 0.0 0.0 1.0"/>
+            </material>
+        </visual>
+    </link>
+    
+    <!-- Front Passive Wheel -->
+    <link name="front_passive_wheel">
+        <visual>
+            <geometry>
+                <sphere radius="0.024"/>
+            </geometry>
+            <material name="black">
+                <color rgba="0.0 0.0 0.0 1.0"/>
+            </material>
+        </visual>
+    </link>
+
+    <!-- Back Passive Wheel -->
+    <link name="back_passive_wheel">
+        <visual>
+            <geometry>
+                <sphere radius="0.024"/>
+            </geometry>
+            <material name="black">
+                <color rgba="0.0 0.0 0.0 1.0"/>
+            </material>
+        </visual>
+    </link>
+
+    
+    <!-- Lidar -->
+    <link name="lidar">
+        <visual>
+            <geometry>
+                <cylinder radius="0.0325" length="0.045"/>
+            </geometry>
+            <material name="blue">
+                <color rgba="0.0 0.0 1.0 1.0"/>
+            </material>
+        </visual>
+    </link>
+    
+    <!-- Joints -->
+    <joint name="left_wheel_joint" type="continuous">
+        <parent link="base_link"/>
+        <child link="left_wheel"/>
+        <!-- rotate wheel 90 deg around y-axis -->
+        <origin xyz="0 -0.107 -0.065" rpy="1.5708 0 0"/>
+        <axis xyz="0 1 0"/>
+    </joint>
+    
+    <joint name="right_wheel_joint" type="continuous">
+        <parent link="base_link"/>
+        <child link="right_wheel"/>
+        <origin xyz="0 0.107 -0.065" rpy="1.5708 0 0"/>
+        <axis xyz="0 1 0"/>
+    </joint>
+    
+    <!-- Front Passive Wheel -->
+    <joint name="front_passive_wheel_joint" type="continuous">
+        <parent link="base_link"/>
+        <child link="front_passive_wheel"/>
+        <origin xyz="0.085 0 -0.065" rpy="0 0 0"/>
+    </joint>
+
+    <!-- Back Passive Wheel -->
+    <joint name="back_passive_wheel_joint" type="continuous">
+        <parent link="base_link"/>
+        <child link="back_passive_wheel"/>
+        <origin xyz="-0.085 0 -0.065" rpy="0 0 0"/>
+    </joint>
+
+    <joint name="lidar_joint" type="fixed">
+        <parent link="base_link"/>
+        <child link="lidar"/>
+        <origin xyz="0 0 0.075" rpy="0 0 0"/>
+    </joint>
+    
+</robot>
