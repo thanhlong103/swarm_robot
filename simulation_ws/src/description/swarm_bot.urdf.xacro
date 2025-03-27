@@ -1,15 +1,18 @@
 <?xml version="1.0"?>
-<robot name="swarm_bot">
+<robot xmlns:xacro="http://www.ros.org/wiki/xacro"  name="swarm_bot">
+
     
     <!-- Base -->
     <link name="base_link">
         <visual>
+            <!-- change the position of the visualization only, not the axis -->
+            <origin xyz="0 0 0.1075" rpy="0 0 0"/>
             <geometry>
                 <!-- unit: meter -->
                 <cylinder radius="0.107" length="0.15"/> 
             </geometry>
-            <material name="gray">
-                <color rgba="0.5 0.5 0.5 1.0"/>
+            <material name="white">
+                <color rgba="1 1 1 1"/>
             </material>
         </visual>
     </link>
@@ -38,7 +41,7 @@
         </visual>
     </link>
     
-    <!-- Front Passive Wheel -->
+    <!-- Front Passive Wheel --> 
     <link name="front_passive_wheel">
         <visual>
             <geometry>
@@ -74,20 +77,24 @@
             </material>
         </visual>
     </link>
+
     
     <!-- Joints -->
+
+    <!-- Left Wheel -->
     <joint name="left_wheel_joint" type="continuous">
         <parent link="base_link"/>
         <child link="left_wheel"/>
-        <!-- rotate wheel 90 deg around y-axis -->
-        <origin xyz="0 -0.107 -0.065" rpy="1.5708 0 0"/>
+        <!-- rotate wheel 90 deg around x-axis -->
+        <origin xyz="0 -0.107 0.0325" rpy="-1.5708 0 0"/>
         <axis xyz="0 1 0"/>
     </joint>
     
+    <!-- Right Wheel -->
     <joint name="right_wheel_joint" type="continuous">
         <parent link="base_link"/>
         <child link="right_wheel"/>
-        <origin xyz="0 0.107 -0.065" rpy="1.5708 0 0"/>
+        <origin xyz="0 0.107 0.0325" rpy="1.5708 0 0"/>
         <axis xyz="0 1 0"/>
     </joint>
     
@@ -95,20 +102,21 @@
     <joint name="front_passive_wheel_joint" type="continuous">
         <parent link="base_link"/>
         <child link="front_passive_wheel"/>
-        <origin xyz="0.067 0 -0.0735" rpy="0 0 0"/>
+        <origin xyz="0.067 0 0.024" rpy="0 0 0"/>
     </joint>
 
     <!-- Back Passive Wheel -->
     <joint name="back_passive_wheel_joint" type="continuous">
         <parent link="base_link"/>
         <child link="back_passive_wheel"/>
-        <origin xyz="-0.067 0 -0.071" rpy="0 0 0"/>
+        <origin xyz="-0.067 0 0.022" rpy="0 0 0"/>
     </joint>
 
+    <!-- Lidar -->
     <joint name="lidar_joint" type="fixed">
         <parent link="base_link"/>
         <child link="lidar"/>
-        <origin xyz="0 0 0.075" rpy="0 0 0"/>
+        <origin xyz="0 0 0.205" rpy="0 0 0"/>
     </joint>
     
 </robot>

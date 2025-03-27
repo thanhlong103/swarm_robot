@@ -1,0 +1,55 @@
+[0.041s] Invoking command in '/home/huhu/Documents/GitHub/swarm_robot/build/tlbot_navigation2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake /home/huhu/Documents/GitHub/swarm_robot/simulation_ws/src/tlbot_navigation2 -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/huhu/Documents/GitHub/swarm_robot/install/tlbot_navigation2
+[0.244s] -- The C compiler identification is GNU 9.4.0
+[0.422s] -- The CXX compiler identification is GNU 9.4.0
+[0.430s] -- Check for working C compiler: /usr/bin/cc
+[0.535s] -- Check for working C compiler: /usr/bin/cc -- works
+[0.537s] -- Detecting C compiler ABI info
+[0.634s] -- Detecting C compiler ABI info - done
+[0.651s] -- Detecting C compile features
+[0.651s] -- Detecting C compile features - done
+[0.655s] -- Check for working CXX compiler: /usr/bin/c++
+[0.765s] -- Check for working CXX compiler: /usr/bin/c++ -- works
+[0.767s] -- Detecting CXX compiler ABI info
+[0.878s] -- Detecting CXX compiler ABI info - done
+[0.895s] -- Detecting CXX compile features
+[0.895s] -- Detecting CXX compile features - done
+[0.913s] -- Found ament_cmake: 0.9.12 (/opt/ros/foxy/share/ament_cmake/cmake)
+[0.952s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3") 
+[0.952s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[1.203s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[1.255s] -- Found ament_lint_auto: 0.9.8 (/opt/ros/foxy/share/ament_lint_auto/cmake)
+[1.394s] -- Added test 'copyright' to check source files copyright and LICENSE
+[1.399s] -- Added test 'flake8' to check Python code syntax and style conventions
+[1.400s] -- Added test 'lint_cmake' to check CMake code style
+[1.403s] -- Added test 'pep257' to check Python code against some of the style conventions in PEP 257
+[1.407s] -- Added test 'xmllint' to check XML markup files
+[1.413s] -- Configuring done
+[1.416s] -- Generating done
+[1.418s] -- Build files have been written to: /home/huhu/Documents/GitHub/swarm_robot/build/tlbot_navigation2
+[1.442s] Invoked command in '/home/huhu/Documents/GitHub/swarm_robot/build/tlbot_navigation2' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake /home/huhu/Documents/GitHub/swarm_robot/simulation_ws/src/tlbot_navigation2 -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/huhu/Documents/GitHub/swarm_robot/install/tlbot_navigation2
+[1.447s] Invoking command in '/home/huhu/Documents/GitHub/swarm_robot/build/tlbot_navigation2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --build /home/huhu/Documents/GitHub/swarm_robot/build/tlbot_navigation2 -- -j6 -l6
+[1.509s] Invoked command in '/home/huhu/Documents/GitHub/swarm_robot/build/tlbot_navigation2' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --build /home/huhu/Documents/GitHub/swarm_robot/build/tlbot_navigation2 -- -j6 -l6
+[1.557s] Invoking command in '/home/huhu/Documents/GitHub/swarm_robot/build/tlbot_navigation2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --install /home/huhu/Documents/GitHub/swarm_robot/build/tlbot_navigation2
+[1.569s] -- Install configuration: ""
+[1.569s] -- Execute custom install script
+[1.571s] -- Symlinking: /home/huhu/Documents/GitHub/swarm_robot/install/tlbot_navigation2/share/tlbot_navigation2/launch/navigation2.launch.py
+[1.586s] -- Symlinking: /home/huhu/Documents/GitHub/swarm_robot/install/tlbot_navigation2/share/tlbot_navigation2/map/simumap.pgm
+[1.600s] -- Symlinking: /home/huhu/Documents/GitHub/swarm_robot/install/tlbot_navigation2/share/tlbot_navigation2/map/simumap.yaml
+[1.614s] -- Symlinking: /home/huhu/Documents/GitHub/swarm_robot/install/tlbot_navigation2/share/tlbot_navigation2/param/tlbot.yaml
+[1.628s] -- Symlinking: /home/huhu/Documents/GitHub/swarm_robot/install/tlbot_navigation2/share/tlbot_navigation2/rviz/tlbot_navigation2.rviz
+[1.643s] -- Symlinking: /home/huhu/Documents/GitHub/swarm_robot/install/tlbot_navigation2/share/ament_index/resource_index/package_run_dependencies/tlbot_navigation2
+[1.658s] -- Symlinking: /home/huhu/Documents/GitHub/swarm_robot/install/tlbot_navigation2/share/ament_index/resource_index/parent_prefix_path/tlbot_navigation2
+[1.673s] -- Symlinking: /home/huhu/Documents/GitHub/swarm_robot/install/tlbot_navigation2/share/tlbot_navigation2/environment/ament_prefix_path.sh
+[1.686s] -- Symlinking: /home/huhu/Documents/GitHub/swarm_robot/install/tlbot_navigation2/share/tlbot_navigation2/environment/ament_prefix_path.dsv
+[1.700s] -- Symlinking: /home/huhu/Documents/GitHub/swarm_robot/install/tlbot_navigation2/share/tlbot_navigation2/environment/path.sh
+[1.713s] -- Symlinking: /home/huhu/Documents/GitHub/swarm_robot/install/tlbot_navigation2/share/tlbot_navigation2/environment/path.dsv
+[1.726s] -- Symlinking: /home/huhu/Documents/GitHub/swarm_robot/install/tlbot_navigation2/share/tlbot_navigation2/local_setup.bash
+[1.739s] -- Symlinking: /home/huhu/Documents/GitHub/swarm_robot/install/tlbot_navigation2/share/tlbot_navigation2/local_setup.sh
+[1.753s] -- Symlinking: /home/huhu/Documents/GitHub/swarm_robot/install/tlbot_navigation2/share/tlbot_navigation2/local_setup.zsh
+[1.767s] -- Symlinking: /home/huhu/Documents/GitHub/swarm_robot/install/tlbot_navigation2/share/tlbot_navigation2/local_setup.dsv
+[1.781s] -- Symlinking: /home/huhu/Documents/GitHub/swarm_robot/install/tlbot_navigation2/share/tlbot_navigation2/package.dsv
+[1.798s] -- Symlinking: /home/huhu/Documents/GitHub/swarm_robot/install/tlbot_navigation2/share/ament_index/resource_index/packages/tlbot_navigation2
+[1.811s] -- Symlinking: /home/huhu/Documents/GitHub/swarm_robot/install/tlbot_navigation2/share/tlbot_navigation2/cmake/tlbot_navigation2Config.cmake
+[1.824s] -- Symlinking: /home/huhu/Documents/GitHub/swarm_robot/install/tlbot_navigation2/share/tlbot_navigation2/cmake/tlbot_navigation2Config-version.cmake
+[1.840s] -- Symlinking: /home/huhu/Documents/GitHub/swarm_robot/install/tlbot_navigation2/share/tlbot_navigation2/package.xml
+[1.884s] Invoked command in '/home/huhu/Documents/GitHub/swarm_robot/build/tlbot_navigation2' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --install /home/huhu/Documents/GitHub/swarm_robot/build/tlbot_navigation2
