@@ -1,1 +1,0 @@
-/home/huhu/Documents/GitHub/swarm_robot/build/cartographer/ament_cmake_environment_hooks/local_setup.sh
