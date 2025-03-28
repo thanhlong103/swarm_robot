@@ -3,6 +3,8 @@
 
     <xacro:include filename="inertial_macros.xacro" />
     <xacro:include filename="gazebo_control.xacro" />
+    <xacro:include filename="lidar.xacro" /> 
+
 
     <!-- LINKS -->
     
@@ -142,32 +144,6 @@
         <mu1 value="0.001"/>
         <mu2 value="0.001"/>
     </gazebo>
-
-    
-    <!-- Lidar -->
-    <!-- <link name="lidar">
-        <visual>
-            <geometry>
-                <cylinder radius="0.0325" length="0.045"/>
-            </geometry>
-            <material name="blue">
-                <color rgba="0.0 0.0 1.0 1.0"/>
-            </material>
-        </visual>
-        <collision>
-            <geometry>
-                <cylinder radius="0.0325" length="0.045"/>
-            </geometry>
-        </collision>
-        <xacro:inertial_cylinder mass="0.1" length="0.045" radius="0.0325">
-            <origin xyz="0 0 0" rpy="0 0 0"/>
-        </xacro:inertial_cylinder>
-    </link>
-
-    <gazebo reference="lidar">
-        <material>Gazebo/Blue</material>
-    </gazebo> -->
-
     
     <!-- JOINTS-->
 
@@ -209,11 +185,4 @@
         <origin xyz="-0.067 0 -0.0083" rpy="0 0 0"/>
     </joint>
 
-    <!-- Lidar -->
-    <!-- <joint name="lidar_joint" type="fixed">
-        <parent link="origin_link"/>
-        <child link="lidar"/>
-        <origin xyz="0 0 0.1725" rpy="0 0 0"/>
-    </joint> -->
-    
 </robot>
