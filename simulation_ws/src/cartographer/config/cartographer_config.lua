@@ -5,8 +5,9 @@ options = {
   map_builder = MAP_BUILDER,
   trajectory_builder = TRAJECTORY_BUILDER,
   map_frame = "map",
-  tracking_frame = "base_link",
-  published_frame = "base_link",
+  tracking_frame = "origin_link",
+  published_frame = "origin_link"",
+  -- base_link_frame = "origin_link"
   odom_frame = "odom",
   provide_odom_frame = true,  -- Let Cartographer provide the odom frame if external odometry is unavailable
   publish_frame_projected_to_2d = true,
@@ -30,8 +31,8 @@ options = {
 
 MAP_BUILDER.use_trajectory_builder_2d = true
 
-TRAJECTORY_BUILDER_2D.min_range = 0.08  -- Adjust based on LiDAR specs
-TRAJECTORY_BUILDER_2D.max_range = 5.0  -- Adjust based on LiDAR specs
+TRAJECTORY_BUILDER_2D.min_range = 0.2  -- Adjust based on LiDAR specs
+TRAJECTORY_BUILDER_2D.max_range = 12.0  -- Adjust based on LiDAR specs
 TRAJECTORY_BUILDER_2D.missing_data_ray_length = 5.
 TRAJECTORY_BUILDER_2D.use_imu_data = false
 TRAJECTORY_BUILDER_2D.use_online_correlative_scan_matching = true

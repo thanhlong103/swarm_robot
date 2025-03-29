@@ -1,0 +1,1 @@
+/home/huhu/Documents/GitHub/swarm_robot/simulation_ws/src/build/navigation/ament_cmake_environment_hooks/local_setup.zsh
