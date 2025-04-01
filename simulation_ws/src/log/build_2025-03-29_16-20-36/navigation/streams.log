@@ -1,0 +1,59 @@
+[0.067s] Invoking command in '/home/huhu/Documents/GitHub/swarm_robot/simulation_ws/src/build/navigation': AMENT_PREFIX_PATH=/home/huhu/Documents/GitHub/swarm_robot/simulation_ws/src/install/tlbot_navigation2:/home/huhu/Documents/GitHub/swarm_robot/simulation_ws/src/install/cartographer:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/huhu/Documents/GitHub/swarm_robot/simulation_ws/src/install/tlbot_navigation2:/home/huhu/Documents/GitHub/swarm_robot/simulation_ws/src/install/cartographer:/home/huhu/ros2_ws/install/my_bot:/home/huhu/ros2_ws/install/ldlidar_stl_ros2:/opt/ros/foxy /usr/bin/cmake /home/huhu/Documents/GitHub/swarm_robot/simulation_ws/src/navigation -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/huhu/Documents/GitHub/swarm_robot/simulation_ws/src/install/navigation
+[0.263s] -- The C compiler identification is GNU 9.4.0
+[0.405s] -- The CXX compiler identification is GNU 9.4.0
+[0.416s] -- Check for working C compiler: /usr/bin/cc
+[0.601s] -- Check for working C compiler: /usr/bin/cc -- works
+[0.606s] -- Detecting C compiler ABI info
+[0.781s] -- Detecting C compiler ABI info - done
+[0.815s] -- Detecting C compile features
+[0.816s] -- Detecting C compile features - done
+[0.822s] -- Check for working CXX compiler: /usr/bin/c++
+[1.024s] -- Check for working CXX compiler: /usr/bin/c++ -- works
+[1.026s] -- Detecting CXX compiler ABI info
+[1.225s] -- Detecting CXX compiler ABI info - done
+[1.247s] -- Detecting CXX compile features
+[1.248s] -- Detecting CXX compile features - done
+[1.254s] -- Found ament_cmake: 0.9.12 (/opt/ros/foxy/share/ament_cmake/cmake)
+[1.303s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3") 
+[1.303s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[1.673s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[1.739s] -- Found rclcpp: 2.4.3 (/opt/ros/foxy/share/rclcpp/cmake)
+[2.078s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[2.126s] -- Found rosidl_adapter: 1.3.1 (/opt/ros/foxy/share/rosidl_adapter/cmake)
+[2.542s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "1.1.1f")  
+[2.617s] -- Found FastRTPS: /opt/ros/foxy/include  
+[2.938s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[3.229s] -- Found rmw_implementation_cmake: 1.0.4 (/opt/ros/foxy/share/rmw_implementation_cmake/cmake)
+[3.242s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[3.253s] -- Looking for pthread.h
+[3.597s] -- Looking for pthread.h - found
+[3.598s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[3.767s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Failed
+[3.767s] -- Looking for pthread_create in pthreads
+[3.920s] -- Looking for pthread_create in pthreads - not found
+[3.920s] -- Looking for pthread_create in pthread
+[4.131s] -- Looking for pthread_create in pthread - found
+[4.140s] -- Found Threads: TRUE  
+[4.680s] -- Found rclpy: 1.0.13 (/opt/ros/foxy/share/rclpy/cmake)
+[4.682s] -- Found cartographer: 0.0.0 (/home/huhu/Documents/GitHub/swarm_robot/simulation_ws/src/install/cartographer/share/cartographer/cmake)
+[4.704s] CMake Error at CMakeLists.txt:24 (find_package):
+[4.704s]   By not providing "Findnav2_bringup.cmake" in CMAKE_MODULE_PATH this project
+[4.705s]   has asked CMake to find a package configuration file provided by
+[4.705s]   "nav2_bringup", but CMake did not find one.
+[4.705s] 
+[4.705s]   Could not find a package configuration file provided by "nav2_bringup" with
+[4.705s]   any of the following names:
+[4.706s] 
+[4.706s]     nav2_bringupConfig.cmake
+[4.706s]     nav2_bringup-config.cmake
+[4.706s] 
+[4.707s]   Add the installation prefix of "nav2_bringup" to CMAKE_PREFIX_PATH or set
+[4.707s]   "nav2_bringup_DIR" to a directory containing one of the above files.  If
+[4.707s]   "nav2_bringup" provides a separate development package or SDK, be sure it
+[4.707s]   has been installed.
+[4.707s] 
+[4.707s] 
+[4.707s] -- Configuring incomplete, errors occurred!
+[4.707s] See also "/home/huhu/Documents/GitHub/swarm_robot/simulation_ws/src/build/navigation/CMakeFiles/CMakeOutput.log".
+[4.707s] See also "/home/huhu/Documents/GitHub/swarm_robot/simulation_ws/src/build/navigation/CMakeFiles/CMakeError.log".
+[4.732s] Invoked command in '/home/huhu/Documents/GitHub/swarm_robot/simulation_ws/src/build/navigation' returned '1': AMENT_PREFIX_PATH=/home/huhu/Documents/GitHub/swarm_robot/simulation_ws/src/install/tlbot_navigation2:/home/huhu/Documents/GitHub/swarm_robot/simulation_ws/src/install/cartographer:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/huhu/Documents/GitHub/swarm_robot/simulation_ws/src/install/tlbot_navigation2:/home/huhu/Documents/GitHub/swarm_robot/simulation_ws/src/install/cartographer:/home/huhu/ros2_ws/install/my_bot:/home/huhu/ros2_ws/install/ldlidar_stl_ros2:/opt/ros/foxy /usr/bin/cmake /home/huhu/Documents/GitHub/swarm_robot/simulation_ws/src/navigation -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/huhu/Documents/GitHub/swarm_robot/simulation_ws/src/install/navigation

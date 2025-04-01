@@ -57,9 +57,14 @@ def generate_launch_description():
                     "-configuration_basename",
                     configuration_basename,
                 ],
+                # remappings=[
+                #     ("/scan", "/Robot0/laser_controller/out"),  # Remap LiDAR topic
+                #     ("/odom", "/Robot0/odom"),  # Remap odom topic
+                # ],
+
                 remappings=[
-                    ("/scan", "/Robot0/laser_controller/out"),  # Remap LiDAR topic
-                    ("/odom", "/Robot0/odom"),  # Remap odom topic
+                    ("/scan", "/scan"),  # Remap LiDAR topic
+                    ("/odom", "/odom"),  # Remap odom topic
                 ],
             ),
             DeclareLaunchArgument(
@@ -86,7 +91,7 @@ def generate_launch_description():
                 package="tf2_ros",
                 executable="static_transform_publisher",
                 name="static_transform_publisher",
-                arguments=["0", "0", "0", "0", "0", "0", "map", "base_link"],
+                arguments=["0", "0", "0", "0", "0", "0", "map", "odom"],
                 output="screen",
             ),
             Node(

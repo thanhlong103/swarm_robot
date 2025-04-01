@@ -1,0 +1,1 @@
+/home/huhu/Documents/GitHub/swarm_robot/simulation_ws/src/navigation/launch/launch_bot_sim.launch.py

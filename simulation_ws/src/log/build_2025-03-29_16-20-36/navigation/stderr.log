@@ -1,0 +1,17 @@
+CMake Error at CMakeLists.txt:24 (find_package):
+  By not providing "Findnav2_bringup.cmake" in CMAKE_MODULE_PATH this project
+  has asked CMake to find a package configuration file provided by
+  "nav2_bringup", but CMake did not find one.
+
+  Could not find a package configuration file provided by "nav2_bringup" with
+  any of the following names:
+
+    nav2_bringupConfig.cmake
+    nav2_bringup-config.cmake
+
+  Add the installation prefix of "nav2_bringup" to CMAKE_PREFIX_PATH or set
+  "nav2_bringup_DIR" to a directory containing one of the above files.  If
+  "nav2_bringup" provides a separate development package or SDK, be sure it
+  has been installed.
+
+

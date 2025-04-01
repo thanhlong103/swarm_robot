@@ -1,0 +1,46 @@
+-- Found ament_cmake: 0.9.12 (/opt/ros/foxy/share/ament_cmake/cmake)
+-- Using PYTHON_EXECUTABLE: /usr/bin/python3
+-- Override CMake install command with custom implementation using symlinks instead of copying resources
+-- Found rclcpp: 2.4.3 (/opt/ros/foxy/share/rclcpp/cmake)
+-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+-- Found rosidl_adapter: 1.3.1 (/opt/ros/foxy/share/rosidl_adapter/cmake)
+-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+-- Found rmw_implementation_cmake: 1.0.4 (/opt/ros/foxy/share/rmw_implementation_cmake/cmake)
+-- Using RMW implementation 'rmw_fastrtps_cpp' as default
+-- Found rclpy: 1.0.13 (/opt/ros/foxy/share/rclpy/cmake)
+-- Found cartographer: 0.0.0 (/home/huhu/Documents/GitHub/swarm_robot/simulation_ws/src/install/cartographer/share/cartographer/cmake)
+-- Found tlbot_navigation2: 0.0.0 (/home/huhu/Documents/GitHub/swarm_robot/simulation_ws/src/install/tlbot_navigation2/share/tlbot_navigation2/cmake)
+-- Found ament_lint_auto: 0.9.8 (/opt/ros/foxy/share/ament_lint_auto/cmake)
+-- Added test 'copyright' to check source files copyright and LICENSE
+-- Added test 'flake8' to check Python code syntax and style conventions
+-- Added test 'lint_cmake' to check CMake code style
+-- Added test 'pep257' to check Python code against some of the style conventions in PEP 257
+-- Added test 'xmllint' to check XML markup files
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/huhu/Documents/GitHub/swarm_robot/simulation_ws/src/build/navigation
+-- Install configuration: ""
+-- Execute custom install script
+-- Symlinking: /home/huhu/Documents/GitHub/swarm_robot/simulation_ws/src/install/navigation/share/navigation//description/gazebo_control.xacro
+-- Symlinking: /home/huhu/Documents/GitHub/swarm_robot/simulation_ws/src/install/navigation/share/navigation//description/inertial_macros.xacro
+-- Symlinking: /home/huhu/Documents/GitHub/swarm_robot/simulation_ws/src/install/navigation/share/navigation//description/lidar.xacro
+-- Symlinking: /home/huhu/Documents/GitHub/swarm_robot/simulation_ws/src/install/navigation/share/navigation//description/swarm_bot.urdf
+-- Symlinking: /home/huhu/Documents/GitHub/swarm_robot/simulation_ws/src/install/navigation/share/navigation//description/swarm_bot.urdf.xacro
+-- Symlinking: /home/huhu/Documents/GitHub/swarm_robot/simulation_ws/src/install/navigation/share/navigation//launch/launch_bot_sim.launch.py
+-- Symlinking: /home/huhu/Documents/GitHub/swarm_robot/simulation_ws/src/install/navigation/share/navigation//launch/navigation.launch.py
+-- Symlinking: /home/huhu/Documents/GitHub/swarm_robot/simulation_ws/src/install/navigation/share/navigation//launch/rsp.launch.py
+-- Symlinking: /home/huhu/Documents/GitHub/swarm_robot/simulation_ws/src/install/navigation/share/ament_index/resource_index/package_run_dependencies/navigation
+-- Symlinking: /home/huhu/Documents/GitHub/swarm_robot/simulation_ws/src/install/navigation/share/ament_index/resource_index/parent_prefix_path/navigation
+-- Symlinking: /home/huhu/Documents/GitHub/swarm_robot/simulation_ws/src/install/navigation/share/navigation/environment/ament_prefix_path.sh
+-- Symlinking: /home/huhu/Documents/GitHub/swarm_robot/simulation_ws/src/install/navigation/share/navigation/environment/ament_prefix_path.dsv
+-- Symlinking: /home/huhu/Documents/GitHub/swarm_robot/simulation_ws/src/install/navigation/share/navigation/environment/path.sh
+-- Symlinking: /home/huhu/Documents/GitHub/swarm_robot/simulation_ws/src/install/navigation/share/navigation/environment/path.dsv
+-- Symlinking: /home/huhu/Documents/GitHub/swarm_robot/simulation_ws/src/install/navigation/share/navigation/local_setup.bash
+-- Symlinking: /home/huhu/Documents/GitHub/swarm_robot/simulation_ws/src/install/navigation/share/navigation/local_setup.sh
+-- Symlinking: /home/huhu/Documents/GitHub/swarm_robot/simulation_ws/src/install/navigation/share/navigation/local_setup.zsh
+-- Symlinking: /home/huhu/Documents/GitHub/swarm_robot/simulation_ws/src/install/navigation/share/navigation/local_setup.dsv
+-- Symlinking: /home/huhu/Documents/GitHub/swarm_robot/simulation_ws/src/install/navigation/share/navigation/package.dsv
+-- Symlinking: /home/huhu/Documents/GitHub/swarm_robot/simulation_ws/src/install/navigation/share/ament_index/resource_index/packages/navigation
+-- Symlinking: /home/huhu/Documents/GitHub/swarm_robot/simulation_ws/src/install/navigation/share/navigation/cmake/navigationConfig.cmake
+-- Symlinking: /home/huhu/Documents/GitHub/swarm_robot/simulation_ws/src/install/navigation/share/navigation/cmake/navigationConfig-version.cmake
+-- Symlinking: /home/huhu/Documents/GitHub/swarm_robot/simulation_ws/src/install/navigation/share/navigation/package.xml
