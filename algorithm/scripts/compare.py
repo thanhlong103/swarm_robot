@@ -7,8 +7,8 @@ from scipy.optimize import linear_sum_assignment
 # --------------------------
 # Problem Setup (Shared)
 # --------------------------
-n_robots = 5
-m_tasks = 20
+n_robots = 20
+m_tasks = 60
 
 np.random.seed(42)
 robot_positions = np.random.rand(n_robots, 2) * 10
