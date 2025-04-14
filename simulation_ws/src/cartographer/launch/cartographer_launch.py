@@ -57,15 +57,6 @@ def generate_launch_description():
                     "-configuration_basename",
                     configuration_basename,
                 ],
-                # remappings=[
-                #     ("/scan", "/Robot0/laser_controller/out"),  # Remap LiDAR topic
-                #     ("/odom", "/Robot0/odom"),  # Remap odom topic
-                # ],
-
-                remappings=[
-                    ("/scan", "/scan"),  # Remap LiDAR topic
-                    ("/odom", "/odom"),  # Remap odom topic
-                ],
             ),
             DeclareLaunchArgument(
                 "resolution",

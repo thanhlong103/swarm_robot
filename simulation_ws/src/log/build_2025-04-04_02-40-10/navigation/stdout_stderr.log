@@ -1,0 +1,25 @@
+-- Install configuration: ""
+-- Execute custom install script
+-- Up-to-date symlink: /home/huhu/Documents/GitHub/swarm_robot/simulation_ws/src/install/navigation/share/navigation//description/gazebo_control.xacro
+-- Up-to-date symlink: /home/huhu/Documents/GitHub/swarm_robot/simulation_ws/src/install/navigation/share/navigation//description/inertial_macros.xacro
+-- Up-to-date symlink: /home/huhu/Documents/GitHub/swarm_robot/simulation_ws/src/install/navigation/share/navigation//description/lidar.xacro
+-- Up-to-date symlink: /home/huhu/Documents/GitHub/swarm_robot/simulation_ws/src/install/navigation/share/navigation//description/swarm_bot.urdf.xacro
+-- Symlinking: /home/huhu/Documents/GitHub/swarm_robot/simulation_ws/src/install/navigation/share/navigation//launch/com.launch.py
+-- Up-to-date symlink: /home/huhu/Documents/GitHub/swarm_robot/simulation_ws/src/install/navigation/share/navigation//launch/launch_bot_sim.launch.py
+-- Up-to-date symlink: /home/huhu/Documents/GitHub/swarm_robot/simulation_ws/src/install/navigation/share/navigation//launch/navigation.launch.py
+-- Up-to-date symlink: /home/huhu/Documents/GitHub/swarm_robot/simulation_ws/src/install/navigation/share/navigation//launch/rsp.launch.py
+-- Up-to-date symlink: /home/huhu/Documents/GitHub/swarm_robot/simulation_ws/src/install/navigation/share/ament_index/resource_index/package_run_dependencies/navigation
+-- Up-to-date symlink: /home/huhu/Documents/GitHub/swarm_robot/simulation_ws/src/install/navigation/share/ament_index/resource_index/parent_prefix_path/navigation
+-- Up-to-date symlink: /home/huhu/Documents/GitHub/swarm_robot/simulation_ws/src/install/navigation/share/navigation/environment/ament_prefix_path.sh
+-- Up-to-date symlink: /home/huhu/Documents/GitHub/swarm_robot/simulation_ws/src/install/navigation/share/navigation/environment/ament_prefix_path.dsv
+-- Up-to-date symlink: /home/huhu/Documents/GitHub/swarm_robot/simulation_ws/src/install/navigation/share/navigation/environment/path.sh
+-- Up-to-date symlink: /home/huhu/Documents/GitHub/swarm_robot/simulation_ws/src/install/navigation/share/navigation/environment/path.dsv
+-- Up-to-date symlink: /home/huhu/Documents/GitHub/swarm_robot/simulation_ws/src/install/navigation/share/navigation/local_setup.bash
+-- Up-to-date symlink: /home/huhu/Documents/GitHub/swarm_robot/simulation_ws/src/install/navigation/share/navigation/local_setup.sh
+-- Up-to-date symlink: /home/huhu/Documents/GitHub/swarm_robot/simulation_ws/src/install/navigation/share/navigation/local_setup.zsh
+-- Up-to-date symlink: /home/huhu/Documents/GitHub/swarm_robot/simulation_ws/src/install/navigation/share/navigation/local_setup.dsv
+-- Symlinking: /home/huhu/Documents/GitHub/swarm_robot/simulation_ws/src/install/navigation/share/navigation/package.dsv
+-- Up-to-date symlink: /home/huhu/Documents/GitHub/swarm_robot/simulation_ws/src/install/navigation/share/ament_index/resource_index/packages/navigation
+-- Up-to-date symlink: /home/huhu/Documents/GitHub/swarm_robot/simulation_ws/src/install/navigation/share/navigation/cmake/navigationConfig.cmake
+-- Up-to-date symlink: /home/huhu/Documents/GitHub/swarm_robot/simulation_ws/src/install/navigation/share/navigation/cmake/navigationConfig-version.cmake
+-- Up-to-date symlink: /home/huhu/Documents/GitHub/swarm_robot/simulation_ws/src/install/navigation/share/navigation/package.xml

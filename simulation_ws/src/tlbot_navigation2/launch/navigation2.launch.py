@@ -55,25 +55,25 @@ def generate_launch_description():
                 'map': map_dir,
                 'use_sim_time': use_sim_time,
                 'params_file': param_dir,
-                'namespace': 'Robot0'
+                # 'namespace': 'Robot0'
             }.items(),
         ),
 
-        Node(
-            package="tf2_ros",
-            executable="static_transform_publisher",
-            name="static_transform_publisher",
-            arguments=["0", "0", "0", "0", "0", "0", "map", "base_link"],
-            output="screen",
-        ),
+        # Node(
+        #     package="tf2_ros",
+        #     executable="static_transform_publisher",
+        #     name="static_transform_publisher",
+        #     arguments=["0", "0", "0", "0", "0", "0", "map", "odom"],
+        #     output="screen",
+        # ),
 
-        Node(
-            package="tf2_ros",
-            executable="static_transform_publisher",
-            name="static_transform_publisher",
-            arguments=["0", "0", "0", "0", "0", "0", "base_link", "odom"],
-            output="screen",
-        ),
+        # Node(
+        #     package="tf2_ros",
+        #     executable="static_transform_publisher",
+        #     name="static_transform_publisher",
+        #     arguments=["0", "0", "0", "0", "0", "0", "base_link", "odom"],
+        #     output="screen",
+        # ),
 
         Node(
             package='rviz2',
