@@ -3,3 +3,9 @@ simulation_ws/build/
 simulation_ws/install/
 
 simulation_ws/log/
+
+slave_ws/build/
+
+slave_ws/log/
+
+slave_ws/install/

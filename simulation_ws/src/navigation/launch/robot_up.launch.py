@@ -22,24 +22,21 @@ def generate_launch_description():
     xacro_file = os.path.join(pkg_path, 'description', 'swarm_bot.urdf.xacro')
     robot_description_config = xacro.process_file(xacro_file)
 
-     # Create a robot_state_publisher node
+    # Create a robot_state_publisher node
     params = {'robot_description': robot_description_config.toxml(), 'use_sim_time': use_sim_time}
     node_robot_state_publisher = Node(
         package='robot_state_publisher',
-        # namespace="Robot0",
         executable='robot_state_publisher',
         output='screen',
-        parameters=[params]
+        parameters=[params],
     )
 
     node_lidar_scan = Node(
-        
         package='rplidar_ros',
         executable='rplidar_composition',
         name='rplidar_node',
         output='screen',
-        parameters=[{'serial_port': '/dev/ttyUSB1', 'frame_id': 'laser'}]
-
+        parameters=[{'serial_port': '/dev/ttyUSB0', 'frame_id': 'laser'}]
     )
 
     node_joint_state = Node(
@@ -47,11 +44,35 @@ def generate_launch_description():
         executable='joint_state_publisher',
         name='joint_state_publisher',
         output='screen'
-    )
+    ) 
 
     return LaunchDescription([
         declare_use_sim_time,
         node_robot_state_publisher,
         node_lidar_scan,
         node_joint_state,
+        Node(
+            package="tf2_ros",
+            executable="static_transform_publisher",
+            name="static_transform_publisher",
+            arguments=["0", "0", "0", "0", "0", "0", "map", "odom"],
+            output="screen",
+        ),
+
+        Node(
+            package="tf2_ros",
+            executable="static_transform_publisher",
+            name="static_transform_publisher",
+            arguments=["0", "0", "0", "0", "0", "0", "odom", "origin_link"],
+            output="screen",
+        ),
+
+        # publish cmd_vel -> odom
+        # Node(
+        #     package='my_robot_driver',
+        #     executable='base_controller_node',
+        #     name='base_controller',
+        #     output='screen',
+        #     parameters=[{'port': '/dev/ttyUSB1', 'baudrate': 115200}]
+        # ),
     ])
