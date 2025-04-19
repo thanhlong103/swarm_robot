@@ -36,7 +36,7 @@ def generate_launch_description():
         executable='rplidar_composition',
         name='rplidar_node',
         output='screen',
-        parameters=[{'serial_port': '/dev/ttyUSB0', 'frame_id': 'laser'}]
+        parameters=[{'serial_port': '/dev/ttyUSB0', 'frame_id': 'laser_frame'}]
     )
 
     node_joint_state = Node(
@@ -49,7 +49,7 @@ def generate_launch_description():
     return LaunchDescription([
         declare_use_sim_time,
         node_robot_state_publisher,
-        node_lidar_scan,
+        # node_lidar_scan,
         node_joint_state,
         Node(
             package="tf2_ros",

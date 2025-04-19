@@ -59,22 +59,6 @@ def generate_launch_description():
             }.items(),
         ),
 
-        # Node(
-        #     package="tf2_ros",
-        #     executable="static_transform_publisher",
-        #     name="static_transform_publisher",
-        #     arguments=["0", "0", "0", "0", "0", "0", "map", "odom"],
-        #     output="screen",
-        # ),
-
-        # Node(
-        #     package="tf2_ros",
-        #     executable="static_transform_publisher",
-        #     name="static_transform_publisher",
-        #     arguments=["0", "0", "0", "0", "0", "0", "base_link", "odom"],
-        #     output="screen",
-        # ),
-
         Node(
             package='rviz2',
             executable='rviz2',

@@ -29,16 +29,17 @@ def generate_launch_description():
         # namespace="Robot0",
         executable='robot_state_publisher',
         output='screen',
-        parameters=[params]
+        parameters=[params],
+        arguments=['--ros-args', '--log-level', 'debug']
     )
 
     node_lidar_scan = Node(
         
         package='rplidar_ros',
-        executable='rplidar_composition',
+        executable='rplidar_c1_launch',
         name='rplidar_node',
         output='screen',
-        parameters=[{'serial_port': '/dev/ttyUSB1', 'frame_id': 'laser'}]
+        parameters=[{'serial_port': '/dev/ttyUSB0', 'frame_id': 'laser_frame'}]
 
     )
 
@@ -52,6 +53,6 @@ def generate_launch_description():
     return LaunchDescription([
         declare_use_sim_time,
         node_robot_state_publisher,
-        node_lidar_scan,
-        node_joint_state,
+        # node_lidar_scan,
+        # node_joint_state,
     ])
