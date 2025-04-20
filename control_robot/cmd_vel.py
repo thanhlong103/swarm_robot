@@ -14,7 +14,7 @@ class CmdVelToArduinoNode(Node):
         self.wheel_radius = 0.0325  # meters
         self.wheel_base = 0.21     # meters
         try:
-            self.serial_port = serial.Serial('/dev/ttyUSB0', 9600, timeout=1)
+            self.serial_port = serial.Serial('/dev/ttyUSB1', 9600, timeout=1)
             time.sleep(2)  # Wait for serial connection to establish
             self.get_logger().info("Serial connection established")
         except serial.SerialException as e:

@@ -11,6 +11,11 @@
 
   <depend>rclcpp</depend>
   <depend>std_msgs</depend>
+  <depend>rclpy</depend>
+  <depend>launch</depend>
+  <depend>launch_ros</depend>
+  <depend>cartographer</depend>
+  <depend>tlbot_navigation2</depend>
 
   <test_depend>ament_lint_auto</test_depend>
   <test_depend>ament_lint_common</test_depend>
