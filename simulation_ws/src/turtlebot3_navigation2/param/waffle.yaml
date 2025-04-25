@@ -164,23 +164,6 @@ local_costmap:
           clearing: True
           marking: True
           data_type: "LaserScan"
-      social_layer:
-        plugin: "nav2_social_costmap_plugin::SocialLayer"
-        people_topic: "/people"
-        enabled: True
-        cutoff: 10.0
-        amplitude: 255.0
-        publish_occgrid: False
-        use_passing: True
-        use_vel_factor: True
-        speed_factor_multiplier: 5.0
-        covariance_front_height: 0.4
-        covariance_front_width: 0.25
-        covariance_rear_height: 0.25
-        covariance_rear_width: 0.25
-        covariance_right_height: 0.3
-        covariance_right_width: 0.2
-        covariance_when_still: 0.25
       voxel_layer:
         plugin: "nav2_costmap_2d::VoxelLayer"
         enabled: True
