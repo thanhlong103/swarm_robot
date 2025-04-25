@@ -7,6 +7,7 @@ from scipy.optimize import linear_sum_assignment
 # --------------------------
 # Problem Setup (Shared)
 # --------------------------
+
 n_robots = 5
 m_tasks = 20
 

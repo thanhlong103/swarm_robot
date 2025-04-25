@@ -1,1 +1,0 @@
-/home/huhu/Documents/GitHub/swarm_robot/simulation_ws/src/build/tlbot_navigation2/ament_cmake_core/tlbot_navigation2Config-version.cmake

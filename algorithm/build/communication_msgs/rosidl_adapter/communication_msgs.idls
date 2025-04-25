@@ -1,0 +1,3 @@
+/home/irs/swarm_robot/algorithm/build/communication_msgs/rosidl_adapter/communication_msgs:msg/Robot.idl
+/home/irs/swarm_robot/algorithm/build/communication_msgs/rosidl_adapter/communication_msgs:msg/Task.idl
+/home/irs/swarm_robot/algorithm/build/communication_msgs/rosidl_adapter/communication_msgs:msg/TaskAllocation.idl
