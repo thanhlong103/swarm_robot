@@ -4,7 +4,8 @@ import launch_ros.actions
 import os
 from ament_index_python.packages import get_package_share_directory
 import xacro
-
+from launch.substitutions import LaunchConfiguration
+from launch.launch_description_sources import PythonLaunchDescriptionSource
 
 def generate_launch_description():
     # Define robot parameters
@@ -15,12 +16,27 @@ def generate_launch_description():
     y = launch.substitutions.LaunchConfiguration('y')
     z = launch.substitutions.LaunchConfiguration('z')
 
-    # Path to your URDF file
-    urdf_file_path = '/home/irs/swarm_robot/simulation_ws/src/robot_bringup/descriptions/robot_swarm.urdf'
+    # Declare launch arguments
+    use_sim_time = LaunchConfiguration('use_sim_time')
+    declare_use_sim_time = launch.actions.DeclareLaunchArgument(
+        'use_sim_time',
+        default_value='false',
+        description='Use sim time if true'
+    )
 
-    # Load URDF content into a variable
-    with open(urdf_file_path, 'r') as urdf_file:
-        robot_description_content = urdf_file.read()
+    # Process the URDF file
+    package_name = 'navigation'
+    pkg_path = os.path.join(get_package_share_directory(package_name))
+    xacro_file = os.path.join(pkg_path, 'description', 'swarm_bot.urdf.xacro')
+    robot_description_config = xacro.process_file(xacro_file)
+
+    params = {'robot_description': robot_description_config.toxml(), 'use_sim_time': use_sim_time}
+    # Path to your URDF file
+    # urdf_file_path = '/home/irs/swarm_robot/simulation_ws/src/robot_bringup/descriptions/robot_swarm.urdf'
+
+    # # Load URDF content into a variable
+    # with open(urdf_file_path, 'r') as urdf_file:
+    #     robot_description_content = urdf_file.read()
 
     # Robot State Publisher node
     robot_state_publisher_node = launch_ros.actions.Node(
@@ -29,7 +45,8 @@ def generate_launch_description():
         name='robot_state_publisher',
         output='screen',
         namespace=robot_namespace,  # Unique namespace for each robot
-        parameters=[{'use_sim_time': True, 'robot_description': robot_description_content}]
+        # parameters=[{'use_sim_time': True, 'robot_description': robot_description_content}]
+        parameters=[params]
     )
 
     # Spawn Robot node

@@ -1,5 +1,6 @@
 import sys
 import os
+import xacro
 
 from ament_index_python.packages import get_package_share_directory, get_package_prefix
 from launch import LaunchDescription
@@ -22,13 +23,16 @@ def gen_robot_list(number_of_robots):
     return robots 
 
 def generate_launch_description():
-
-    urdf = os.path.join(get_package_share_directory('robot_bringup'), 'descriptions/', 'robot_swarm.urdf')
+    package_name = 'navigation'
+    pkg_path = os.path.join(get_package_share_directory(package_name))
+    urdf = os.path.join(pkg_path, 'description/', 'swarm_bot.urdf')
+    
+    # urdf = os.path.join(get_package_share_directory('robot_bringup'), 'descriptions/', 'robot_swarm.urdf')
     pkg_robot_description = get_package_share_directory('robot_bringup')
-    assert os.path.exists(urdf), "The robot.urdf doesnt exist in "+str(urdf)
+    # assert os.path.exists(urdf), "The robot.urdf doesnt exist in "+str(urdf)
 
     # Names and poses of the robots
-    robots = gen_robot_list(1)
+    robots = gen_robot_list(3)
 
     # We create the list of spawn robots commands
     spawn_robots_cmds = []

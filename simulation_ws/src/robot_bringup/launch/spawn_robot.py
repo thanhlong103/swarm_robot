@@ -4,6 +4,7 @@
 
 import argparse
 import os
+import xacro
 import xml.etree.ElementTree as ET
 
 from ament_index_python.packages import get_package_share_directory
@@ -12,9 +13,15 @@ import rclpy
 
 
 def main():
+    package_name = 'navigation'
+    pkg_path = os.path.join(get_package_share_directory(package_name))
+    xacro_file = os.path.join(pkg_path, 'description', 'swarm_bot.urdf.xacro')
+    urdf = xacro.process_file(xacro_file)
+    robot_urdf = urdf.toxml()
+
     # Get input arguments from user
     parser = argparse.ArgumentParser(description='Spawn Robot into Gazebo with navigation2')
-    parser.add_argument('-urdf', '--robot_urdf', type=str, default='/home/irs/swarm_robot/simulation_ws/src/robot_bringup/descriptions/swarm_robot.urdf',
+    parser.add_argument('-urdf', '--robot_urdf', type=str, default=robot_urdf,
                         help='Name of the robot to spawn')
     parser.add_argument('-n', '--robot_name', type=str, default='dummy_robot',
                         help='Name of the robot to spawn')
@@ -59,9 +66,17 @@ def main():
     print(root)
     diff_drive_plugin = None 
 
+    # for plugin in root.iter('plugin'):
+    #     if 'diff_drive_controller' in plugin.attrib.values():
+    #         diff_drive_plugin = plugin
+
     for plugin in root.iter('plugin'):
-        if 'differential_drive_controller' in plugin.attrib.values():
+        if plugin.attrib.get('name') == 'diff_drive_controller':
             diff_drive_plugin = plugin
+            break
+
+    if diff_drive_plugin is None:
+        raise RuntimeError("diff_drive_controller plugin not found in the URDF!")
 
     # We change the namespace to the robots corresponding one
     tag_diff_drive_ros_params = diff_drive_plugin.find('ros')
