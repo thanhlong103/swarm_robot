@@ -31,14 +31,6 @@ def generate_launch_description():
         parameters=[params],
     )
 
-    node_lidar_scan = Node(
-        package='rplidar_ros',
-        executable='rplidar_composition',
-        name='rplidar_node',
-        output='screen',
-        parameters=[{'serial_port': '/dev/ttyUSB0', 'frame_id': 'laser_frame'}]
-    )
-
     node_joint_state = Node(
         package='joint_state_publisher',
         executable='joint_state_publisher',
