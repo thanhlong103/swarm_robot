@@ -1,6 +1,6 @@
 from setuptools import setup
 
-package_name = 'algorithm'
+package_name = 'control'
 
 setup(
     name=package_name,
@@ -20,7 +20,9 @@ setup(
     tests_require=['pytest'],
     entry_points={
         'console_scripts': [
-            "aco = algorithm.ACO:main",
+            "navigation_process = control.navigation_process:main",
+            "odom = control.odometry:main",
+            "send_vel =  control.cmd_vel:main"
         ],
     },
 )
