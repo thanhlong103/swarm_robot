@@ -20,6 +20,8 @@ setup(
     tests_require=['pytest'],
     entry_points={
         'console_scripts': [
+            "aco = algorithm.ACO:main",
+            "navigation_process = algorithm.navigation_process:main"
         ],
     },
 )

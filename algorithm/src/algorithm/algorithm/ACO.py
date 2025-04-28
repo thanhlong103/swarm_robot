@@ -18,8 +18,8 @@ class ACOAllocationNode(Node):
         self.alloc_pub = self.create_publisher(TaskAllocation, '/task_allocation', 10)
         
         # Storage for incoming data
-        self.robots = {}  # robot_id -> (x, y, available)
-        self.tasks = {}   # task_id -> (pickup_x, pickup_y, dropoff_x, dropoff_y, available)
+        self.robots = {}
+        self.tasks = {}
         
         # ACO Parameters
         self.num_ants = 30

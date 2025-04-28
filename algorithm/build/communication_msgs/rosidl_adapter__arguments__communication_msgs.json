@@ -1,8 +1,0 @@
-{
-  "package_name": "communication_msgs",
-  "non_idl_tuples": [
-    "/home/irs/swarm_robot/algorithm/src/communication_msgs:msg/Robot.msg",
-    "/home/irs/swarm_robot/algorithm/src/communication_msgs:msg/Task.msg",
-    "/home/irs/swarm_robot/algorithm/src/communication_msgs:msg/TaskAllocation.msg"
-  ]
-}
