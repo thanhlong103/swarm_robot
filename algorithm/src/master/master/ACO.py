@@ -3,7 +3,7 @@ import rclpy
 from rclpy.node import Node
 import numpy as np
 from scipy.spatial.distance import cdist
-from communication_msgs.msg import Robots, Task, TaskAllocation
+from communication_msgs.msg import Robots, Task, TaskAllocation, TaskAllocationArray
 from threading import Lock
 
 class ACOAllocationNode(Node):
@@ -24,8 +24,8 @@ class ACOAllocationNode(Node):
         
         # Publisher
         self.alloc_pub = self.create_publisher(
-            TaskAllocation,
-            '/task_allocation',
+            TaskAllocationArray,
+            '/task_allocations',
             10)
         
         # Storage for incoming data
@@ -62,7 +62,7 @@ class ACOAllocationNode(Node):
             available_tasks = {tid: t for tid, t in self.tasks.items() if t[4]}    # Filter available tasks
         
         if not available_robots or not available_tasks:
-            self.get_logger().warn('No available robots or tasks.')
+            self.get_logger().warn('No available robots or tasks for allocation.')
             return
         
         robot_positions = np.array([(r[0], r[1]) for r in available_robots.values()])
@@ -79,7 +79,8 @@ class ACOAllocationNode(Node):
                   self.num_ants, self.num_iterations, self.alpha, self.beta, self.rho, self.q)
         task_order, assignment, total_cost, robot_distances = aco.run()
         
-        # Publish allocations
+        # Prepare TaskAllocationArray message
+        alloc_array_msg = TaskAllocationArray()
         robot_tasks = {rid: [] for rid in available_robots.keys()}
         task_id_list = list(available_tasks.keys())
         for idx, task_idx in enumerate(task_order):
@@ -88,12 +89,19 @@ class ACOAllocationNode(Node):
         
         for robot_id, tasks in robot_tasks.items():
             if tasks:
-                msg = TaskAllocation()
-                msg.robot_id = robot_id
-                msg.task_ids = tasks
-                msg.total_distance = float(robot_distances[list(available_robots.keys()).index(robot_id)])
-                self.alloc_pub.publish(msg)
-                self.get_logger().info(f'Robot {robot_id}: Tasks {tasks}, Distance: {msg.total_distance:.2f}')
+                alloc_msg = TaskAllocation()
+                alloc_msg.robot_id = robot_id
+                alloc_msg.task_ids = tasks
+                alloc_msg.total_distance = float(robot_distances[list(available_robots.keys()).index(robot_id)])
+                alloc_array_msg.tasks.append(alloc_msg)
+                self.get_logger().info(f'Robot {robot_id}: Tasks {tasks}, Distance: {alloc_msg.total_distance:.2f}')
+        
+        # Publish allocations
+        if alloc_array_msg.tasks:
+            self.alloc_pub.publish(alloc_array_msg)
+            self.get_logger().info(f'Published TaskAllocationArray with {len(alloc_array_msg.tasks)} allocations')
+        else:
+            self.get_logger().warn('No task allocations to publish')
 
 class ACO:
     def __init__(self, n_robots, m_tasks, dist_task, dist_dropoff, dist_dropoff_task,
@@ -128,11 +136,21 @@ class ACO:
         assignment = np.zeros(self.m_tasks, dtype=int)
         task_order = np.arange(self.m_tasks)
         np.random.shuffle(task_order)
+        robot_distances = {i: 0.0 for i in range(self.n_robots)}
+        
         for task in range(self.m_tasks):
             probabilities = (self.pheromone_assignment[task] ** self.alpha) * (self.heuristic_assignment[:, task] ** self.beta)
             probabilities /= probabilities.sum()
             assignment[task] = np.random.choice(self.n_robots, p=probabilities)
-        return assignment, task_order, 0, {i: 0.0 for i in range(self.n_robots)}
+            robot_id = assignment[task]
+            task_idx = task_order[task]
+            # Add distance from robot to task pickup
+            robot_distances[robot_id] += self.dist_task[robot_id, task_idx]
+            # Add distance from pickup to dropoff
+            robot_distances[robot_id] += self.dist_dropoff[task_idx, task_idx]
+        
+        total_cost = sum(robot_distances.values())
+        return assignment, task_order, total_cost, robot_distances
 
     def update_pheromones(self, solutions):
         self.pheromone_assignment *= (1 - self.rho)

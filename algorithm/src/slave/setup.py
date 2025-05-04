@@ -28,6 +28,7 @@ setup(
             "odom = slave.odometry:main",
             "send_vel = slave.cmd_vel:main",
             "waypoint_navigator = slave.waypoint_navigator:main",
+            "odom_to_robot_odom = slave.odom_to_robot_odom:main"
         ],
     },
 )
