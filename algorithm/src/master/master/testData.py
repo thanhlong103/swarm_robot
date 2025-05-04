@@ -5,29 +5,11 @@ from communication_msgs.msg import Robot, Task
 class TaskRobotPublisher(Node):
     def __init__(self):
         super().__init__('task_robot_publisher')
-        
-        self.robot_pub = self.create_publisher(Robot, '/robot_status', 10)
         self.task_pub = self.create_publisher(Task, '/task_locations', 10)
         
         self.timer = self.create_timer(2.0, self.publish_data)
 
     def publish_data(self):
-        # Publish static robot data
-        robots = [
-            (0, 2.0, 3.0, True),
-            (1, 5.0, 7.0, True),
-            (2, 8.0, 1.0, True)
-        ]
-        
-        for robot_id, x, y, available in robots:
-            robot_msg = Robot()
-            robot_msg.robot_id = robot_id
-            robot_msg.x = x
-            robot_msg.y = y
-            robot_msg.available = available
-            self.robot_pub.publish(robot_msg)
-            self.get_logger().info(f'Published Robot {robot_id} at ({x}, {y})')
-        
         # Publish static task data
         tasks = [
             (0, 1.0, 1.0, 6.0, 6.0, True),

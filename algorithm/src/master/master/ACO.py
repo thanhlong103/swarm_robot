@@ -1,8 +1,10 @@
+#!/usr/bin/env python3
 import rclpy
 from rclpy.node import Node
 import numpy as np
 from scipy.spatial.distance import cdist
-from communication_msgs.msg import Robot, Task, TaskAllocation
+from communication_msgs.msg import Robots, Task, TaskAllocation
+from threading import Lock
 
 class ACOAllocationNode(Node):
     def __init__(self):
@@ -10,16 +12,26 @@ class ACOAllocationNode(Node):
         
         # Subscribers
         self.robot_sub = self.create_subscription(
-            Robot, '/robot_status', self.robot_status_callback, 10)
+            Robots,
+            '/all_robot_status',
+            self.robot_status_callback,
+            10)
         self.task_sub = self.create_subscription(
-            Task, '/task_locations', self.task_location_callback, 10)
+            Task,
+            '/task_locations',
+            self.task_location_callback,
+            10)
         
         # Publisher
-        self.alloc_pub = self.create_publisher(TaskAllocation, '/task_allocation', 10)
+        self.alloc_pub = self.create_publisher(
+            TaskAllocation,
+            '/task_allocation',
+            10)
         
         # Storage for incoming data
-        self.robots = {}
-        self.tasks = {}
+        self.robots = {}  # {robot_id: (x, y, available)}
+        self.tasks = {}   # {task_id: (pickup_x, pickup_y, dropoff_x, dropoff_y, available)}
+        self.data_lock = Lock()  # Lock for thread-safe access to robots and tasks
         
         # ACO Parameters
         self.num_ants = 30
@@ -31,18 +43,23 @@ class ACOAllocationNode(Node):
         
         # Timer to run allocation periodically
         self.timer = self.create_timer(5.0, self.run_allocation)
+        self.get_logger().info('ACO Allocation Node started')
 
     def robot_status_callback(self, msg):
-        self.robots[msg.robot_id] = (msg.x, msg.y, msg.available)
-        self.get_logger().info(f'Robot {msg.robot_id} at ({msg.x}, {msg.y}), Available: {msg.available}')
+        with self.data_lock:
+            for robot in msg.robot_status:
+                self.robots[robot.robot_id] = (robot.x, robot.y, robot.available)
+                self.get_logger().info(f'Robot {robot.robot_id} at ({robot.x}, {robot.y}), Available: {robot.available}')
 
     def task_location_callback(self, msg):
-        self.tasks[msg.task_id] = (msg.pickup_x, msg.pickup_y, msg.dropoff_x, msg.dropoff_y, msg.available)
-        self.get_logger().info(f'Task {msg.task_id} added, Available: {msg.available}')
+        with self.data_lock:
+            self.tasks[msg.task_id] = (msg.pickup_x, msg.pickup_y, msg.dropoff_x, msg.dropoff_y, msg.available)
+            self.get_logger().info(f'Task {msg.task_id} added, Available: {msg.available}')
 
     def run_allocation(self):
-        available_robots = {rid: r for rid, r in self.robots.items() if r[2]}  # Filter available robots
-        available_tasks = {tid: t for tid, t in self.tasks.items() if t[4]}  # Filter available tasks
+        with self.data_lock:
+            available_robots = {rid: r for rid, r in self.robots.items() if r[2]}  # Filter available robots
+            available_tasks = {tid: t for tid, t in self.tasks.items() if t[4]}    # Filter available tasks
         
         if not available_robots or not available_tasks:
             self.get_logger().warn('No available robots or tasks.')
@@ -125,12 +142,16 @@ class ACO:
             for task, robot in enumerate(assignment):
                 self.pheromone_assignment[task, robot] += pheromone_deposit
 
-
 def main():
     rclpy.init()
     node = ACOAllocationNode()
-    rclpy.spin(node)
-    rclpy.shutdown()
+    try:
+        rclpy.spin(node)
+    except KeyboardInterrupt:
+        pass
+    finally:
+        node.destroy_node()
+        rclpy.shutdown()
 
 if __name__ == '__main__':
     main()

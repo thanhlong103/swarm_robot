@@ -1,6 +1,6 @@
 from setuptools import setup
 
-package_name = 'algorithm'
+package_name = 'master'
 
 setup(
     name=package_name,
@@ -20,7 +20,7 @@ setup(
     tests_require=['pytest'],
     entry_points={
         'console_scripts': [
-            "aco = algorithm.ACO:main",
+            "aco = master.ACO:main",
         ],
     },
 )

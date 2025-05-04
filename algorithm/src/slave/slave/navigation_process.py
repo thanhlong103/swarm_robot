@@ -3,7 +3,7 @@
 import rclpy
 from rclpy.node import Node
 from rclpy.action import ActionClient
-from communication_msgs.msg import Robot, TaskAllocationArray, TaskAllocation, Task
+from communication_msgs.msg import RobotStatus, TaskAllocationArray, TaskAllocation, Task
 from nav_msgs.msg import Odometry
 from geometry_msgs.msg import PoseStamped, Point, Quaternion
 from nav2_msgs.action import NavigateToPose
@@ -48,8 +48,8 @@ class NavigationProcessNode(Node):
         
         # Publishers
         self.robot_status_pub = self.create_publisher(
-            Robot,
-            '/robot_status',
+            RobotStatus,
+            '/status_topic',
             10
         )
         self.task_pub = self.create_publisher(
@@ -63,6 +63,8 @@ class NavigationProcessNode(Node):
         if not self.nav2_client.wait_for_server(timeout_sec=5.0):
             self.get_logger().error('Nav2 action server not available')
         
+        # Publish initial robot status (available)
+        self.publish_robot_status(available=True)
         self.get_logger().info(f'Navigation Process Node started for Robot {self.robot_id}')
     
     def odom_callback(self, msg):
@@ -105,22 +107,7 @@ class NavigationProcessNode(Node):
                 self.get_logger().info(f'Received task allocation for Robot {self.robot_id}: Tasks {allocation.task_ids}')
                 
                 # Update robot status to unavailable
-                robot_status = Robot()
-                robot_status.robot_id = self.robot_id
-                robot_status.available = False
-                
-                if self.current_pose:
-                    robot_status.x, robot_status.y = self.current_pose[0], self.current_pose[1]
-                else:
-                    robot_status.x, robot_status.y = 0.0, 0.0
-                    self.get_logger().warn(f'No odometry data for Robot {self.robot_id}, using default position (0, 0)')
-                
-                try:
-                    self.robot_status_pub.publish(robot_status)
-                    self.get_logger().info(f'Robot {self.robot_id} set to unavailable')
-                except Exception as e:
-                    self.get_logger().error(f'Error publishing robot status: {e}')
-                    continue
+                self.publish_robot_status(available=False)
                 
                 # Store task IDs and create waypoints
                 self.current_task_ids = allocation.task_ids
@@ -257,21 +244,7 @@ class NavigationProcessNode(Node):
                     self.get_logger().error(f'Error publishing task update: {e}')
         
         # Update robot status to available
-        robot_status = Robot()
-        robot_status.robot_id = self.robot_id
-        robot_status.available = True
-        if self.current_pose:
-            robot_status.x, robot_status.y = self.current_pose[0], self.current_pose[1]
-        else:
-            robot_status.x, robot_status.y = 0.0, 0.0
-            self.get_logger().warn(f'No odometry data for Robot {self.robot_id}, using default position (0, 0)')
-        
-        try:
-            self.robot_status_pub.publish(robot_status)
-            self.get_logger().info(f'Robot {self.robot_id} set to available')
-        except Exception as e:
-            self.get_logger().error(f'Error publishing robot status: {e}')
-        
+        self.publish_robot_status(available=True)
         self.reset_navigation()
 
     def reset_navigation(self):
@@ -280,6 +253,17 @@ class NavigationProcessNode(Node):
         self.current_waypoints = []
         self.current_waypoint_index = 0
         self.get_logger().info(f'Navigation reset for Robot {self.robot_id}')
+
+    def publish_robot_status(self, available):
+        """Publish robot status on /status_topic."""
+        robot_status = RobotStatus()
+        robot_status.robot_id = self.robot_id
+        robot_status.available = available
+        try:
+            self.robot_status_pub.publish(robot_status)
+            self.get_logger().info(f'Robot {self.robot_id} status published: available={available}')
+        except Exception as e:
+            self.get_logger().error(f'Error publishing robot status: {e}')
 
     def angle_to_quaternion(self, yaw):
         """Convert yaw angle to quaternion."""

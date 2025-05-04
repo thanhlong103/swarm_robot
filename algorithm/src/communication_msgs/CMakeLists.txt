@@ -42,6 +42,9 @@ rosidl_generate_interfaces(${PROJECT_NAME}
   "msg/Task.msg"
   "msg/TaskAllocation.msg"
   "msg/TaskAllocationArray.msg"
+  "msg/RobotStatus.msg"
+  "msg/RobotOdom.msg"
+  "msg/Robots.msg"
   DEPENDENCIES geometry_msgs std_msgs
 )
 
