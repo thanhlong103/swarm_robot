@@ -19,9 +19,9 @@ class WaypointNavigatorNode(Node):
         self.waypoints = self.get_parameter('waypoints').get_parameter_value().double_array_value
         
         # Validate waypoints (should be pairs of x, y coordinates)
-        if len(self.waypoints) % 2 != 0 or not self.waypoints:
-            self.get_logger().error('Invalid waypoints parameter: must be a list of [x, y] coordinates')
-            raise ValueError('Invalid waypoints parameter')
+        # if len(self.waypoints) % 2 != 0 or not self.waypoints:
+        #     self.get_logger().error('Invalid waypoints parameter: must be a list of [x, y] coordinates')
+        #     raise ValueError('Invalid waypoints parameter')
         
         # Convert waypoints to list of (x, y) tuples
         self.waypoint_list = [(self.waypoints[i], self.waypoints[i+1]) for i in range(0, len(self.waypoints), 2)]

@@ -13,9 +13,9 @@ import rclpy
 
 
 def main():
-    package_name = 'navigation'
+    package_name = 'robot_bringup'
     pkg_path = os.path.join(get_package_share_directory(package_name))
-    xacro_file = os.path.join(pkg_path, 'description', 'swarm_bot.urdf.xacro')
+    xacro_file = os.path.join(pkg_path, 'descriptions', 'swarm_bot.urdf.xacro')
     urdf = xacro.process_file(xacro_file)
     robot_urdf = urdf.toxml()
 

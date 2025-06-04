@@ -23,16 +23,16 @@ def gen_robot_list(number_of_robots):
     return robots 
 
 def generate_launch_description():
-    package_name = 'navigation'
+    package_name = 'robot_bringup'
     pkg_path = os.path.join(get_package_share_directory(package_name))
-    urdf = os.path.join(pkg_path, 'description/', 'swarm_bot.urdf')
+    urdf = os.path.join(pkg_path, 'descriptions', 'swarm_bot.urdf')
     
     # urdf = os.path.join(get_package_share_directory('robot_bringup'), 'descriptions/', 'robot_swarm.urdf')
     pkg_robot_description = get_package_share_directory('robot_bringup')
     # assert os.path.exists(urdf), "The robot.urdf doesnt exist in "+str(urdf)
 
     # Names and poses of the robots
-    robots = gen_robot_list(3)
+    robots = gen_robot_list(1)
 
     # We create the list of spawn robots commands
     spawn_robots_cmds = []

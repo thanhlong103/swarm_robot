@@ -1,5 +1,21 @@
 ros2 launch navigation launch_bot_sim.launch.py world:=src/robot_bringup/worlds/swarm_world.worlds 
 
+ros2 topic pub --once /goal_pose geometry_msgs/msg/PoseStamped "{header: {stamp: {sec: 0, nanosec: 0},frame_id: 'map'},pose: {position: {x: 8.0, y: 1.0, z: 0.0},orientation: {x: 0.0, y: 0.0, z: 0.0, w: 1.0}}}"
+
+# Start gazebo
+ros2 launch robot_bringup multi_robot_launch.py use_sim_time:=true
+
+# navigation2
 ros2 launch turtlebot3_navigation2 navigation2.launch.py use_sim_time:=true
 
-ros2 topic pub --once /goal_pose geometry_msgs/msg/PoseStamped "{header: {stamp: {sec: 0, nanosec: 0},frame_id: 'map'},pose: {position: {x: 8.0, y: 1.0, z: 0.0},orientation: {x: 0.0, y: 0.0, z: 0.0, w: 1.0}}}"
+# navigation process
+ros2 run slave navigation_process
+
+# waypoint_navigator
+ros2 run slave waypoint_navigator
+
+# statusReceiver
+ros2 run master statusReceiver
+
+# ACO
+ros2 run master aco
