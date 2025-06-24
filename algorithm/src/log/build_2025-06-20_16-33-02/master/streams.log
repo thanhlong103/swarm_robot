@@ -1,0 +1,24 @@
+[2.166s] Invoking command in '/home/thaoton1910/swarm_robot/algorithm/src/build/master': PYTHONPATH=/home/thaoton1910/swarm_robot/algorithm/src/build/master/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/thaoton1910/swarm_robot/algorithm/src/install/master/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/thaoton1910/swarm_robot/algorithm/src/build/master/build --no-deps symlink_data
+[3.036s] running develop
+[3.441s] running egg_info
+[3.441s] creating master.egg-info
+[3.442s] writing master.egg-info/PKG-INFO
+[3.442s] writing dependency_links to master.egg-info/dependency_links.txt
+[3.443s] writing entry points to master.egg-info/entry_points.txt
+[3.444s] writing requirements to master.egg-info/requires.txt
+[3.444s] writing top-level names to master.egg-info/top_level.txt
+[3.444s] writing manifest file 'master.egg-info/SOURCES.txt'
+[3.449s] reading manifest file 'master.egg-info/SOURCES.txt'
+[3.451s] writing manifest file 'master.egg-info/SOURCES.txt'
+[3.453s] running build_ext
+[3.455s] Creating /home/thaoton1910/swarm_robot/algorithm/src/install/master/lib/python3.10/site-packages/master.egg-link (link to .)
+[3.456s] Installing aco script to /home/thaoton1910/swarm_robot/algorithm/src/install/master/lib/master
+[3.457s] 
+[3.458s] Installed /home/thaoton1910/swarm_robot/algorithm/src/build/master
+[3.458s] running symlink_data
+[3.458s] creating /home/thaoton1910/swarm_robot/algorithm/src/install/master/share/ament_index
+[3.459s] creating /home/thaoton1910/swarm_robot/algorithm/src/install/master/share/ament_index/resource_index
+[3.460s] creating /home/thaoton1910/swarm_robot/algorithm/src/install/master/share/ament_index/resource_index/packages
+[3.461s] symbolically linking /home/thaoton1910/swarm_robot/algorithm/src/build/master/resource/master -> /home/thaoton1910/swarm_robot/algorithm/src/install/master/share/ament_index/resource_index/packages
+[3.461s] symbolically linking /home/thaoton1910/swarm_robot/algorithm/src/build/master/package.xml -> /home/thaoton1910/swarm_robot/algorithm/src/install/master/share/master
+[3.546s] Invoked command in '/home/thaoton1910/swarm_robot/algorithm/src/build/master' returned '0': PYTHONPATH=/home/thaoton1910/swarm_robot/algorithm/src/build/master/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/thaoton1910/swarm_robot/algorithm/src/install/master/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/thaoton1910/swarm_robot/algorithm/src/build/master/build --no-deps symlink_data

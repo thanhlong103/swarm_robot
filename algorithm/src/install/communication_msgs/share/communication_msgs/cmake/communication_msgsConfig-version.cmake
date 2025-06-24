@@ -1,0 +1,1 @@
+/home/thaoton1910/swarm_robot/algorithm/src/build/communication_msgs/ament_cmake_core/communication_msgsConfig-version.cmake

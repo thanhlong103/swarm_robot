@@ -1,0 +1,7 @@
+/home/thaoton1910/swarm_robot/algorithm/src/build/communication_msgs/rosidl_adapter/communication_msgs:msg/Robot.idl
+/home/thaoton1910/swarm_robot/algorithm/src/build/communication_msgs/rosidl_adapter/communication_msgs:msg/Task.idl
+/home/thaoton1910/swarm_robot/algorithm/src/build/communication_msgs/rosidl_adapter/communication_msgs:msg/TaskAllocation.idl
+/home/thaoton1910/swarm_robot/algorithm/src/build/communication_msgs/rosidl_adapter/communication_msgs:msg/TaskAllocationArray.idl
+/home/thaoton1910/swarm_robot/algorithm/src/build/communication_msgs/rosidl_adapter/communication_msgs:msg/RobotStatus.idl
+/home/thaoton1910/swarm_robot/algorithm/src/build/communication_msgs/rosidl_adapter/communication_msgs:msg/RobotOdom.idl
+/home/thaoton1910/swarm_robot/algorithm/src/build/communication_msgs/rosidl_adapter/communication_msgs:msg/Robots.idl

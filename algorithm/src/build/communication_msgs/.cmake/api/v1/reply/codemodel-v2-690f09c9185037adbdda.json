@@ -1,0 +1,233 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"childIndexes" : 
+					[
+						1
+					],
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-4268de2156654628b5a4.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.12"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						5,
+						6,
+						7,
+						8,
+						9,
+						10,
+						11,
+						12,
+						13,
+						14,
+						15,
+						16,
+						17
+					]
+				},
+				{
+					"build" : "communication_msgs__py",
+					"jsonFile" : "directory-communication_msgs__py-61ce4c1514e0668e6ae8.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.12"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "/home/thaoton1910/swarm_robot/algorithm/src/build/communication_msgs/communication_msgs__py",
+					"targetIndexes" : 
+					[
+						4
+					]
+				}
+			],
+			"name" : "",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0,
+						1
+					],
+					"name" : "communication_msgs",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6,
+						7,
+						8,
+						9,
+						10,
+						11,
+						12,
+						13,
+						14,
+						15,
+						16,
+						17
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "ament_cmake_python_build_communication_msgs_egg::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ament_cmake_python_build_communication_msgs_egg-2cf206c3de16bb6c337e.json",
+					"name" : "ament_cmake_python_build_communication_msgs_egg",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ament_cmake_python_symlink_communication_msgs::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ament_cmake_python_symlink_communication_msgs-da34dda393211b8133f5.json",
+					"name" : "ament_cmake_python_symlink_communication_msgs",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "communication_msgs::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-communication_msgs-15d1902b98c69acb0036.json",
+					"name" : "communication_msgs",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "communication_msgs__cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-communication_msgs__cpp-867f6d8635c65b9cff6e.json",
+					"name" : "communication_msgs__cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "communication_msgs__py::@c966344439fe8efc9cb1",
+					"jsonFile" : "target-communication_msgs__py-0ddbf5bc474074eeda10.json",
+					"name" : "communication_msgs__py",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "communication_msgs__rosidl_generator_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-communication_msgs__rosidl_generator_c-67cf6c966ea88b5e124a.json",
+					"name" : "communication_msgs__rosidl_generator_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "communication_msgs__rosidl_generator_py::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-communication_msgs__rosidl_generator_py-6de2a52ed8750702f036.json",
+					"name" : "communication_msgs__rosidl_generator_py",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "communication_msgs__rosidl_typesupport_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-communication_msgs__rosidl_typesupport_c-370e5ee7de0d9cfe68c6.json",
+					"name" : "communication_msgs__rosidl_typesupport_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "communication_msgs__rosidl_typesupport_c__pyext::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-communication_msgs__rosidl_typesupport_c__pyext-264d2876467e852455a0.json",
+					"name" : "communication_msgs__rosidl_typesupport_c__pyext",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "communication_msgs__rosidl_typesupport_cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-communication_msgs__rosidl_typesupport_cpp-9e5e88bace632f8cefd8.json",
+					"name" : "communication_msgs__rosidl_typesupport_cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "communication_msgs__rosidl_typesupport_fastrtps_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-communication_msgs__rosidl_typesupport_fastrtps_c-7c4de6fe6a161387e6f7.json",
+					"name" : "communication_msgs__rosidl_typesupport_fastrtps_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "communication_msgs__rosidl_typesupport_fastrtps_c__pyext::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-communication_msgs__rosidl_typesupport_fastrtps_c__pyext-172f94289d9eb57201fb.json",
+					"name" : "communication_msgs__rosidl_typesupport_fastrtps_c__pyext",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "communication_msgs__rosidl_typesupport_fastrtps_cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-communication_msgs__rosidl_typesupport_fastrtps_cpp-27f0e451694ad0b89497.json",
+					"name" : "communication_msgs__rosidl_typesupport_fastrtps_cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "communication_msgs__rosidl_typesupport_introspection_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-communication_msgs__rosidl_typesupport_introspection_c-d530958a20f0eda478d7.json",
+					"name" : "communication_msgs__rosidl_typesupport_introspection_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "communication_msgs__rosidl_typesupport_introspection_c__pyext::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-communication_msgs__rosidl_typesupport_introspection_c__pyext-413905ecae6e84e0607f.json",
+					"name" : "communication_msgs__rosidl_typesupport_introspection_c__pyext",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "communication_msgs__rosidl_typesupport_introspection_cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-communication_msgs__rosidl_typesupport_introspection_cpp-a67724becb6bb96ce43c.json",
+					"name" : "communication_msgs__rosidl_typesupport_introspection_cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "communication_msgs_uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-communication_msgs_uninstall-5c4fad23dff7ee4fc340.json",
+					"name" : "communication_msgs_uninstall",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-uninstall-9d0ae6f724885713439f.json",
+					"name" : "uninstall",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/thaoton1910/swarm_robot/algorithm/src/build/communication_msgs",
+		"source" : "/home/thaoton1910/swarm_robot/algorithm/src/communication_msgs"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 3
+	}
+}

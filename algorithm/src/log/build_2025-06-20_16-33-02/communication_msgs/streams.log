@@ -1,0 +1,359 @@
+[0.056s] Invoking command in '/home/thaoton1910/swarm_robot/algorithm/src/build/communication_msgs': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/thaoton1910/swarm_robot/algorithm/src/communication_msgs -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/thaoton1910/swarm_robot/algorithm/src/install/communication_msgs
+[0.684s] -- The C compiler identification is GNU 11.4.0
+[1.960s] -- The CXX compiler identification is GNU 11.4.0
+[3.096s] -- Detecting C compiler ABI info
+[3.478s] -- Detecting C compiler ABI info - done
+[3.496s] -- Check for working C compiler: /usr/bin/cc - skipped
+[3.498s] -- Detecting C compile features
+[3.500s] -- Detecting C compile features - done
+[3.511s] -- Detecting CXX compiler ABI info
+[3.864s] -- Detecting CXX compiler ABI info - done
+[3.876s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[3.876s] -- Detecting CXX compile features
+[3.877s] -- Detecting CXX compile features - done
+[3.885s] -- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)
+[4.185s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[4.313s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[4.396s] -- Found rosidl_default_generators: 1.2.0 (/opt/ros/humble/share/rosidl_default_generators/cmake)
+[4.406s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[4.421s] -- Found rosidl_adapter: 3.1.6 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[4.835s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[4.935s] -- Found geometry_msgs: 4.8.0 (/opt/ros/humble/share/geometry_msgs/cmake)
+[5.056s] -- Found ament_lint_auto: 0.12.12 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[5.618s] -- Found ament_cmake_ros: 0.10.0 (/opt/ros/humble/share/ament_cmake_ros/cmake)
+[5.998s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[6.482s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[6.885s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.10.12", minimum required is "3.6") 
+[6.890s] -- Found python_cmake_module: 0.10.0 (/opt/ros/humble/share/python_cmake_module/cmake)
+[8.050s] -- Found PythonLibs: /usr/lib/x86_64-linux-gnu/libpython3.10.so (found suitable version "3.10.12", minimum required is "3.5") 
+[8.051s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[8.051s] -- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.10
+[8.051s] -- Using PYTHON_LIBRARIES: /usr/lib/x86_64-linux-gnu/libpython3.10.so
+[8.092s] -- Found PythonExtra: .so  
+[8.346s] -- Added test 'copyright' to check source files copyright and LICENSE
+[8.354s] -- Added test 'lint_cmake' to check CMake code style
+[8.359s] -- Added test 'xmllint' to check XML markup files
+[8.387s] -- Configuring done
+[8.480s] -- Generating done
+[8.499s] -- Build files have been written to: /home/thaoton1910/swarm_robot/algorithm/src/build/communication_msgs
+[8.515s] Invoked command in '/home/thaoton1910/swarm_robot/algorithm/src/build/communication_msgs' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/thaoton1910/swarm_robot/algorithm/src/communication_msgs -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/thaoton1910/swarm_robot/algorithm/src/install/communication_msgs
+[8.518s] Invoking command in '/home/thaoton1910/swarm_robot/algorithm/src/build/communication_msgs': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/thaoton1910/swarm_robot/algorithm/src/build/communication_msgs -- -j12 -l12
+[8.584s] [  1%] [34m[1mGenerating C code for ROS interfaces[0m
+[8.605s] [  2%] [34m[1mGenerating C++ code for ROS interfaces[0m
+[8.624s] [  2%] Built target ament_cmake_python_symlink_communication_msgs
+[9.236s] running egg_info
+[9.238s] creating communication_msgs.egg-info
+[9.239s] writing communication_msgs.egg-info/PKG-INFO
+[9.240s] writing dependency_links to communication_msgs.egg-info/dependency_links.txt
+[9.240s] writing top-level names to communication_msgs.egg-info/top_level.txt
+[9.240s] writing manifest file 'communication_msgs.egg-info/SOURCES.txt'
+[9.246s] reading manifest file 'communication_msgs.egg-info/SOURCES.txt'
+[9.248s] writing manifest file 'communication_msgs.egg-info/SOURCES.txt'
+[9.313s] [  2%] Built target ament_cmake_python_build_communication_msgs_egg
+[9.769s] [  2%] Built target communication_msgs__cpp
+[9.811s] [  3%] [34m[1mGenerating C++ type support for eProsima Fast-RTPS[0m
+[9.814s] [  6%] [34m[1mGenerating C++ introspection for ROS interfaces[0m
+[9.814s] [  6%] [34m[1mGenerating C++ type support dispatch for ROS interfaces[0m
+[9.867s] [  8%] [32mBuilding C object CMakeFiles/communication_msgs__rosidl_generator_c.dir/rosidl_generator_c/communication_msgs/msg/detail/robot__functions.c.o[0m
+[9.869s] [  8%] [32mBuilding C object CMakeFiles/communication_msgs__rosidl_generator_c.dir/rosidl_generator_c/communication_msgs/msg/detail/task__functions.c.o[0m
+[9.870s] [ 10%] [32mBuilding C object CMakeFiles/communication_msgs__rosidl_generator_c.dir/rosidl_generator_c/communication_msgs/msg/detail/task_allocation_array__functions.c.o[0m
+[9.871s] [ 11%] [32mBuilding C object CMakeFiles/communication_msgs__rosidl_generator_c.dir/rosidl_generator_c/communication_msgs/msg/detail/robot_odom__functions.c.o[0m
+[9.871s] [ 12%] [32mBuilding C object CMakeFiles/communication_msgs__rosidl_generator_c.dir/rosidl_generator_c/communication_msgs/msg/detail/task_allocation__functions.c.o[0m
+[9.871s] [ 13%] [32mBuilding C object CMakeFiles/communication_msgs__rosidl_generator_c.dir/rosidl_generator_c/communication_msgs/msg/detail/robot_status__functions.c.o[0m
+[9.872s] [ 15%] [32mBuilding C object CMakeFiles/communication_msgs__rosidl_generator_c.dir/rosidl_generator_c/communication_msgs/msg/detail/robots__functions.c.o[0m
+[10.127s] [ 16%] [32m[1mLinking C shared library libcommunication_msgs__rosidl_generator_c.so[0m
+[10.496s] [ 16%] Built target communication_msgs__rosidl_generator_c
+[10.526s] [ 17%] [34m[1mGenerating C type support dispatch for ROS interfaces[0m
+[10.526s] [ 18%] [34m[1mGenerating C type support for eProsima Fast-RTPS[0m
+[10.526s] [ 20%] [34m[1mGenerating C introspection for ROS interfaces[0m
+[10.909s] [ 21%] [32mBuilding CXX object CMakeFiles/communication_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/communication_msgs/msg/robot_odom__type_support.cpp.o[0m
+[10.914s] [ 22%] [32mBuilding CXX object CMakeFiles/communication_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/communication_msgs/msg/task_allocation__type_support.cpp.o[0m
+[10.916s] [ 24%] [32mBuilding CXX object CMakeFiles/communication_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/communication_msgs/msg/robots__type_support.cpp.o[0m
+[10.917s] [ 26%] [32mBuilding CXX object CMakeFiles/communication_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/communication_msgs/msg/task_allocation_array__type_support.cpp.o[0m
+[10.917s] [ 26%] [32mBuilding CXX object CMakeFiles/communication_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/communication_msgs/msg/task__type_support.cpp.o[0m
+[10.922s] [ 27%] [32mBuilding CXX object CMakeFiles/communication_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/communication_msgs/msg/robot__type_support.cpp.o[0m
+[10.927s] [ 29%] [32mBuilding CXX object CMakeFiles/communication_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/communication_msgs/msg/robot_status__type_support.cpp.o[0m
+[11.566s] [ 30%] [32mBuilding CXX object CMakeFiles/communication_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/communication_msgs/msg/detail/robot__type_support.cpp.o[0m
+[11.857s] [ 31%] [32mBuilding CXX object CMakeFiles/communication_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/communication_msgs/msg/detail/dds_fastrtps/robot__type_support.cpp.o[0m
+[12.298s] [ 32%] [32mBuilding CXX object CMakeFiles/communication_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/communication_msgs/msg/robot__type_support.cpp.o[0m
+[12.371s] [ 34%] [32mBuilding CXX object CMakeFiles/communication_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/communication_msgs/msg/detail/task__type_support.cpp.o[0m
+[12.372s] [ 35%] [32mBuilding CXX object CMakeFiles/communication_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/communication_msgs/msg/task__type_support.cpp.o[0m
+[12.393s] [ 36%] [32mBuilding CXX object CMakeFiles/communication_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/communication_msgs/msg/task_allocation__type_support.cpp.o[0m
+[12.408s] [ 37%] [32mBuilding CXX object CMakeFiles/communication_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/communication_msgs/msg/detail/dds_fastrtps/task__type_support.cpp.o[0m
+[12.423s] [ 39%] [32mBuilding CXX object CMakeFiles/communication_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/communication_msgs/msg/detail/dds_fastrtps/task_allocation__type_support.cpp.o[0m
+[12.432s] [ 40%] [32mBuilding CXX object CMakeFiles/communication_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/communication_msgs/msg/detail/dds_fastrtps/task_allocation_array__type_support.cpp.o[0m
+[12.465s] [ 41%] [32mBuilding CXX object CMakeFiles/communication_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/communication_msgs/msg/task_allocation_array__type_support.cpp.o[0m
+[12.471s] [ 43%] [32mBuilding C object CMakeFiles/communication_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/communication_msgs/msg/detail/robot__type_support.c.o[0m
+[12.496s] [ 44%] [32mBuilding C object CMakeFiles/communication_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/communication_msgs/msg/detail/task__type_support.c.o[0m
+[12.530s] [ 45%] [32mBuilding CXX object CMakeFiles/communication_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/communication_msgs/msg/robot_status__type_support.cpp.o[0m
+[12.606s] [ 46%] [32mBuilding CXX object CMakeFiles/communication_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/communication_msgs/msg/detail/dds_fastrtps/robot_status__type_support.cpp.o[0m
+[12.618s] [ 48%] [32mBuilding CXX object CMakeFiles/communication_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/communication_msgs/msg/detail/task_allocation__type_support.cpp.o[0m
+[12.623s] [ 49%] [32mBuilding C object CMakeFiles/communication_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/communication_msgs/msg/detail/task_allocation__type_support.c.o[0m
+[12.634s] [ 50%] [32m[1mLinking CXX shared library libcommunication_msgs__rosidl_typesupport_cpp.so[0m
+[12.639s] [ 51%] [32mBuilding CXX object CMakeFiles/communication_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/communication_msgs/msg/detail/robot__type_support_c.cpp.o[0m
+[12.649s] [ 53%] [32mBuilding CXX object CMakeFiles/communication_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/communication_msgs/msg/robot_odom__type_support.cpp.o[0m
+[12.764s] [ 54%] [32mBuilding CXX object CMakeFiles/communication_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/communication_msgs/msg/robots__type_support.cpp.o[0m
+[12.796s] [ 55%] [32mBuilding C object CMakeFiles/communication_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/communication_msgs/msg/detail/task_allocation_array__type_support.c.o[0m
+[12.920s] [ 56%] [32m[1mLinking CXX shared library libcommunication_msgs__rosidl_typesupport_c.so[0m
+[13.016s] [ 58%] [32mBuilding C object CMakeFiles/communication_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/communication_msgs/msg/detail/robot_status__type_support.c.o[0m
+[13.175s] [ 59%] [32mBuilding C object CMakeFiles/communication_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/communication_msgs/msg/detail/robot_odom__type_support.c.o[0m
+[13.314s] [ 60%] [32mBuilding C object CMakeFiles/communication_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/communication_msgs/msg/detail/robots__type_support.c.o[0m
+[13.405s] [ 60%] Built target communication_msgs__rosidl_typesupport_cpp
+[13.445s] [ 62%] [32mBuilding CXX object CMakeFiles/communication_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/communication_msgs/msg/detail/task_allocation_array__type_support.cpp.o[0m
+[13.501s] [ 63%] [32m[1mLinking C shared library libcommunication_msgs__rosidl_typesupport_introspection_c.so[0m
+[13.515s] [ 64%] [32mBuilding CXX object CMakeFiles/communication_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/communication_msgs/msg/detail/robot_status__type_support.cpp.o[0m
+[13.592s] [ 64%] Built target communication_msgs__rosidl_typesupport_c
+[13.657s] [ 65%] [32mBuilding CXX object CMakeFiles/communication_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/communication_msgs/msg/detail/dds_fastrtps/robot_odom__type_support.cpp.o[0m
+[14.311s] [ 67%] [32mBuilding CXX object CMakeFiles/communication_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/communication_msgs/msg/detail/dds_fastrtps/robots__type_support.cpp.o[0m
+[14.490s] [ 68%] [32mBuilding CXX object CMakeFiles/communication_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/communication_msgs/msg/detail/robot_odom__type_support.cpp.o[0m
+[14.593s] [ 69%] [32mBuilding CXX object CMakeFiles/communication_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/communication_msgs/msg/detail/robots__type_support.cpp.o[0m
+[14.834s] [ 70%] [32mBuilding CXX object CMakeFiles/communication_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/communication_msgs/msg/detail/task__type_support_c.cpp.o[0m
+[14.966s] [ 70%] Built target communication_msgs__rosidl_typesupport_introspection_c
+[15.008s] [ 72%] [32mBuilding CXX object CMakeFiles/communication_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/communication_msgs/msg/detail/task_allocation_array__type_support_c.cpp.o[0m
+[15.030s] [ 73%] [32mBuilding CXX object CMakeFiles/communication_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/communication_msgs/msg/detail/task_allocation__type_support_c.cpp.o[0m
+[15.042s] [ 74%] [32mBuilding CXX object CMakeFiles/communication_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/communication_msgs/msg/detail/robot_status__type_support_c.cpp.o[0m
+[15.194s] [ 75%] [32mBuilding CXX object CMakeFiles/communication_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/communication_msgs/msg/detail/robot_odom__type_support_c.cpp.o[0m
+[15.405s] [ 77%] [32mBuilding CXX object CMakeFiles/communication_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/communication_msgs/msg/detail/robots__type_support_c.cpp.o[0m
+[16.472s] [ 78%] [32m[1mLinking CXX shared library libcommunication_msgs__rosidl_typesupport_fastrtps_cpp.so[0m
+[16.784s] [ 79%] [32m[1mLinking CXX shared library libcommunication_msgs__rosidl_typesupport_fastrtps_c.so[0m
+[16.817s] [ 81%] [32m[1mLinking CXX shared library libcommunication_msgs__rosidl_typesupport_introspection_cpp.so[0m
+[16.975s] [ 81%] Built target communication_msgs__rosidl_typesupport_fastrtps_cpp
+[17.213s] [ 81%] Built target communication_msgs__rosidl_typesupport_fastrtps_c
+[17.228s] [ 81%] Built target communication_msgs__rosidl_typesupport_introspection_cpp
+[17.265s] [ 81%] Built target communication_msgs
+[17.307s] [ 82%] [34m[1mGenerating Python code for ROS interfaces[0m
+[18.593s] [ 82%] Built target communication_msgs__py
+[18.651s] [ 83%] [32mBuilding C object CMakeFiles/communication_msgs__rosidl_generator_py.dir/rosidl_generator_py/communication_msgs/msg/_task_allocation_s.c.o[0m
+[18.653s] [ 84%] [32mBuilding C object CMakeFiles/communication_msgs__rosidl_generator_py.dir/rosidl_generator_py/communication_msgs/msg/_task_s.c.o[0m
+[18.653s] [ 86%] [32mBuilding C object CMakeFiles/communication_msgs__rosidl_generator_py.dir/rosidl_generator_py/communication_msgs/msg/_task_allocation_array_s.c.o[0m
+[18.653s] [ 87%] [32mBuilding C object CMakeFiles/communication_msgs__rosidl_generator_py.dir/rosidl_generator_py/communication_msgs/msg/_robot_status_s.c.o[0m
+[18.653s] [ 88%] [32mBuilding C object CMakeFiles/communication_msgs__rosidl_generator_py.dir/rosidl_generator_py/communication_msgs/msg/_robot_odom_s.c.o[0m
+[18.660s] [ 89%] [32mBuilding C object CMakeFiles/communication_msgs__rosidl_generator_py.dir/rosidl_generator_py/communication_msgs/msg/_robot_s.c.o[0m
+[18.660s] [ 91%] [32mBuilding C object CMakeFiles/communication_msgs__rosidl_generator_py.dir/rosidl_generator_py/communication_msgs/msg/_robots_s.c.o[0m
+[19.273s] [ 92%] [32m[1mLinking C shared library rosidl_generator_py/communication_msgs/libcommunication_msgs__rosidl_generator_py.so[0m
+[19.673s] [ 92%] Built target communication_msgs__rosidl_generator_py
+[19.743s] [ 93%] [32mBuilding C object CMakeFiles/communication_msgs__rosidl_typesupport_c__pyext.dir/rosidl_generator_py/communication_msgs/_communication_msgs_s.ep.rosidl_typesupport_c.c.o[0m
+[19.744s] [ 96%] [32mBuilding C object CMakeFiles/communication_msgs__rosidl_typesupport_fastrtps_c__pyext.dir/rosidl_generator_py/communication_msgs/_communication_msgs_s.ep.rosidl_typesupport_fastrtps_c.c.o[0m
+[19.745s] [ 96%] [32mBuilding C object CMakeFiles/communication_msgs__rosidl_typesupport_introspection_c__pyext.dir/rosidl_generator_py/communication_msgs/_communication_msgs_s.ep.rosidl_typesupport_introspection_c.c.o[0m
+[20.140s] [ 97%] [32m[1mLinking C shared library rosidl_generator_py/communication_msgs/communication_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so[0m
+[20.140s] [ 98%] [32m[1mLinking C shared library rosidl_generator_py/communication_msgs/communication_msgs_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so[0m
+[20.162s] [100%] [32m[1mLinking C shared library rosidl_generator_py/communication_msgs/communication_msgs_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so[0m
+[20.469s] [100%] Built target communication_msgs__rosidl_typesupport_c__pyext
+[20.477s] [100%] Built target communication_msgs__rosidl_typesupport_fastrtps_c__pyext
+[20.593s] [100%] Built target communication_msgs__rosidl_typesupport_introspection_c__pyext
+[20.632s] Invoked command in '/home/thaoton1910/swarm_robot/algorithm/src/build/communication_msgs' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/thaoton1910/swarm_robot/algorithm/src/build/communication_msgs -- -j12 -l12
+[20.663s] Invoking command in '/home/thaoton1910/swarm_robot/algorithm/src/build/communication_msgs': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/thaoton1910/swarm_robot/algorithm/src/build/communication_msgs
+[20.680s] -- Install configuration: ""
+[20.682s] -- Execute custom install script
+[20.685s] -- Symlinking: /home/thaoton1910/swarm_robot/algorithm/src/install/communication_msgs/share/ament_index/resource_index/rosidl_interfaces/communication_msgs
+[20.716s] -- Symlinking: /home/thaoton1910/swarm_robot/algorithm/src/install/communication_msgs/include/communication_msgs/communication_msgs/msg/detail/robot__functions.h
+[20.742s] -- Symlinking: /home/thaoton1910/swarm_robot/algorithm/src/install/communication_msgs/include/communication_msgs/communication_msgs/msg/detail/robot__struct.h
+[20.767s] -- Symlinking: /home/thaoton1910/swarm_robot/algorithm/src/install/communication_msgs/include/communication_msgs/communication_msgs/msg/detail/robot__type_support.h
+[20.788s] -- Symlinking: /home/thaoton1910/swarm_robot/algorithm/src/install/communication_msgs/include/communication_msgs/communication_msgs/msg/detail/robot_odom__functions.h
+[20.817s] -- Symlinking: /home/thaoton1910/swarm_robot/algorithm/src/install/communication_msgs/include/communication_msgs/communication_msgs/msg/detail/robot_odom__struct.h
+[20.843s] -- Symlinking: /home/thaoton1910/swarm_robot/algorithm/src/install/communication_msgs/include/communication_msgs/communication_msgs/msg/detail/robot_odom__type_support.h
+[20.864s] -- Symlinking: /home/thaoton1910/swarm_robot/algorithm/src/install/communication_msgs/include/communication_msgs/communication_msgs/msg/detail/robot_status__functions.h
+[20.884s] -- Symlinking: /home/thaoton1910/swarm_robot/algorithm/src/install/communication_msgs/include/communication_msgs/communication_msgs/msg/detail/robot_status__struct.h
+[20.910s] -- Symlinking: /home/thaoton1910/swarm_robot/algorithm/src/install/communication_msgs/include/communication_msgs/communication_msgs/msg/detail/robot_status__type_support.h
+[20.935s] -- Symlinking: /home/thaoton1910/swarm_robot/algorithm/src/install/communication_msgs/include/communication_msgs/communication_msgs/msg/detail/robots__functions.h
+[20.965s] -- Symlinking: /home/thaoton1910/swarm_robot/algorithm/src/install/communication_msgs/include/communication_msgs/communication_msgs/msg/detail/robots__struct.h
+[20.989s] -- Symlinking: /home/thaoton1910/swarm_robot/algorithm/src/install/communication_msgs/include/communication_msgs/communication_msgs/msg/detail/robots__type_support.h
+[21.020s] -- Symlinking: /home/thaoton1910/swarm_robot/algorithm/src/install/communication_msgs/include/communication_msgs/communication_msgs/msg/detail/task__functions.h
+[21.053s] -- Symlinking: /home/thaoton1910/swarm_robot/algorithm/src/install/communication_msgs/include/communication_msgs/communication_msgs/msg/detail/task__struct.h
+[21.086s] -- Symlinking: /home/thaoton1910/swarm_robot/algorithm/src/install/communication_msgs/include/communication_msgs/communication_msgs/msg/detail/task__type_support.h
+[21.134s] -- Symlinking: /home/thaoton1910/swarm_robot/algorithm/src/install/communication_msgs/include/communication_msgs/communication_msgs/msg/detail/task_allocation__functions.h
+[21.164s] -- Symlinking: /home/thaoton1910/swarm_robot/algorithm/src/install/communication_msgs/include/communication_msgs/communication_msgs/msg/detail/task_allocation__struct.h
+[21.191s] -- Symlinking: /home/thaoton1910/swarm_robot/algorithm/src/install/communication_msgs/include/communication_msgs/communication_msgs/msg/detail/task_allocation__type_support.h
+[21.223s] -- Symlinking: /home/thaoton1910/swarm_robot/algorithm/src/install/communication_msgs/include/communication_msgs/communication_msgs/msg/detail/task_allocation_array__functions.h
+[21.259s] -- Symlinking: /home/thaoton1910/swarm_robot/algorithm/src/install/communication_msgs/include/communication_msgs/communication_msgs/msg/detail/task_allocation_array__struct.h
+[21.293s] -- Symlinking: /home/thaoton1910/swarm_robot/algorithm/src/install/communication_msgs/include/communication_msgs/communication_msgs/msg/detail/task_allocation_array__type_support.h
+[21.322s] -- Symlinking: /home/thaoton1910/swarm_robot/algorithm/src/install/communication_msgs/include/communication_msgs/communication_msgs/msg/robot.h
+[21.351s] -- Symlinking: /home/thaoton1910/swarm_robot/algorithm/src/install/communication_msgs/include/communication_msgs/communication_msgs/msg/robot_odom.h
+[21.376s] -- Symlinking: /home/thaoton1910/swarm_robot/algorithm/src/install/communication_msgs/include/communication_msgs/communication_msgs/msg/robot_status.h
+[21.408s] -- Symlinking: /home/thaoton1910/swarm_robot/algorithm/src/install/communication_msgs/include/communication_msgs/communication_msgs/msg/robots.h
+[21.435s] -- Symlinking: /home/thaoton1910/swarm_robot/algorithm/src/install/communication_msgs/include/communication_msgs/communication_msgs/msg/rosidl_generator_c__visibility_control.h
+[21.463s] -- Symlinking: /home/thaoton1910/swarm_robot/algorithm/src/install/communication_msgs/include/communication_msgs/communication_msgs/msg/task.h
+[21.487s] -- Symlinking: /home/thaoton1910/swarm_robot/algorithm/src/install/communication_msgs/include/communication_msgs/communication_msgs/msg/task_allocation.h
+[21.509s] -- Symlinking: /home/thaoton1910/swarm_robot/algorithm/src/install/communication_msgs/include/communication_msgs/communication_msgs/msg/task_allocation_array.h
+[21.538s] -- Symlinking: /home/thaoton1910/swarm_robot/algorithm/src/install/communication_msgs/share/communication_msgs/environment/library_path.sh
+[21.560s] -- Symlinking: /home/thaoton1910/swarm_robot/algorithm/src/install/communication_msgs/share/communication_msgs/environment/library_path.dsv
+[21.585s] -- Symlinking: /home/thaoton1910/swarm_robot/algorithm/src/install/communication_msgs/include/communication_msgs/communication_msgs/msg/detail/robot__rosidl_typesupport_fastrtps_c.h
+[21.610s] -- Symlinking: /home/thaoton1910/swarm_robot/algorithm/src/install/communication_msgs/include/communication_msgs/communication_msgs/msg/detail/robot_odom__rosidl_typesupport_fastrtps_c.h
+[21.633s] -- Symlinking: /home/thaoton1910/swarm_robot/algorithm/src/install/communication_msgs/include/communication_msgs/communication_msgs/msg/detail/robot_status__rosidl_typesupport_fastrtps_c.h
+[21.654s] -- Symlinking: /home/thaoton1910/swarm_robot/algorithm/src/install/communication_msgs/include/communication_msgs/communication_msgs/msg/detail/robots__rosidl_typesupport_fastrtps_c.h
+[21.682s] -- Symlinking: /home/thaoton1910/swarm_robot/algorithm/src/install/communication_msgs/include/communication_msgs/communication_msgs/msg/detail/task__rosidl_typesupport_fastrtps_c.h
+[21.704s] -- Symlinking: /home/thaoton1910/swarm_robot/algorithm/src/install/communication_msgs/include/communication_msgs/communication_msgs/msg/detail/task_allocation__rosidl_typesupport_fastrtps_c.h
+[21.727s] -- Symlinking: /home/thaoton1910/swarm_robot/algorithm/src/install/communication_msgs/include/communication_msgs/communication_msgs/msg/detail/task_allocation_array__rosidl_typesupport_fastrtps_c.h
+[21.749s] -- Symlinking: /home/thaoton1910/swarm_robot/algorithm/src/install/communication_msgs/include/communication_msgs/communication_msgs/msg/rosidl_typesupport_fastrtps_c__visibility_control.h
+[21.769s] -- Symlinking: /home/thaoton1910/swarm_robot/algorithm/src/install/communication_msgs/include/communication_msgs/communication_msgs/msg/detail/robot__rosidl_typesupport_introspection_c.h
+[21.792s] -- Symlinking: /home/thaoton1910/swarm_robot/algorithm/src/install/communication_msgs/include/communication_msgs/communication_msgs/msg/detail/robot_odom__rosidl_typesupport_introspection_c.h
+[21.815s] -- Symlinking: /home/thaoton1910/swarm_robot/algorithm/src/install/communication_msgs/include/communication_msgs/communication_msgs/msg/detail/robot_status__rosidl_typesupport_introspection_c.h
+[21.840s] -- Symlinking: /home/thaoton1910/swarm_robot/algorithm/src/install/communication_msgs/include/communication_msgs/communication_msgs/msg/detail/robots__rosidl_typesupport_introspection_c.h
+[21.859s] -- Symlinking: /home/thaoton1910/swarm_robot/algorithm/src/install/communication_msgs/include/communication_msgs/communication_msgs/msg/detail/task__rosidl_typesupport_introspection_c.h
+[21.878s] -- Symlinking: /home/thaoton1910/swarm_robot/algorithm/src/install/communication_msgs/include/communication_msgs/communication_msgs/msg/detail/task_allocation__rosidl_typesupport_introspection_c.h
+[21.900s] -- Symlinking: /home/thaoton1910/swarm_robot/algorithm/src/install/communication_msgs/include/communication_msgs/communication_msgs/msg/detail/task_allocation_array__rosidl_typesupport_introspection_c.h
+[21.920s] -- Symlinking: /home/thaoton1910/swarm_robot/algorithm/src/install/communication_msgs/include/communication_msgs/communication_msgs/msg/rosidl_typesupport_introspection_c__visibility_control.h
+[21.942s] -- Symlinking: /home/thaoton1910/swarm_robot/algorithm/src/install/communication_msgs/include/communication_msgs/communication_msgs/msg/detail/robot__builder.hpp
+[21.963s] -- Symlinking: /home/thaoton1910/swarm_robot/algorithm/src/install/communication_msgs/include/communication_msgs/communication_msgs/msg/detail/robot__struct.hpp
+[21.979s] -- Symlinking: /home/thaoton1910/swarm_robot/algorithm/src/install/communication_msgs/include/communication_msgs/communication_msgs/msg/detail/robot__traits.hpp
+[22.005s] -- Symlinking: /home/thaoton1910/swarm_robot/algorithm/src/install/communication_msgs/include/communication_msgs/communication_msgs/msg/detail/robot__type_support.hpp
+[22.026s] -- Symlinking: /home/thaoton1910/swarm_robot/algorithm/src/install/communication_msgs/include/communication_msgs/communication_msgs/msg/detail/robot_odom__builder.hpp
+[22.045s] -- Symlinking: /home/thaoton1910/swarm_robot/algorithm/src/install/communication_msgs/include/communication_msgs/communication_msgs/msg/detail/robot_odom__struct.hpp
+[22.063s] -- Symlinking: /home/thaoton1910/swarm_robot/algorithm/src/install/communication_msgs/include/communication_msgs/communication_msgs/msg/detail/robot_odom__traits.hpp
+[22.081s] -- Symlinking: /home/thaoton1910/swarm_robot/algorithm/src/install/communication_msgs/include/communication_msgs/communication_msgs/msg/detail/robot_odom__type_support.hpp
+[22.103s] -- Symlinking: /home/thaoton1910/swarm_robot/algorithm/src/install/communication_msgs/include/communication_msgs/communication_msgs/msg/detail/robot_status__builder.hpp
+[22.124s] -- Symlinking: /home/thaoton1910/swarm_robot/algorithm/src/install/communication_msgs/include/communication_msgs/communication_msgs/msg/detail/robot_status__struct.hpp
+[22.145s] -- Symlinking: /home/thaoton1910/swarm_robot/algorithm/src/install/communication_msgs/include/communication_msgs/communication_msgs/msg/detail/robot_status__traits.hpp
+[22.165s] -- Symlinking: /home/thaoton1910/swarm_robot/algorithm/src/install/communication_msgs/include/communication_msgs/communication_msgs/msg/detail/robot_status__type_support.hpp
+[22.184s] -- Symlinking: /home/thaoton1910/swarm_robot/algorithm/src/install/communication_msgs/include/communication_msgs/communication_msgs/msg/detail/robots__builder.hpp
+[22.209s] -- Symlinking: /home/thaoton1910/swarm_robot/algorithm/src/install/communication_msgs/include/communication_msgs/communication_msgs/msg/detail/robots__struct.hpp
+[22.230s] -- Symlinking: /home/thaoton1910/swarm_robot/algorithm/src/install/communication_msgs/include/communication_msgs/communication_msgs/msg/detail/robots__traits.hpp
+[22.250s] -- Symlinking: /home/thaoton1910/swarm_robot/algorithm/src/install/communication_msgs/include/communication_msgs/communication_msgs/msg/detail/robots__type_support.hpp
+[22.272s] -- Symlinking: /home/thaoton1910/swarm_robot/algorithm/src/install/communication_msgs/include/communication_msgs/communication_msgs/msg/detail/task__builder.hpp
+[22.289s] -- Symlinking: /home/thaoton1910/swarm_robot/algorithm/src/install/communication_msgs/include/communication_msgs/communication_msgs/msg/detail/task__struct.hpp
+[22.308s] -- Symlinking: /home/thaoton1910/swarm_robot/algorithm/src/install/communication_msgs/include/communication_msgs/communication_msgs/msg/detail/task__traits.hpp
+[22.332s] -- Symlinking: /home/thaoton1910/swarm_robot/algorithm/src/install/communication_msgs/include/communication_msgs/communication_msgs/msg/detail/task__type_support.hpp
+[22.351s] -- Symlinking: /home/thaoton1910/swarm_robot/algorithm/src/install/communication_msgs/include/communication_msgs/communication_msgs/msg/detail/task_allocation__builder.hpp
+[22.373s] -- Symlinking: /home/thaoton1910/swarm_robot/algorithm/src/install/communication_msgs/include/communication_msgs/communication_msgs/msg/detail/task_allocation__struct.hpp
+[22.397s] -- Symlinking: /home/thaoton1910/swarm_robot/algorithm/src/install/communication_msgs/include/communication_msgs/communication_msgs/msg/detail/task_allocation__traits.hpp
+[22.420s] -- Symlinking: /home/thaoton1910/swarm_robot/algorithm/src/install/communication_msgs/include/communication_msgs/communication_msgs/msg/detail/task_allocation__type_support.hpp
+[22.439s] -- Symlinking: /home/thaoton1910/swarm_robot/algorithm/src/install/communication_msgs/include/communication_msgs/communication_msgs/msg/detail/task_allocation_array__builder.hpp
+[22.458s] -- Symlinking: /home/thaoton1910/swarm_robot/algorithm/src/install/communication_msgs/include/communication_msgs/communication_msgs/msg/detail/task_allocation_array__struct.hpp
+[22.475s] -- Symlinking: /home/thaoton1910/swarm_robot/algorithm/src/install/communication_msgs/include/communication_msgs/communication_msgs/msg/detail/task_allocation_array__traits.hpp
+[22.497s] -- Symlinking: /home/thaoton1910/swarm_robot/algorithm/src/install/communication_msgs/include/communication_msgs/communication_msgs/msg/detail/task_allocation_array__type_support.hpp
+[22.524s] -- Symlinking: /home/thaoton1910/swarm_robot/algorithm/src/install/communication_msgs/include/communication_msgs/communication_msgs/msg/robot.hpp
+[22.546s] -- Symlinking: /home/thaoton1910/swarm_robot/algorithm/src/install/communication_msgs/include/communication_msgs/communication_msgs/msg/robot_odom.hpp
+[22.569s] -- Symlinking: /home/thaoton1910/swarm_robot/algorithm/src/install/communication_msgs/include/communication_msgs/communication_msgs/msg/robot_status.hpp
+[22.591s] -- Symlinking: /home/thaoton1910/swarm_robot/algorithm/src/install/communication_msgs/include/communication_msgs/communication_msgs/msg/robots.hpp
+[22.612s] -- Symlinking: /home/thaoton1910/swarm_robot/algorithm/src/install/communication_msgs/include/communication_msgs/communication_msgs/msg/rosidl_generator_cpp__visibility_control.hpp
+[22.636s] -- Symlinking: /home/thaoton1910/swarm_robot/algorithm/src/install/communication_msgs/include/communication_msgs/communication_msgs/msg/task.hpp
+[22.657s] -- Symlinking: /home/thaoton1910/swarm_robot/algorithm/src/install/communication_msgs/include/communication_msgs/communication_msgs/msg/task_allocation.hpp
+[22.679s] -- Symlinking: /home/thaoton1910/swarm_robot/algorithm/src/install/communication_msgs/include/communication_msgs/communication_msgs/msg/task_allocation_array.hpp
+[22.707s] -- Symlinking: /home/thaoton1910/swarm_robot/algorithm/src/install/communication_msgs/include/communication_msgs/communication_msgs/msg/detail/robot__rosidl_typesupport_fastrtps_cpp.hpp
+[22.729s] -- Symlinking: /home/thaoton1910/swarm_robot/algorithm/src/install/communication_msgs/include/communication_msgs/communication_msgs/msg/detail/robot_odom__rosidl_typesupport_fastrtps_cpp.hpp
+[22.755s] -- Symlinking: /home/thaoton1910/swarm_robot/algorithm/src/install/communication_msgs/include/communication_msgs/communication_msgs/msg/detail/robot_status__rosidl_typesupport_fastrtps_cpp.hpp
+[22.774s] -- Symlinking: /home/thaoton1910/swarm_robot/algorithm/src/install/communication_msgs/include/communication_msgs/communication_msgs/msg/detail/robots__rosidl_typesupport_fastrtps_cpp.hpp
+[22.795s] -- Symlinking: /home/thaoton1910/swarm_robot/algorithm/src/install/communication_msgs/include/communication_msgs/communication_msgs/msg/detail/task__rosidl_typesupport_fastrtps_cpp.hpp
+[22.819s] -- Symlinking: /home/thaoton1910/swarm_robot/algorithm/src/install/communication_msgs/include/communication_msgs/communication_msgs/msg/detail/task_allocation__rosidl_typesupport_fastrtps_cpp.hpp
+[22.843s] -- Symlinking: /home/thaoton1910/swarm_robot/algorithm/src/install/communication_msgs/include/communication_msgs/communication_msgs/msg/detail/task_allocation_array__rosidl_typesupport_fastrtps_cpp.hpp
+[22.865s] -- Symlinking: /home/thaoton1910/swarm_robot/algorithm/src/install/communication_msgs/include/communication_msgs/communication_msgs/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h
+[22.885s] -- Symlinking: /home/thaoton1910/swarm_robot/algorithm/src/install/communication_msgs/include/communication_msgs/communication_msgs/msg/detail/robot__rosidl_typesupport_introspection_cpp.hpp
+[22.902s] -- Symlinking: /home/thaoton1910/swarm_robot/algorithm/src/install/communication_msgs/include/communication_msgs/communication_msgs/msg/detail/robot_odom__rosidl_typesupport_introspection_cpp.hpp
+[22.921s] -- Symlinking: /home/thaoton1910/swarm_robot/algorithm/src/install/communication_msgs/include/communication_msgs/communication_msgs/msg/detail/robot_status__rosidl_typesupport_introspection_cpp.hpp
+[22.942s] -- Symlinking: /home/thaoton1910/swarm_robot/algorithm/src/install/communication_msgs/include/communication_msgs/communication_msgs/msg/detail/robots__rosidl_typesupport_introspection_cpp.hpp
+[22.964s] -- Symlinking: /home/thaoton1910/swarm_robot/algorithm/src/install/communication_msgs/include/communication_msgs/communication_msgs/msg/detail/task__rosidl_typesupport_introspection_cpp.hpp
+[22.982s] -- Symlinking: /home/thaoton1910/swarm_robot/algorithm/src/install/communication_msgs/include/communication_msgs/communication_msgs/msg/detail/task_allocation__rosidl_typesupport_introspection_cpp.hpp
+[22.999s] -- Symlinking: /home/thaoton1910/swarm_robot/algorithm/src/install/communication_msgs/include/communication_msgs/communication_msgs/msg/detail/task_allocation_array__rosidl_typesupport_introspection_cpp.hpp
+[23.018s] -- Symlinking: /home/thaoton1910/swarm_robot/algorithm/src/install/communication_msgs/share/communication_msgs/environment/pythonpath.sh
+[23.046s] -- Symlinking: /home/thaoton1910/swarm_robot/algorithm/src/install/communication_msgs/share/communication_msgs/environment/pythonpath.dsv
+[23.068s] -- Symlinking: /home/thaoton1910/swarm_robot/algorithm/src/install/communication_msgs/local/lib/python3.10/dist-packages/communication_msgs-0.0.0-py3.10.egg-info/PKG-INFO
+[23.088s] -- Symlinking: /home/thaoton1910/swarm_robot/algorithm/src/install/communication_msgs/local/lib/python3.10/dist-packages/communication_msgs-0.0.0-py3.10.egg-info/SOURCES.txt
+[23.112s] -- Symlinking: /home/thaoton1910/swarm_robot/algorithm/src/install/communication_msgs/local/lib/python3.10/dist-packages/communication_msgs-0.0.0-py3.10.egg-info/dependency_links.txt
+[23.129s] -- Symlinking: /home/thaoton1910/swarm_robot/algorithm/src/install/communication_msgs/local/lib/python3.10/dist-packages/communication_msgs-0.0.0-py3.10.egg-info/top_level.txt
+[23.154s] -- Symlinking: /home/thaoton1910/swarm_robot/algorithm/src/install/communication_msgs/local/lib/python3.10/dist-packages/communication_msgs/__init__.py
+[23.180s] -- Symlinking: /home/thaoton1910/swarm_robot/algorithm/src/install/communication_msgs/local/lib/python3.10/dist-packages/communication_msgs/_communication_msgs_s.ep.rosidl_typesupport_c.c
+[23.203s] -- Symlinking: /home/thaoton1910/swarm_robot/algorithm/src/install/communication_msgs/local/lib/python3.10/dist-packages/communication_msgs/_communication_msgs_s.ep.rosidl_typesupport_fastrtps_c.c
+[23.228s] -- Symlinking: /home/thaoton1910/swarm_robot/algorithm/src/install/communication_msgs/local/lib/python3.10/dist-packages/communication_msgs/_communication_msgs_s.ep.rosidl_typesupport_introspection_c.c
+[23.257s] -- Symlinking: /home/thaoton1910/swarm_robot/algorithm/src/install/communication_msgs/local/lib/python3.10/dist-packages/communication_msgs/communication_msgs_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+[23.279s] -- Symlinking: /home/thaoton1910/swarm_robot/algorithm/src/install/communication_msgs/local/lib/python3.10/dist-packages/communication_msgs/communication_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+[23.303s] -- Symlinking: /home/thaoton1910/swarm_robot/algorithm/src/install/communication_msgs/local/lib/python3.10/dist-packages/communication_msgs/communication_msgs_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+[23.326s] -- Symlinking: /home/thaoton1910/swarm_robot/algorithm/src/install/communication_msgs/local/lib/python3.10/dist-packages/communication_msgs/libcommunication_msgs__rosidl_generator_py.so
+[23.352s] -- Symlinking: /home/thaoton1910/swarm_robot/algorithm/src/install/communication_msgs/local/lib/python3.10/dist-packages/communication_msgs/msg/__init__.py
+[23.377s] -- Symlinking: /home/thaoton1910/swarm_robot/algorithm/src/install/communication_msgs/local/lib/python3.10/dist-packages/communication_msgs/msg/_robot.py
+[23.399s] -- Symlinking: /home/thaoton1910/swarm_robot/algorithm/src/install/communication_msgs/local/lib/python3.10/dist-packages/communication_msgs/msg/_robot_odom.py
+[23.420s] -- Symlinking: /home/thaoton1910/swarm_robot/algorithm/src/install/communication_msgs/local/lib/python3.10/dist-packages/communication_msgs/msg/_robot_odom_s.c
+[23.444s] -- Symlinking: /home/thaoton1910/swarm_robot/algorithm/src/install/communication_msgs/local/lib/python3.10/dist-packages/communication_msgs/msg/_robot_s.c
+[23.466s] -- Symlinking: /home/thaoton1910/swarm_robot/algorithm/src/install/communication_msgs/local/lib/python3.10/dist-packages/communication_msgs/msg/_robot_status.py
+[23.488s] -- Symlinking: /home/thaoton1910/swarm_robot/algorithm/src/install/communication_msgs/local/lib/python3.10/dist-packages/communication_msgs/msg/_robot_status_s.c
+[23.510s] -- Symlinking: /home/thaoton1910/swarm_robot/algorithm/src/install/communication_msgs/local/lib/python3.10/dist-packages/communication_msgs/msg/_robots.py
+[23.530s] -- Symlinking: /home/thaoton1910/swarm_robot/algorithm/src/install/communication_msgs/local/lib/python3.10/dist-packages/communication_msgs/msg/_robots_s.c
+[23.552s] -- Symlinking: /home/thaoton1910/swarm_robot/algorithm/src/install/communication_msgs/local/lib/python3.10/dist-packages/communication_msgs/msg/_task.py
+[23.578s] -- Symlinking: /home/thaoton1910/swarm_robot/algorithm/src/install/communication_msgs/local/lib/python3.10/dist-packages/communication_msgs/msg/_task_allocation.py
+[23.606s] -- Symlinking: /home/thaoton1910/swarm_robot/algorithm/src/install/communication_msgs/local/lib/python3.10/dist-packages/communication_msgs/msg/_task_allocation_array.py
+[23.640s] -- Symlinking: /home/thaoton1910/swarm_robot/algorithm/src/install/communication_msgs/local/lib/python3.10/dist-packages/communication_msgs/msg/_task_allocation_array_s.c
+[23.666s] -- Symlinking: /home/thaoton1910/swarm_robot/algorithm/src/install/communication_msgs/local/lib/python3.10/dist-packages/communication_msgs/msg/_task_allocation_s.c
+[23.692s] -- Symlinking: /home/thaoton1910/swarm_robot/algorithm/src/install/communication_msgs/local/lib/python3.10/dist-packages/communication_msgs/msg/_task_s.c
+[23.727s] -- Up-to-date symlink: /home/thaoton1910/swarm_robot/algorithm/src/install/communication_msgs/local/lib/python3.10/dist-packages/communication_msgs/communication_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+[23.727s] -- Up-to-date symlink: /home/thaoton1910/swarm_robot/algorithm/src/install/communication_msgs/local/lib/python3.10/dist-packages/communication_msgs/communication_msgs_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+[23.728s] -- Up-to-date symlink: /home/thaoton1910/swarm_robot/algorithm/src/install/communication_msgs/local/lib/python3.10/dist-packages/communication_msgs/communication_msgs_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+[23.730s] -- Symlinking: /home/thaoton1910/swarm_robot/algorithm/src/install/communication_msgs/share/communication_msgs/msg/Robot.idl
+[23.758s] -- Symlinking: /home/thaoton1910/swarm_robot/algorithm/src/install/communication_msgs/share/communication_msgs/msg/Task.idl
+[23.785s] -- Symlinking: /home/thaoton1910/swarm_robot/algorithm/src/install/communication_msgs/share/communication_msgs/msg/TaskAllocation.idl
+[23.813s] -- Symlinking: /home/thaoton1910/swarm_robot/algorithm/src/install/communication_msgs/share/communication_msgs/msg/TaskAllocationArray.idl
+[23.840s] -- Symlinking: /home/thaoton1910/swarm_robot/algorithm/src/install/communication_msgs/share/communication_msgs/msg/RobotStatus.idl
+[23.862s] -- Symlinking: /home/thaoton1910/swarm_robot/algorithm/src/install/communication_msgs/share/communication_msgs/msg/RobotOdom.idl
+[23.884s] -- Symlinking: /home/thaoton1910/swarm_robot/algorithm/src/install/communication_msgs/share/communication_msgs/msg/Robots.idl
+[23.907s] -- Symlinking: /home/thaoton1910/swarm_robot/algorithm/src/install/communication_msgs/share/communication_msgs/msg/Robot.msg
+[23.929s] -- Symlinking: /home/thaoton1910/swarm_robot/algorithm/src/install/communication_msgs/share/communication_msgs/msg/Task.msg
+[23.951s] -- Symlinking: /home/thaoton1910/swarm_robot/algorithm/src/install/communication_msgs/share/communication_msgs/msg/TaskAllocation.msg
+[23.973s] -- Symlinking: /home/thaoton1910/swarm_robot/algorithm/src/install/communication_msgs/share/communication_msgs/msg/TaskAllocationArray.msg
+[23.996s] -- Symlinking: /home/thaoton1910/swarm_robot/algorithm/src/install/communication_msgs/share/communication_msgs/msg/RobotStatus.msg
+[24.020s] -- Symlinking: /home/thaoton1910/swarm_robot/algorithm/src/install/communication_msgs/share/communication_msgs/msg/RobotOdom.msg
+[24.048s] -- Symlinking: /home/thaoton1910/swarm_robot/algorithm/src/install/communication_msgs/share/communication_msgs/msg/Robots.msg
+[24.073s] -- Symlinking: /home/thaoton1910/swarm_robot/algorithm/src/install/communication_msgs/share/ament_index/resource_index/package_run_dependencies/communication_msgs
+[24.101s] -- Symlinking: /home/thaoton1910/swarm_robot/algorithm/src/install/communication_msgs/share/ament_index/resource_index/parent_prefix_path/communication_msgs
+[24.134s] -- Symlinking: /home/thaoton1910/swarm_robot/algorithm/src/install/communication_msgs/share/communication_msgs/environment/ament_prefix_path.sh
+[24.156s] -- Symlinking: /home/thaoton1910/swarm_robot/algorithm/src/install/communication_msgs/share/communication_msgs/environment/ament_prefix_path.dsv
+[24.181s] -- Symlinking: /home/thaoton1910/swarm_robot/algorithm/src/install/communication_msgs/share/communication_msgs/environment/path.sh
+[24.205s] -- Symlinking: /home/thaoton1910/swarm_robot/algorithm/src/install/communication_msgs/share/communication_msgs/environment/path.dsv
+[24.225s] -- Symlinking: /home/thaoton1910/swarm_robot/algorithm/src/install/communication_msgs/share/communication_msgs/local_setup.bash
+[24.246s] -- Symlinking: /home/thaoton1910/swarm_robot/algorithm/src/install/communication_msgs/share/communication_msgs/local_setup.sh
+[24.267s] -- Symlinking: /home/thaoton1910/swarm_robot/algorithm/src/install/communication_msgs/share/communication_msgs/local_setup.zsh
+[24.285s] -- Symlinking: /home/thaoton1910/swarm_robot/algorithm/src/install/communication_msgs/share/communication_msgs/local_setup.dsv
+[24.304s] -- Symlinking: /home/thaoton1910/swarm_robot/algorithm/src/install/communication_msgs/share/communication_msgs/package.dsv
+[24.322s] -- Symlinking: /home/thaoton1910/swarm_robot/algorithm/src/install/communication_msgs/share/ament_index/resource_index/packages/communication_msgs
+[24.343s] -- Symlinking: /home/thaoton1910/swarm_robot/algorithm/src/install/communication_msgs/share/communication_msgs/cmake/rosidl_cmake-extras.cmake
+[24.360s] -- Symlinking: /home/thaoton1910/swarm_robot/algorithm/src/install/communication_msgs/share/communication_msgs/cmake/ament_cmake_export_dependencies-extras.cmake
+[24.377s] -- Symlinking: /home/thaoton1910/swarm_robot/algorithm/src/install/communication_msgs/share/communication_msgs/cmake/ament_cmake_export_include_directories-extras.cmake
+[24.394s] -- Symlinking: /home/thaoton1910/swarm_robot/algorithm/src/install/communication_msgs/share/communication_msgs/cmake/ament_cmake_export_libraries-extras.cmake
+[24.412s] -- Symlinking: /home/thaoton1910/swarm_robot/algorithm/src/install/communication_msgs/share/communication_msgs/cmake/ament_cmake_export_targets-extras.cmake
+[24.436s] -- Symlinking: /home/thaoton1910/swarm_robot/algorithm/src/install/communication_msgs/share/communication_msgs/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake
+[24.453s] -- Symlinking: /home/thaoton1910/swarm_robot/algorithm/src/install/communication_msgs/share/communication_msgs/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake
+[24.469s] -- Symlinking: /home/thaoton1910/swarm_robot/algorithm/src/install/communication_msgs/share/communication_msgs/cmake/communication_msgsConfig.cmake
+[24.486s] -- Symlinking: /home/thaoton1910/swarm_robot/algorithm/src/install/communication_msgs/share/communication_msgs/cmake/communication_msgsConfig-version.cmake
+[24.503s] -- Symlinking: /home/thaoton1910/swarm_robot/algorithm/src/install/communication_msgs/share/communication_msgs/package.xml
+[24.518s] -- Installing: /home/thaoton1910/swarm_robot/algorithm/src/install/communication_msgs/lib/libcommunication_msgs__rosidl_generator_c.so
+[24.518s] -- Set runtime path of "/home/thaoton1910/swarm_robot/algorithm/src/install/communication_msgs/lib/libcommunication_msgs__rosidl_generator_c.so" to ""
+[24.518s] -- Installing: /home/thaoton1910/swarm_robot/algorithm/src/install/communication_msgs/lib/libcommunication_msgs__rosidl_typesupport_fastrtps_c.so
+[24.519s] -- Set runtime path of "/home/thaoton1910/swarm_robot/algorithm/src/install/communication_msgs/lib/libcommunication_msgs__rosidl_typesupport_fastrtps_c.so" to ""
+[24.519s] -- Installing: /home/thaoton1910/swarm_robot/algorithm/src/install/communication_msgs/lib/libcommunication_msgs__rosidl_typesupport_introspection_c.so
+[24.520s] -- Set runtime path of "/home/thaoton1910/swarm_robot/algorithm/src/install/communication_msgs/lib/libcommunication_msgs__rosidl_typesupport_introspection_c.so" to ""
+[24.520s] -- Installing: /home/thaoton1910/swarm_robot/algorithm/src/install/communication_msgs/lib/libcommunication_msgs__rosidl_typesupport_c.so
+[24.520s] -- Set runtime path of "/home/thaoton1910/swarm_robot/algorithm/src/install/communication_msgs/lib/libcommunication_msgs__rosidl_typesupport_c.so" to ""
+[24.520s] -- Installing: /home/thaoton1910/swarm_robot/algorithm/src/install/communication_msgs/lib/libcommunication_msgs__rosidl_typesupport_fastrtps_cpp.so
+[24.521s] -- Set runtime path of "/home/thaoton1910/swarm_robot/algorithm/src/install/communication_msgs/lib/libcommunication_msgs__rosidl_typesupport_fastrtps_cpp.so" to ""
+[24.521s] -- Installing: /home/thaoton1910/swarm_robot/algorithm/src/install/communication_msgs/lib/libcommunication_msgs__rosidl_typesupport_introspection_cpp.so
+[24.521s] -- Set runtime path of "/home/thaoton1910/swarm_robot/algorithm/src/install/communication_msgs/lib/libcommunication_msgs__rosidl_typesupport_introspection_cpp.so" to ""
+[24.522s] -- Installing: /home/thaoton1910/swarm_robot/algorithm/src/install/communication_msgs/lib/libcommunication_msgs__rosidl_typesupport_cpp.so
+[24.522s] -- Set runtime path of "/home/thaoton1910/swarm_robot/algorithm/src/install/communication_msgs/lib/libcommunication_msgs__rosidl_typesupport_cpp.so" to ""
+[24.591s] Listing '/home/thaoton1910/swarm_robot/algorithm/src/install/communication_msgs/local/lib/python3.10/dist-packages/communication_msgs'...
+[24.591s] Compiling '/home/thaoton1910/swarm_robot/algorithm/src/install/communication_msgs/local/lib/python3.10/dist-packages/communication_msgs/__init__.py'...
+[24.592s] Listing '/home/thaoton1910/swarm_robot/algorithm/src/install/communication_msgs/local/lib/python3.10/dist-packages/communication_msgs/msg'...
+[24.592s] Compiling '/home/thaoton1910/swarm_robot/algorithm/src/install/communication_msgs/local/lib/python3.10/dist-packages/communication_msgs/msg/__init__.py'...
+[24.592s] Compiling '/home/thaoton1910/swarm_robot/algorithm/src/install/communication_msgs/local/lib/python3.10/dist-packages/communication_msgs/msg/_robot.py'...
+[24.592s] Compiling '/home/thaoton1910/swarm_robot/algorithm/src/install/communication_msgs/local/lib/python3.10/dist-packages/communication_msgs/msg/_robot_odom.py'...
+[24.592s] Compiling '/home/thaoton1910/swarm_robot/algorithm/src/install/communication_msgs/local/lib/python3.10/dist-packages/communication_msgs/msg/_robot_status.py'...
+[24.592s] Compiling '/home/thaoton1910/swarm_robot/algorithm/src/install/communication_msgs/local/lib/python3.10/dist-packages/communication_msgs/msg/_robots.py'...
+[24.592s] Compiling '/home/thaoton1910/swarm_robot/algorithm/src/install/communication_msgs/local/lib/python3.10/dist-packages/communication_msgs/msg/_task.py'...
+[24.592s] Compiling '/home/thaoton1910/swarm_robot/algorithm/src/install/communication_msgs/local/lib/python3.10/dist-packages/communication_msgs/msg/_task_allocation.py'...
+[24.592s] Compiling '/home/thaoton1910/swarm_robot/algorithm/src/install/communication_msgs/local/lib/python3.10/dist-packages/communication_msgs/msg/_task_allocation_array.py'...
+[24.602s] -- Installing: /home/thaoton1910/swarm_robot/algorithm/src/install/communication_msgs/lib/libcommunication_msgs__rosidl_generator_py.so
+[24.603s] -- Set runtime path of "/home/thaoton1910/swarm_robot/algorithm/src/install/communication_msgs/lib/libcommunication_msgs__rosidl_generator_py.so" to ""
+[24.604s] -- Installing: /home/thaoton1910/swarm_robot/algorithm/src/install/communication_msgs/share/communication_msgs/cmake/export_communication_msgs__rosidl_generator_cExport.cmake
+[24.604s] -- Installing: /home/thaoton1910/swarm_robot/algorithm/src/install/communication_msgs/share/communication_msgs/cmake/export_communication_msgs__rosidl_generator_cExport-noconfig.cmake
+[24.604s] -- Installing: /home/thaoton1910/swarm_robot/algorithm/src/install/communication_msgs/share/communication_msgs/cmake/export_communication_msgs__rosidl_typesupport_fastrtps_cExport.cmake
+[24.604s] -- Installing: /home/thaoton1910/swarm_robot/algorithm/src/install/communication_msgs/share/communication_msgs/cmake/export_communication_msgs__rosidl_typesupport_fastrtps_cExport-noconfig.cmake
+[24.605s] -- Installing: /home/thaoton1910/swarm_robot/algorithm/src/install/communication_msgs/share/communication_msgs/cmake/communication_msgs__rosidl_typesupport_introspection_cExport.cmake
+[24.606s] -- Installing: /home/thaoton1910/swarm_robot/algorithm/src/install/communication_msgs/share/communication_msgs/cmake/communication_msgs__rosidl_typesupport_introspection_cExport-noconfig.cmake
+[24.606s] -- Installing: /home/thaoton1910/swarm_robot/algorithm/src/install/communication_msgs/share/communication_msgs/cmake/communication_msgs__rosidl_typesupport_cExport.cmake
+[24.607s] -- Installing: /home/thaoton1910/swarm_robot/algorithm/src/install/communication_msgs/share/communication_msgs/cmake/communication_msgs__rosidl_typesupport_cExport-noconfig.cmake
+[24.607s] -- Installing: /home/thaoton1910/swarm_robot/algorithm/src/install/communication_msgs/share/communication_msgs/cmake/export_communication_msgs__rosidl_generator_cppExport.cmake
+[24.607s] -- Installing: /home/thaoton1910/swarm_robot/algorithm/src/install/communication_msgs/share/communication_msgs/cmake/export_communication_msgs__rosidl_typesupport_fastrtps_cppExport.cmake
+[24.607s] -- Installing: /home/thaoton1910/swarm_robot/algorithm/src/install/communication_msgs/share/communication_msgs/cmake/export_communication_msgs__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake
+[24.608s] -- Installing: /home/thaoton1910/swarm_robot/algorithm/src/install/communication_msgs/share/communication_msgs/cmake/communication_msgs__rosidl_typesupport_introspection_cppExport.cmake
+[24.608s] -- Installing: /home/thaoton1910/swarm_robot/algorithm/src/install/communication_msgs/share/communication_msgs/cmake/communication_msgs__rosidl_typesupport_introspection_cppExport-noconfig.cmake
+[24.608s] -- Installing: /home/thaoton1910/swarm_robot/algorithm/src/install/communication_msgs/share/communication_msgs/cmake/communication_msgs__rosidl_typesupport_cppExport.cmake
+[24.608s] -- Installing: /home/thaoton1910/swarm_robot/algorithm/src/install/communication_msgs/share/communication_msgs/cmake/communication_msgs__rosidl_typesupport_cppExport-noconfig.cmake
+[24.608s] -- Installing: /home/thaoton1910/swarm_robot/algorithm/src/install/communication_msgs/share/communication_msgs/cmake/export_communication_msgs__rosidl_generator_pyExport.cmake
+[24.608s] -- Installing: /home/thaoton1910/swarm_robot/algorithm/src/install/communication_msgs/share/communication_msgs/cmake/export_communication_msgs__rosidl_generator_pyExport-noconfig.cmake
+[24.614s] Invoked command in '/home/thaoton1910/swarm_robot/algorithm/src/build/communication_msgs' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/thaoton1910/swarm_robot/algorithm/src/build/communication_msgs

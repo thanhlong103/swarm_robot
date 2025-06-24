@@ -1,0 +1,246 @@
+[0.431s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build', '--symlink-install']
+[0.431s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=True, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=12, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=None, packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, allow_overriding=[], cmake_args=None, cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, verb_parser=<colcon_defaults.argument_parser.defaults.DefaultArgumentsDecorator object at 0x7ecd6ab1bc10>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0x7ecd6ac58fa0>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0x7ecd6ac58fa0>>)
+[0.688s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[0.689s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[0.689s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[0.689s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[0.689s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[0.689s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[0.689s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/thaoton1910/swarm_robot/algorithm/src'
+[0.689s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[0.689s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[0.689s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[0.690s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[0.690s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[0.690s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[0.690s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[0.690s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[0.690s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[0.719s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[0.719s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[0.719s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[0.719s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[0.719s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[0.720s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[0.720s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[0.720s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[0.720s] Level 1:colcon.colcon_core.package_identification:_identify(communication_msgs) by extensions ['ignore', 'ignore_ament_install']
+[0.720s] Level 1:colcon.colcon_core.package_identification:_identify(communication_msgs) by extension 'ignore'
+[0.720s] Level 1:colcon.colcon_core.package_identification:_identify(communication_msgs) by extension 'ignore_ament_install'
+[0.720s] Level 1:colcon.colcon_core.package_identification:_identify(communication_msgs) by extensions ['colcon_pkg']
+[0.720s] Level 1:colcon.colcon_core.package_identification:_identify(communication_msgs) by extension 'colcon_pkg'
+[0.720s] Level 1:colcon.colcon_core.package_identification:_identify(communication_msgs) by extensions ['colcon_meta']
+[0.720s] Level 1:colcon.colcon_core.package_identification:_identify(communication_msgs) by extension 'colcon_meta'
+[0.720s] Level 1:colcon.colcon_core.package_identification:_identify(communication_msgs) by extensions ['ros']
+[0.721s] Level 1:colcon.colcon_core.package_identification:_identify(communication_msgs) by extension 'ros'
+[0.724s] DEBUG:colcon.colcon_core.package_identification:Package 'communication_msgs' with type 'ros.ament_cmake' and name 'communication_msgs'
+[0.725s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[0.725s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[0.725s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[0.725s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[0.725s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[0.725s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[0.725s] Level 1:colcon.colcon_core.package_identification:_identify(master) by extensions ['ignore', 'ignore_ament_install']
+[0.725s] Level 1:colcon.colcon_core.package_identification:_identify(master) by extension 'ignore'
+[0.726s] Level 1:colcon.colcon_core.package_identification:_identify(master) by extension 'ignore_ament_install'
+[0.726s] Level 1:colcon.colcon_core.package_identification:_identify(master) by extensions ['colcon_pkg']
+[0.726s] Level 1:colcon.colcon_core.package_identification:_identify(master) by extension 'colcon_pkg'
+[0.726s] Level 1:colcon.colcon_core.package_identification:_identify(master) by extensions ['colcon_meta']
+[0.726s] Level 1:colcon.colcon_core.package_identification:_identify(master) by extension 'colcon_meta'
+[0.726s] Level 1:colcon.colcon_core.package_identification:_identify(master) by extensions ['ros']
+[0.726s] Level 1:colcon.colcon_core.package_identification:_identify(master) by extension 'ros'
+[0.727s] DEBUG:colcon.colcon_core.package_identification:Package 'master' with type 'ros.ament_python' and name 'master'
+[0.727s] Level 1:colcon.colcon_core.package_identification:_identify(slave) by extensions ['ignore', 'ignore_ament_install']
+[0.727s] Level 1:colcon.colcon_core.package_identification:_identify(slave) by extension 'ignore'
+[0.727s] Level 1:colcon.colcon_core.package_identification:_identify(slave) by extension 'ignore_ament_install'
+[0.727s] Level 1:colcon.colcon_core.package_identification:_identify(slave) by extensions ['colcon_pkg']
+[0.728s] Level 1:colcon.colcon_core.package_identification:_identify(slave) by extension 'colcon_pkg'
+[0.728s] Level 1:colcon.colcon_core.package_identification:_identify(slave) by extensions ['colcon_meta']
+[0.728s] Level 1:colcon.colcon_core.package_identification:_identify(slave) by extension 'colcon_meta'
+[0.728s] Level 1:colcon.colcon_core.package_identification:_identify(slave) by extensions ['ros']
+[0.728s] Level 1:colcon.colcon_core.package_identification:_identify(slave) by extension 'ros'
+[0.728s] DEBUG:colcon.colcon_core.package_identification:Package 'slave' with type 'ros.ament_python' and name 'slave'
+[0.728s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[0.729s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[0.729s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[0.729s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[0.729s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[0.766s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[0.766s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[0.773s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 425 installed packages in /opt/ros/humble
+[0.796s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[0.868s] Level 5:colcon.colcon_core.verb:set package 'communication_msgs' build argument 'cmake_args' from command line to 'None'
+[0.868s] Level 5:colcon.colcon_core.verb:set package 'communication_msgs' build argument 'cmake_target' from command line to 'None'
+[0.868s] Level 5:colcon.colcon_core.verb:set package 'communication_msgs' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.868s] Level 5:colcon.colcon_core.verb:set package 'communication_msgs' build argument 'cmake_clean_cache' from command line to 'False'
+[0.869s] Level 5:colcon.colcon_core.verb:set package 'communication_msgs' build argument 'cmake_clean_first' from command line to 'False'
+[0.869s] Level 5:colcon.colcon_core.verb:set package 'communication_msgs' build argument 'cmake_force_configure' from command line to 'False'
+[0.869s] Level 5:colcon.colcon_core.verb:set package 'communication_msgs' build argument 'ament_cmake_args' from command line to 'None'
+[0.869s] Level 5:colcon.colcon_core.verb:set package 'communication_msgs' build argument 'catkin_cmake_args' from command line to 'None'
+[0.869s] Level 5:colcon.colcon_core.verb:set package 'communication_msgs' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.869s] DEBUG:colcon.colcon_core.verb:Building package 'communication_msgs' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/thaoton1910/swarm_robot/algorithm/src/build/communication_msgs', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/thaoton1910/swarm_robot/algorithm/src/install/communication_msgs', 'merge_install': False, 'path': '/home/thaoton1910/swarm_robot/algorithm/src/communication_msgs', 'symlink_install': True, 'test_result_base': None}
+[0.870s] Level 5:colcon.colcon_core.verb:set package 'master' build argument 'cmake_args' from command line to 'None'
+[0.870s] Level 5:colcon.colcon_core.verb:set package 'master' build argument 'cmake_target' from command line to 'None'
+[0.870s] Level 5:colcon.colcon_core.verb:set package 'master' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.870s] Level 5:colcon.colcon_core.verb:set package 'master' build argument 'cmake_clean_cache' from command line to 'False'
+[0.870s] Level 5:colcon.colcon_core.verb:set package 'master' build argument 'cmake_clean_first' from command line to 'False'
+[0.870s] Level 5:colcon.colcon_core.verb:set package 'master' build argument 'cmake_force_configure' from command line to 'False'
+[0.870s] Level 5:colcon.colcon_core.verb:set package 'master' build argument 'ament_cmake_args' from command line to 'None'
+[0.870s] Level 5:colcon.colcon_core.verb:set package 'master' build argument 'catkin_cmake_args' from command line to 'None'
+[0.870s] Level 5:colcon.colcon_core.verb:set package 'master' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.870s] DEBUG:colcon.colcon_core.verb:Building package 'master' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/thaoton1910/swarm_robot/algorithm/src/build/master', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/thaoton1910/swarm_robot/algorithm/src/install/master', 'merge_install': False, 'path': '/home/thaoton1910/swarm_robot/algorithm/src/master', 'symlink_install': True, 'test_result_base': None}
+[0.871s] Level 5:colcon.colcon_core.verb:set package 'slave' build argument 'cmake_args' from command line to 'None'
+[0.871s] Level 5:colcon.colcon_core.verb:set package 'slave' build argument 'cmake_target' from command line to 'None'
+[0.871s] Level 5:colcon.colcon_core.verb:set package 'slave' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.871s] Level 5:colcon.colcon_core.verb:set package 'slave' build argument 'cmake_clean_cache' from command line to 'False'
+[0.871s] Level 5:colcon.colcon_core.verb:set package 'slave' build argument 'cmake_clean_first' from command line to 'False'
+[0.871s] Level 5:colcon.colcon_core.verb:set package 'slave' build argument 'cmake_force_configure' from command line to 'False'
+[0.871s] Level 5:colcon.colcon_core.verb:set package 'slave' build argument 'ament_cmake_args' from command line to 'None'
+[0.871s] Level 5:colcon.colcon_core.verb:set package 'slave' build argument 'catkin_cmake_args' from command line to 'None'
+[0.871s] Level 5:colcon.colcon_core.verb:set package 'slave' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.871s] DEBUG:colcon.colcon_core.verb:Building package 'slave' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/thaoton1910/swarm_robot/algorithm/src/build/slave', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/thaoton1910/swarm_robot/algorithm/src/install/slave', 'merge_install': False, 'path': '/home/thaoton1910/swarm_robot/algorithm/src/slave', 'symlink_install': True, 'test_result_base': None}
+[0.871s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[0.874s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[0.874s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/thaoton1910/swarm_robot/algorithm/src/communication_msgs' with build type 'ament_cmake'
+[0.874s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/thaoton1910/swarm_robot/algorithm/src/communication_msgs'
+[0.881s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[0.881s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.881s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.888s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/thaoton1910/swarm_robot/algorithm/src/master' with build type 'ament_python'
+[0.888s] Level 1:colcon.colcon_core.shell:create_environment_hook('master', 'ament_prefix_path')
+[0.889s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/thaoton1910/swarm_robot/algorithm/src/install/master/share/master/hook/ament_prefix_path.ps1'
+[0.891s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/thaoton1910/swarm_robot/algorithm/src/install/master/share/master/hook/ament_prefix_path.dsv'
+[0.891s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/thaoton1910/swarm_robot/algorithm/src/install/master/share/master/hook/ament_prefix_path.sh'
+[0.894s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.894s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.898s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/thaoton1910/swarm_robot/algorithm/src/slave' with build type 'ament_python'
+[0.899s] Level 1:colcon.colcon_core.shell:create_environment_hook('slave', 'ament_prefix_path')
+[0.900s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/thaoton1910/swarm_robot/algorithm/src/install/slave/share/slave/hook/ament_prefix_path.ps1'
+[0.904s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/thaoton1910/swarm_robot/algorithm/src/install/slave/share/slave/hook/ament_prefix_path.dsv'
+[0.906s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/thaoton1910/swarm_robot/algorithm/src/install/slave/share/slave/hook/ament_prefix_path.sh'
+[0.907s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.907s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.932s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/thaoton1910/swarm_robot/algorithm/src/build/communication_msgs': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/thaoton1910/swarm_robot/algorithm/src/communication_msgs -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/thaoton1910/swarm_robot/algorithm/src/install/communication_msgs
+[1.546s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/thaoton1910/swarm_robot/algorithm/src/master'
+[1.546s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.546s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[2.092s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/thaoton1910/swarm_robot/algorithm/src/slave'
+[2.093s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[2.093s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[3.046s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/thaoton1910/swarm_robot/algorithm/src/build/slave': PYTHONPATH=/home/thaoton1910/swarm_robot/algorithm/src/build/slave/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/thaoton1910/swarm_robot/algorithm/src/install/slave/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/thaoton1910/swarm_robot/algorithm/src/build/slave/build --no-deps symlink_data
+[3.056s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/thaoton1910/swarm_robot/algorithm/src/build/master': PYTHONPATH=/home/thaoton1910/swarm_robot/algorithm/src/build/master/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/thaoton1910/swarm_robot/algorithm/src/install/master/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/thaoton1910/swarm_robot/algorithm/src/build/master/build --no-deps symlink_data
+[4.434s] Level 1:colcon.colcon_core.shell:create_environment_hook('master', 'pythonpath_develop')
+[4.435s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/thaoton1910/swarm_robot/algorithm/src/build/master/share/master/hook/pythonpath_develop.ps1'
+[4.436s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/thaoton1910/swarm_robot/algorithm/src/build/master' returned '0': PYTHONPATH=/home/thaoton1910/swarm_robot/algorithm/src/build/master/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/thaoton1910/swarm_robot/algorithm/src/install/master/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/thaoton1910/swarm_robot/algorithm/src/build/master/build --no-deps symlink_data
+[4.439s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/thaoton1910/swarm_robot/algorithm/src/build/master/share/master/hook/pythonpath_develop.dsv'
+[4.440s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/thaoton1910/swarm_robot/algorithm/src/build/master/share/master/hook/pythonpath_develop.sh'
+[4.447s] Level 1:colcon.colcon_core.environment:checking '/home/thaoton1910/swarm_robot/algorithm/src/install/master' for CMake module files
+[4.448s] Level 1:colcon.colcon_core.environment:checking '/home/thaoton1910/swarm_robot/algorithm/src/install/master' for CMake config files
+[4.451s] Level 1:colcon.colcon_core.environment:checking '/home/thaoton1910/swarm_robot/algorithm/src/install/master/lib'
+[4.451s] Level 1:colcon.colcon_core.environment:checking '/home/thaoton1910/swarm_robot/algorithm/src/install/master/bin'
+[4.451s] Level 1:colcon.colcon_core.environment:checking '/home/thaoton1910/swarm_robot/algorithm/src/install/master/lib/pkgconfig/master.pc'
+[4.452s] Level 1:colcon.colcon_core.environment:checking '/home/thaoton1910/swarm_robot/algorithm/src/install/master/lib/python3.10/site-packages'
+[4.452s] Level 1:colcon.colcon_core.shell:create_environment_hook('master', 'pythonpath')
+[4.453s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/thaoton1910/swarm_robot/algorithm/src/install/master/share/master/hook/pythonpath.ps1'
+[4.455s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/thaoton1910/swarm_robot/algorithm/src/install/master/share/master/hook/pythonpath.dsv'
+[4.455s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/thaoton1910/swarm_robot/algorithm/src/install/master/share/master/hook/pythonpath.sh'
+[4.456s] Level 1:colcon.colcon_core.environment:checking '/home/thaoton1910/swarm_robot/algorithm/src/install/master/bin'
+[4.457s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(master)
+[4.457s] INFO:colcon.colcon_core.shell:Creating package script '/home/thaoton1910/swarm_robot/algorithm/src/install/master/share/master/package.ps1'
+[4.459s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/thaoton1910/swarm_robot/algorithm/src/install/master/share/master/package.dsv'
+[4.460s] INFO:colcon.colcon_core.shell:Creating package script '/home/thaoton1910/swarm_robot/algorithm/src/install/master/share/master/package.sh'
+[4.463s] INFO:colcon.colcon_core.shell:Creating package script '/home/thaoton1910/swarm_robot/algorithm/src/install/master/share/master/package.bash'
+[4.466s] INFO:colcon.colcon_core.shell:Creating package script '/home/thaoton1910/swarm_robot/algorithm/src/install/master/share/master/package.zsh'
+[4.468s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/thaoton1910/swarm_robot/algorithm/src/install/master/share/colcon-core/packages/master)
+[4.476s] Level 1:colcon.colcon_core.shell:create_environment_hook('slave', 'pythonpath_develop')
+[4.477s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/thaoton1910/swarm_robot/algorithm/src/build/slave/share/slave/hook/pythonpath_develop.ps1'
+[4.478s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/thaoton1910/swarm_robot/algorithm/src/build/slave' returned '0': PYTHONPATH=/home/thaoton1910/swarm_robot/algorithm/src/build/slave/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/thaoton1910/swarm_robot/algorithm/src/install/slave/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/thaoton1910/swarm_robot/algorithm/src/build/slave/build --no-deps symlink_data
+[4.480s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/thaoton1910/swarm_robot/algorithm/src/build/slave/share/slave/hook/pythonpath_develop.dsv'
+[4.481s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/thaoton1910/swarm_robot/algorithm/src/build/slave/share/slave/hook/pythonpath_develop.sh'
+[4.483s] Level 1:colcon.colcon_core.environment:checking '/home/thaoton1910/swarm_robot/algorithm/src/install/slave' for CMake module files
+[4.484s] Level 1:colcon.colcon_core.environment:checking '/home/thaoton1910/swarm_robot/algorithm/src/install/slave' for CMake config files
+[4.485s] Level 1:colcon.colcon_core.environment:checking '/home/thaoton1910/swarm_robot/algorithm/src/install/slave/lib'
+[4.485s] Level 1:colcon.colcon_core.environment:checking '/home/thaoton1910/swarm_robot/algorithm/src/install/slave/bin'
+[4.485s] Level 1:colcon.colcon_core.environment:checking '/home/thaoton1910/swarm_robot/algorithm/src/install/slave/lib/pkgconfig/slave.pc'
+[4.486s] Level 1:colcon.colcon_core.environment:checking '/home/thaoton1910/swarm_robot/algorithm/src/install/slave/lib/python3.10/site-packages'
+[4.486s] Level 1:colcon.colcon_core.shell:create_environment_hook('slave', 'pythonpath')
+[4.486s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/thaoton1910/swarm_robot/algorithm/src/install/slave/share/slave/hook/pythonpath.ps1'
+[4.487s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/thaoton1910/swarm_robot/algorithm/src/install/slave/share/slave/hook/pythonpath.dsv'
+[4.487s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/thaoton1910/swarm_robot/algorithm/src/install/slave/share/slave/hook/pythonpath.sh'
+[4.488s] Level 1:colcon.colcon_core.environment:checking '/home/thaoton1910/swarm_robot/algorithm/src/install/slave/bin'
+[4.489s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(slave)
+[4.490s] INFO:colcon.colcon_core.shell:Creating package script '/home/thaoton1910/swarm_robot/algorithm/src/install/slave/share/slave/package.ps1'
+[4.492s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/thaoton1910/swarm_robot/algorithm/src/install/slave/share/slave/package.dsv'
+[4.493s] INFO:colcon.colcon_core.shell:Creating package script '/home/thaoton1910/swarm_robot/algorithm/src/install/slave/share/slave/package.sh'
+[4.493s] INFO:colcon.colcon_core.shell:Creating package script '/home/thaoton1910/swarm_robot/algorithm/src/install/slave/share/slave/package.bash'
+[4.494s] INFO:colcon.colcon_core.shell:Creating package script '/home/thaoton1910/swarm_robot/algorithm/src/install/slave/share/slave/package.zsh'
+[4.494s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/thaoton1910/swarm_robot/algorithm/src/install/slave/share/colcon-core/packages/slave)
+[9.391s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/thaoton1910/swarm_robot/algorithm/src/build/communication_msgs' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/thaoton1910/swarm_robot/algorithm/src/communication_msgs -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/thaoton1910/swarm_robot/algorithm/src/install/communication_msgs
+[9.395s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/thaoton1910/swarm_robot/algorithm/src/build/communication_msgs': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/thaoton1910/swarm_robot/algorithm/src/build/communication_msgs -- -j12 -l12
+[21.509s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/thaoton1910/swarm_robot/algorithm/src/build/communication_msgs' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/thaoton1910/swarm_robot/algorithm/src/build/communication_msgs -- -j12 -l12
+[21.539s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/thaoton1910/swarm_robot/algorithm/src/build/communication_msgs': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/thaoton1910/swarm_robot/algorithm/src/build/communication_msgs
+[25.490s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(communication_msgs)
+[25.490s] Level 1:colcon.colcon_core.environment:checking '/home/thaoton1910/swarm_robot/algorithm/src/install/communication_msgs' for CMake module files
+[25.491s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/thaoton1910/swarm_robot/algorithm/src/build/communication_msgs' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/thaoton1910/swarm_robot/algorithm/src/build/communication_msgs
+[25.492s] Level 1:colcon.colcon_core.environment:checking '/home/thaoton1910/swarm_robot/algorithm/src/install/communication_msgs' for CMake config files
+[25.494s] Level 1:colcon.colcon_core.shell:create_environment_hook('communication_msgs', 'cmake_prefix_path')
+[25.494s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/thaoton1910/swarm_robot/algorithm/src/install/communication_msgs/share/communication_msgs/hook/cmake_prefix_path.ps1'
+[25.495s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/thaoton1910/swarm_robot/algorithm/src/install/communication_msgs/share/communication_msgs/hook/cmake_prefix_path.dsv'
+[25.496s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/thaoton1910/swarm_robot/algorithm/src/install/communication_msgs/share/communication_msgs/hook/cmake_prefix_path.sh'
+[25.496s] Level 1:colcon.colcon_core.environment:checking '/home/thaoton1910/swarm_robot/algorithm/src/install/communication_msgs/lib'
+[25.496s] Level 1:colcon.colcon_core.shell:create_environment_hook('communication_msgs', 'ld_library_path_lib')
+[25.496s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/thaoton1910/swarm_robot/algorithm/src/install/communication_msgs/share/communication_msgs/hook/ld_library_path_lib.ps1'
+[25.497s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/thaoton1910/swarm_robot/algorithm/src/install/communication_msgs/share/communication_msgs/hook/ld_library_path_lib.dsv'
+[25.499s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/thaoton1910/swarm_robot/algorithm/src/install/communication_msgs/share/communication_msgs/hook/ld_library_path_lib.sh'
+[25.499s] Level 1:colcon.colcon_core.environment:checking '/home/thaoton1910/swarm_robot/algorithm/src/install/communication_msgs/bin'
+[25.500s] Level 1:colcon.colcon_core.environment:checking '/home/thaoton1910/swarm_robot/algorithm/src/install/communication_msgs/lib/pkgconfig/communication_msgs.pc'
+[25.500s] Level 1:colcon.colcon_core.environment:checking '/home/thaoton1910/swarm_robot/algorithm/src/install/communication_msgs/lib/python3.10/site-packages'
+[25.500s] Level 1:colcon.colcon_core.environment:checking '/home/thaoton1910/swarm_robot/algorithm/src/install/communication_msgs/bin'
+[25.501s] INFO:colcon.colcon_core.shell:Creating package script '/home/thaoton1910/swarm_robot/algorithm/src/install/communication_msgs/share/communication_msgs/package.ps1'
+[25.502s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/thaoton1910/swarm_robot/algorithm/src/install/communication_msgs/share/communication_msgs/package.dsv'
+[25.502s] INFO:colcon.colcon_core.shell:Creating package script '/home/thaoton1910/swarm_robot/algorithm/src/install/communication_msgs/share/communication_msgs/package.sh'
+[25.503s] INFO:colcon.colcon_core.shell:Creating package script '/home/thaoton1910/swarm_robot/algorithm/src/install/communication_msgs/share/communication_msgs/package.bash'
+[25.503s] INFO:colcon.colcon_core.shell:Creating package script '/home/thaoton1910/swarm_robot/algorithm/src/install/communication_msgs/share/communication_msgs/package.zsh'
+[25.503s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/thaoton1910/swarm_robot/algorithm/src/install/communication_msgs/share/colcon-core/packages/communication_msgs)
+[25.504s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(communication_msgs)
+[25.505s] Level 1:colcon.colcon_core.environment:checking '/home/thaoton1910/swarm_robot/algorithm/src/install/communication_msgs' for CMake module files
+[25.505s] Level 1:colcon.colcon_core.environment:checking '/home/thaoton1910/swarm_robot/algorithm/src/install/communication_msgs' for CMake config files
+[25.507s] Level 1:colcon.colcon_core.shell:create_environment_hook('communication_msgs', 'cmake_prefix_path')
+[25.507s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/thaoton1910/swarm_robot/algorithm/src/install/communication_msgs/share/communication_msgs/hook/cmake_prefix_path.ps1'
+[25.507s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/thaoton1910/swarm_robot/algorithm/src/install/communication_msgs/share/communication_msgs/hook/cmake_prefix_path.dsv'
+[25.508s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/thaoton1910/swarm_robot/algorithm/src/install/communication_msgs/share/communication_msgs/hook/cmake_prefix_path.sh'
+[25.509s] Level 1:colcon.colcon_core.environment:checking '/home/thaoton1910/swarm_robot/algorithm/src/install/communication_msgs/lib'
+[25.509s] Level 1:colcon.colcon_core.shell:create_environment_hook('communication_msgs', 'ld_library_path_lib')
+[25.509s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/thaoton1910/swarm_robot/algorithm/src/install/communication_msgs/share/communication_msgs/hook/ld_library_path_lib.ps1'
+[25.510s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/thaoton1910/swarm_robot/algorithm/src/install/communication_msgs/share/communication_msgs/hook/ld_library_path_lib.dsv'
+[25.510s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/thaoton1910/swarm_robot/algorithm/src/install/communication_msgs/share/communication_msgs/hook/ld_library_path_lib.sh'
+[25.511s] Level 1:colcon.colcon_core.environment:checking '/home/thaoton1910/swarm_robot/algorithm/src/install/communication_msgs/bin'
+[25.511s] Level 1:colcon.colcon_core.environment:checking '/home/thaoton1910/swarm_robot/algorithm/src/install/communication_msgs/lib/pkgconfig/communication_msgs.pc'
+[25.511s] Level 1:colcon.colcon_core.environment:checking '/home/thaoton1910/swarm_robot/algorithm/src/install/communication_msgs/lib/python3.10/site-packages'
+[25.511s] Level 1:colcon.colcon_core.environment:checking '/home/thaoton1910/swarm_robot/algorithm/src/install/communication_msgs/bin'
+[25.512s] INFO:colcon.colcon_core.shell:Creating package script '/home/thaoton1910/swarm_robot/algorithm/src/install/communication_msgs/share/communication_msgs/package.ps1'
+[25.513s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/thaoton1910/swarm_robot/algorithm/src/install/communication_msgs/share/communication_msgs/package.dsv'
+[25.515s] INFO:colcon.colcon_core.shell:Creating package script '/home/thaoton1910/swarm_robot/algorithm/src/install/communication_msgs/share/communication_msgs/package.sh'
+[25.517s] INFO:colcon.colcon_core.shell:Creating package script '/home/thaoton1910/swarm_robot/algorithm/src/install/communication_msgs/share/communication_msgs/package.bash'
+[25.519s] INFO:colcon.colcon_core.shell:Creating package script '/home/thaoton1910/swarm_robot/algorithm/src/install/communication_msgs/share/communication_msgs/package.zsh'
+[25.521s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/thaoton1910/swarm_robot/algorithm/src/install/communication_msgs/share/colcon-core/packages/communication_msgs)
+[25.522s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[25.523s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[25.523s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
+[25.523s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[25.658s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.notify_send': Could not find 'notify-send'
+[25.658s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[25.658s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[25.658s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[25.659s] DEBUG:colcon.colcon_notification.desktop_notification.notify2:Failed to initialize notify2: org.freedesktop.DBus.Error.FileNotFound: Failed to connect to socket /run/user/1000/bus: No such file or directory
+[25.659s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[25.659s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/thaoton1910/swarm_robot/algorithm/src/install/local_setup.ps1'
+[25.668s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/thaoton1910/swarm_robot/algorithm/src/install/_local_setup_util_ps1.py'
+[25.670s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/thaoton1910/swarm_robot/algorithm/src/install/setup.ps1'
+[25.673s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/thaoton1910/swarm_robot/algorithm/src/install/local_setup.sh'
+[25.675s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/thaoton1910/swarm_robot/algorithm/src/install/_local_setup_util_sh.py'
+[25.676s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/thaoton1910/swarm_robot/algorithm/src/install/setup.sh'
+[25.678s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/thaoton1910/swarm_robot/algorithm/src/install/local_setup.bash'
+[25.679s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/thaoton1910/swarm_robot/algorithm/src/install/setup.bash'
+[25.682s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/thaoton1910/swarm_robot/algorithm/src/install/local_setup.zsh'
+[25.683s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/thaoton1910/swarm_robot/algorithm/src/install/setup.zsh'

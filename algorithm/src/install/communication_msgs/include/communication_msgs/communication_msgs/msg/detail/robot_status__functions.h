@@ -1,0 +1,1 @@
+/home/thaoton1910/swarm_robot/algorithm/src/build/communication_msgs/rosidl_generator_c/communication_msgs/msg/detail/robot_status__functions.h

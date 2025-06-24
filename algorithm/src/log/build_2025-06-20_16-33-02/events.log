@@ -1,0 +1,673 @@
+[0.000000] (-) TimerEvent: {}
+[0.002230] (communication_msgs) JobQueued: {'identifier': 'communication_msgs', 'dependencies': OrderedDict()}
+[0.002377] (master) JobQueued: {'identifier': 'master', 'dependencies': OrderedDict()}
+[0.002462] (slave) JobQueued: {'identifier': 'slave', 'dependencies': OrderedDict()}
+[0.002524] (communication_msgs) JobStarted: {'identifier': 'communication_msgs'}
+[0.015917] (master) JobStarted: {'identifier': 'master'}
+[0.025319] (slave) JobStarted: {'identifier': 'slave'}
+[0.042881] (communication_msgs) JobProgress: {'identifier': 'communication_msgs', 'progress': 'cmake'}
+[0.050021] (communication_msgs) Command: {'cmd': ['/usr/bin/cmake', '/home/thaoton1910/swarm_robot/algorithm/src/communication_msgs', '-DAMENT_CMAKE_SYMLINK_INSTALL=1', '-DCMAKE_INSTALL_PREFIX=/home/thaoton1910/swarm_robot/algorithm/src/install/communication_msgs'], 'cwd': '/home/thaoton1910/swarm_robot/algorithm/src/build/communication_msgs', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'thaoton1910'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/thaoton1910'), ('OLDPWD', '/home/thaoton1910/swarm_robot'), ('ROS_PYTHON_VERSION', '3'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('WSL_DISTRO_NAME', 'Ubuntu-22.04-ROS'), ('WAYLAND_DISPLAY', 'wayland-0'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'thaoton1910'), ('NAME', 'ubuntu-2204-ros'), ('WSL_INTEROP', '/run/WSL/927_interop'), ('PULSE_SERVER', 'unix:/mnt/wslg/PulseServer'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('TERM', 'xterm-256color'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/Program Files/WindowsApps/MicrosoftCorporationII.WindowsSubsystemForLinux_2.5.9.0_x64__8wekyb3d8bbwe:/mnt/c/Program Files (x86)/VMware/VMware Workstation/bin/:/mnt/c/WINDOWS/system32:/mnt/c/WINDOWS:/mnt/c/WINDOWS/System32/Wbem:/mnt/c/WINDOWS/System32/WindowsPowerShell/v1.0/:/mnt/c/WINDOWS/System32/OpenSSH/:/mnt/c/Program Files/dotnet/:/mnt/d/MathLab/bin:/mnt/d/Calulator:/mnt/c/Program Files/Git/cmd:/mnt/c/Program Files/PuTTY/:/mnt/c/Users/Dell/AppData/Local/Programs/Python/Python310/Scripts/:/mnt/c/Users/Dell/AppData/Local/Programs/Python/Python310/:/mnt/c/Users/Dell/AppData/Local/Programs/Python/Launcher/:/mnt/c/Users/Dell/AppData/Local/Microsoft/WindowsApps:/mnt/c/Users/Dell/AppData/Local/Programs/Microsoft VS Code/bin:/mnt/c/Users/Dell/.dotnet/tools:/snap/bin'), ('XDG_RUNTIME_DIR', '/run/user/1000/'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('PWD', '/home/thaoton1910/swarm_robot/algorithm/src/build/communication_msgs'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('WSL2_GUI_APPS_ENABLED', '1'), ('HOSTTYPE', 'x86_64'), ('WSLENV', ''), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[0.098961] (-) TimerEvent: {}
+[0.199725] (-) TimerEvent: {}
+[0.300550] (-) TimerEvent: {}
+[0.401536] (-) TimerEvent: {}
+[0.502227] (-) TimerEvent: {}
+[0.602908] (-) TimerEvent: {}
+[0.684210] (communication_msgs) StdoutLine: {'line': b'-- The C compiler identification is GNU 11.4.0\n'}
+[0.703167] (-) TimerEvent: {}
+[0.803874] (-) TimerEvent: {}
+[0.904661] (-) TimerEvent: {}
+[1.005104] (-) TimerEvent: {}
+[1.105950] (-) TimerEvent: {}
+[1.206558] (-) TimerEvent: {}
+[1.307272] (-) TimerEvent: {}
+[1.407891] (-) TimerEvent: {}
+[1.508757] (-) TimerEvent: {}
+[1.609369] (-) TimerEvent: {}
+[1.710218] (-) TimerEvent: {}
+[1.810916] (-) TimerEvent: {}
+[1.913241] (-) TimerEvent: {}
+[1.962651] (communication_msgs) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.4.0\n'}
+[2.013630] (-) TimerEvent: {}
+[2.114889] (-) TimerEvent: {}
+[2.162756] (slave) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', '-W', 'ignore:easy_install command is deprecated', 'setup.py', 'develop', '--editable', '--build-directory', '/home/thaoton1910/swarm_robot/algorithm/src/build/slave/build', '--no-deps', 'symlink_data'], 'cwd': '/home/thaoton1910/swarm_robot/algorithm/src/build/slave', 'env': {'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'thaoton1910', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib', 'HOME': '/home/thaoton1910', 'OLDPWD': '/home/thaoton1910/swarm_robot', 'ROS_PYTHON_VERSION': '3', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'WSL_DISTRO_NAME': 'Ubuntu-22.04-ROS', 'WAYLAND_DISPLAY': 'wayland-0', 'ROS_DISTRO': 'humble', 'LOGNAME': 'thaoton1910', 'NAME': 'ubuntu-2204-ros', 'WSL_INTEROP': '/run/WSL/927_interop', 'PULSE_SERVER': 'unix:/mnt/wslg/PulseServer', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'TERM': 'xterm-256color', 'ROS_LOCALHOST_ONLY': '0', 'PATH': '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/Program Files/WindowsApps/MicrosoftCorporationII.WindowsSubsystemForLinux_2.5.9.0_x64__8wekyb3d8bbwe:/mnt/c/Program Files (x86)/VMware/VMware Workstation/bin/:/mnt/c/WINDOWS/system32:/mnt/c/WINDOWS:/mnt/c/WINDOWS/System32/Wbem:/mnt/c/WINDOWS/System32/WindowsPowerShell/v1.0/:/mnt/c/WINDOWS/System32/OpenSSH/:/mnt/c/Program Files/dotnet/:/mnt/d/MathLab/bin:/mnt/d/Calulator:/mnt/c/Program Files/Git/cmd:/mnt/c/Program Files/PuTTY/:/mnt/c/Users/Dell/AppData/Local/Programs/Python/Python310/Scripts/:/mnt/c/Users/Dell/AppData/Local/Programs/Python/Python310/:/mnt/c/Users/Dell/AppData/Local/Programs/Python/Launcher/:/mnt/c/Users/Dell/AppData/Local/Microsoft/WindowsApps:/mnt/c/Users/Dell/AppData/Local/Programs/Microsoft VS Code/bin:/mnt/c/Users/Dell/.dotnet/tools:/snap/bin', 'XDG_RUNTIME_DIR': '/run/user/1000/', 'DISPLAY': ':0', 'LANG': 'en_US.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'AMENT_PREFIX_PATH': '/opt/ros/humble', 'SHELL': '/bin/bash', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'PWD': '/home/thaoton1910/swarm_robot/algorithm/src/build/slave', 'XDG_DATA_DIRS': '/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/thaoton1910/swarm_robot/algorithm/src/build/slave/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/thaoton1910/swarm_robot/algorithm/src/install/slave/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages', 'COLCON': '1', 'WSL2_GUI_APPS_ENABLED': '1', 'HOSTTYPE': 'x86_64', 'WSLENV': ''}, 'shell': False}
+[2.176062] (master) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', '-W', 'ignore:easy_install command is deprecated', 'setup.py', 'develop', '--editable', '--build-directory', '/home/thaoton1910/swarm_robot/algorithm/src/build/master/build', '--no-deps', 'symlink_data'], 'cwd': '/home/thaoton1910/swarm_robot/algorithm/src/build/master', 'env': {'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'thaoton1910', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib', 'HOME': '/home/thaoton1910', 'OLDPWD': '/home/thaoton1910/swarm_robot', 'ROS_PYTHON_VERSION': '3', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'WSL_DISTRO_NAME': 'Ubuntu-22.04-ROS', 'WAYLAND_DISPLAY': 'wayland-0', 'ROS_DISTRO': 'humble', 'LOGNAME': 'thaoton1910', 'NAME': 'ubuntu-2204-ros', 'WSL_INTEROP': '/run/WSL/927_interop', 'PULSE_SERVER': 'unix:/mnt/wslg/PulseServer', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'TERM': 'xterm-256color', 'ROS_LOCALHOST_ONLY': '0', 'PATH': '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/Program Files/WindowsApps/MicrosoftCorporationII.WindowsSubsystemForLinux_2.5.9.0_x64__8wekyb3d8bbwe:/mnt/c/Program Files (x86)/VMware/VMware Workstation/bin/:/mnt/c/WINDOWS/system32:/mnt/c/WINDOWS:/mnt/c/WINDOWS/System32/Wbem:/mnt/c/WINDOWS/System32/WindowsPowerShell/v1.0/:/mnt/c/WINDOWS/System32/OpenSSH/:/mnt/c/Program Files/dotnet/:/mnt/d/MathLab/bin:/mnt/d/Calulator:/mnt/c/Program Files/Git/cmd:/mnt/c/Program Files/PuTTY/:/mnt/c/Users/Dell/AppData/Local/Programs/Python/Python310/Scripts/:/mnt/c/Users/Dell/AppData/Local/Programs/Python/Python310/:/mnt/c/Users/Dell/AppData/Local/Programs/Python/Launcher/:/mnt/c/Users/Dell/AppData/Local/Microsoft/WindowsApps:/mnt/c/Users/Dell/AppData/Local/Programs/Microsoft VS Code/bin:/mnt/c/Users/Dell/.dotnet/tools:/snap/bin', 'XDG_RUNTIME_DIR': '/run/user/1000/', 'DISPLAY': ':0', 'LANG': 'en_US.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'AMENT_PREFIX_PATH': '/opt/ros/humble', 'SHELL': '/bin/bash', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'PWD': '/home/thaoton1910/swarm_robot/algorithm/src/build/master', 'XDG_DATA_DIRS': '/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/thaoton1910/swarm_robot/algorithm/src/build/master/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/thaoton1910/swarm_robot/algorithm/src/install/master/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages', 'COLCON': '1', 'WSL2_GUI_APPS_ENABLED': '1', 'HOSTTYPE': 'x86_64', 'WSLENV': ''}, 'shell': False}
+[2.215023] (-) TimerEvent: {}
+[2.315600] (-) TimerEvent: {}
+[2.416112] (-) TimerEvent: {}
+[2.516892] (-) TimerEvent: {}
+[2.617789] (-) TimerEvent: {}
+[2.718729] (-) TimerEvent: {}
+[2.819743] (-) TimerEvent: {}
+[2.920474] (-) TimerEvent: {}
+[3.021202] (-) TimerEvent: {}
+[3.048547] (slave) StdoutLine: {'line': b'running develop\n'}
+[3.051763] (master) StdoutLine: {'line': b'running develop\n'}
+[3.098778] (communication_msgs) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[3.121545] (-) TimerEvent: {}
+[3.222573] (-) TimerEvent: {}
+[3.323358] (-) TimerEvent: {}
+[3.424094] (-) TimerEvent: {}
+[3.456331] (master) StdoutLine: {'line': b'running egg_info\n'}
+[3.456925] (master) StdoutLine: {'line': b'creating master.egg-info\n'}
+[3.457611] (master) StdoutLine: {'line': b'writing master.egg-info/PKG-INFO\n'}
+[3.458181] (master) StdoutLine: {'line': b'writing dependency_links to master.egg-info/dependency_links.txt\n'}
+[3.458627] (master) StdoutLine: {'line': b'writing entry points to master.egg-info/entry_points.txt\n'}
+[3.459300] (master) StdoutLine: {'line': b'writing requirements to master.egg-info/requires.txt\n'}
+[3.459653] (master) StdoutLine: {'line': b'writing top-level names to master.egg-info/top_level.txt\n'}
+[3.459789] (master) StdoutLine: {'line': b"writing manifest file 'master.egg-info/SOURCES.txt'\n"}
+[3.465180] (master) StdoutLine: {'line': b"reading manifest file 'master.egg-info/SOURCES.txt'\n"}
+[3.466454] (master) StdoutLine: {'line': b"writing manifest file 'master.egg-info/SOURCES.txt'\n"}
+[3.467127] (slave) StdoutLine: {'line': b'running egg_info\n'}
+[3.467387] (slave) StdoutLine: {'line': b'creating slave.egg-info\n'}
+[3.468105] (slave) StdoutLine: {'line': b'writing slave.egg-info/PKG-INFO\n'}
+[3.468729] (slave) StdoutLine: {'line': b'writing dependency_links to slave.egg-info/dependency_links.txt\n'}
+[3.469165] (master) StdoutLine: {'line': b'running build_ext\n'}
+[3.470158] (slave) StdoutLine: {'line': b'writing entry points to slave.egg-info/entry_points.txt\n'}
+[3.470573] (slave) StdoutLine: {'line': b'writing requirements to slave.egg-info/requires.txt\n'}
+[3.470865] (master) StdoutLine: {'line': b'Creating /home/thaoton1910/swarm_robot/algorithm/src/install/master/lib/python3.10/site-packages/master.egg-link (link to .)\n'}
+[3.471085] (slave) StdoutLine: {'line': b'writing top-level names to slave.egg-info/top_level.txt\n'}
+[3.471894] (master) StdoutLine: {'line': b'Installing aco script to /home/thaoton1910/swarm_robot/algorithm/src/install/master/lib/master\n'}
+[3.472183] (slave) StdoutLine: {'line': b"writing manifest file 'slave.egg-info/SOURCES.txt'\n"}
+[3.472725] (master) StdoutLine: {'line': b'\n'}
+[3.473392] (master) StdoutLine: {'line': b'Installed /home/thaoton1910/swarm_robot/algorithm/src/build/master\n'}
+[3.473970] (master) StdoutLine: {'line': b'running symlink_data\n'}
+[3.474135] (master) StdoutLine: {'line': b'creating /home/thaoton1910/swarm_robot/algorithm/src/install/master/share/ament_index\n'}
+[3.474645] (master) StdoutLine: {'line': b'creating /home/thaoton1910/swarm_robot/algorithm/src/install/master/share/ament_index/resource_index\n'}
+[3.475808] (master) StdoutLine: {'line': b'creating /home/thaoton1910/swarm_robot/algorithm/src/install/master/share/ament_index/resource_index/packages\n'}
+[3.476439] (slave) StdoutLine: {'line': b"reading manifest file 'slave.egg-info/SOURCES.txt'\n"}
+[3.476614] (master) StdoutLine: {'line': b'symbolically linking /home/thaoton1910/swarm_robot/algorithm/src/build/master/resource/master -> /home/thaoton1910/swarm_robot/algorithm/src/install/master/share/ament_index/resource_index/packages\n'}
+[3.476955] (master) StdoutLine: {'line': b'symbolically linking /home/thaoton1910/swarm_robot/algorithm/src/build/master/package.xml -> /home/thaoton1910/swarm_robot/algorithm/src/install/master/share/master\n'}
+[3.477146] (slave) StdoutLine: {'line': b"writing manifest file 'slave.egg-info/SOURCES.txt'\n"}
+[3.480239] (slave) StdoutLine: {'line': b'running build_ext\n'}
+[3.480751] (communication_msgs) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[3.481156] (slave) StdoutLine: {'line': b'Creating /home/thaoton1910/swarm_robot/algorithm/src/install/slave/lib/python3.10/site-packages/slave.egg-link (link to .)\n'}
+[3.483632] (slave) StdoutLine: {'line': b'Installing navigation_process script to /home/thaoton1910/swarm_robot/algorithm/src/install/slave/lib/slave\n'}
+[3.484795] (slave) StdoutLine: {'line': b'Installing odom script to /home/thaoton1910/swarm_robot/algorithm/src/install/slave/lib/slave\n'}
+[3.485508] (slave) StdoutLine: {'line': b'Installing send_vel script to /home/thaoton1910/swarm_robot/algorithm/src/install/slave/lib/slave\n'}
+[3.485850] (slave) StdoutLine: {'line': b'Installing waypoint_navigator script to /home/thaoton1910/swarm_robot/algorithm/src/install/slave/lib/slave\n'}
+[3.486475] (slave) StdoutLine: {'line': b'\n'}
+[3.487872] (slave) StdoutLine: {'line': b'Installed /home/thaoton1910/swarm_robot/algorithm/src/build/slave\n'}
+[3.488099] (slave) StdoutLine: {'line': b'running symlink_data\n'}
+[3.488246] (slave) StdoutLine: {'line': b'creating /home/thaoton1910/swarm_robot/algorithm/src/install/slave/share/ament_index\n'}
+[3.488389] (slave) StdoutLine: {'line': b'creating /home/thaoton1910/swarm_robot/algorithm/src/install/slave/share/ament_index/resource_index\n'}
+[3.489029] (slave) StdoutLine: {'line': b'creating /home/thaoton1910/swarm_robot/algorithm/src/install/slave/share/ament_index/resource_index/packages\n'}
+[3.489821] (slave) StdoutLine: {'line': b'symbolically linking /home/thaoton1910/swarm_robot/algorithm/src/build/slave/resource/slave -> /home/thaoton1910/swarm_robot/algorithm/src/install/slave/share/ament_index/resource_index/packages\n'}
+[3.490245] (slave) StdoutLine: {'line': b'symbolically linking /home/thaoton1910/swarm_robot/algorithm/src/build/slave/package.xml -> /home/thaoton1910/swarm_robot/algorithm/src/install/slave/share/slave\n'}
+[3.490914] (slave) StdoutLine: {'line': b'creating /home/thaoton1910/swarm_robot/algorithm/src/install/slave/share/slave/config\n'}
+[3.491753] (slave) StdoutLine: {'line': b'symbolically linking /home/thaoton1910/swarm_robot/algorithm/src/build/slave/config/ekf_config.yaml -> /home/thaoton1910/swarm_robot/algorithm/src/install/slave/share/slave/config\n'}
+[3.492214] (slave) StdoutLine: {'line': b'symbolically linking /home/thaoton1910/swarm_robot/algorithm/src/build/slave/config/waypoints.yaml -> /home/thaoton1910/swarm_robot/algorithm/src/install/slave/share/slave/config\n'}
+[3.492837] (slave) StdoutLine: {'line': b'creating /home/thaoton1910/swarm_robot/algorithm/src/install/slave/share/slave/launch\n'}
+[3.493782] (slave) StdoutLine: {'line': b'symbolically linking /home/thaoton1910/swarm_robot/algorithm/src/build/slave/launch/waypoint_navigator_launch.py -> /home/thaoton1910/swarm_robot/algorithm/src/install/slave/share/slave/launch\n'}
+[3.498026] (communication_msgs) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[3.499878] (communication_msgs) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[3.502111] (communication_msgs) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[3.513771] (communication_msgs) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[3.524402] (-) TimerEvent: {}
+[3.561893] (master) CommandEnded: {'returncode': 0}
+[3.597325] (master) JobEnded: {'identifier': 'master', 'rc': 0}
+[3.602611] (slave) CommandEnded: {'returncode': 0}
+[3.622246] (slave) JobEnded: {'identifier': 'slave', 'rc': 0}
+[3.624524] (-) TimerEvent: {}
+[3.725456] (-) TimerEvent: {}
+[3.826115] (-) TimerEvent: {}
+[3.866475] (communication_msgs) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[3.878218] (communication_msgs) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[3.878857] (communication_msgs) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[3.879353] (communication_msgs) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[3.887692] (communication_msgs) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[3.926181] (-) TimerEvent: {}
+[4.026798] (-) TimerEvent: {}
+[4.127535] (-) TimerEvent: {}
+[4.187359] (communication_msgs) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter \n'}
+[4.227700] (-) TimerEvent: {}
+[4.315025] (communication_msgs) StdoutLine: {'line': b'-- Override CMake install command with custom implementation using symlinks instead of copying resources\n'}
+[4.328010] (-) TimerEvent: {}
+[4.398810] (communication_msgs) StdoutLine: {'line': b'-- Found rosidl_default_generators: 1.2.0 (/opt/ros/humble/share/rosidl_default_generators/cmake)\n'}
+[4.408962] (communication_msgs) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[4.423967] (communication_msgs) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.6 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[4.428165] (-) TimerEvent: {}
+[4.528857] (-) TimerEvent: {}
+[4.629239] (-) TimerEvent: {}
+[4.729782] (-) TimerEvent: {}
+[4.830275] (-) TimerEvent: {}
+[4.837821] (communication_msgs) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[4.930542] (-) TimerEvent: {}
+[4.937606] (communication_msgs) StdoutLine: {'line': b'-- Found geometry_msgs: 4.8.0 (/opt/ros/humble/share/geometry_msgs/cmake)\n'}
+[5.030763] (-) TimerEvent: {}
+[5.058162] (communication_msgs) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.12.12 (/opt/ros/humble/share/ament_lint_auto/cmake)\n'}
+[5.130931] (-) TimerEvent: {}
+[5.231368] (-) TimerEvent: {}
+[5.331959] (-) TimerEvent: {}
+[5.432564] (-) TimerEvent: {}
+[5.533047] (-) TimerEvent: {}
+[5.620438] (communication_msgs) StdoutLine: {'line': b'-- Found ament_cmake_ros: 0.10.0 (/opt/ros/humble/share/ament_cmake_ros/cmake)\n'}
+[5.633175] (-) TimerEvent: {}
+[5.733910] (-) TimerEvent: {}
+[5.834681] (-) TimerEvent: {}
+[5.935208] (-) TimerEvent: {}
+[6.000549] (communication_msgs) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[6.035525] (-) TimerEvent: {}
+[6.136200] (-) TimerEvent: {}
+[6.236605] (-) TimerEvent: {}
+[6.337134] (-) TimerEvent: {}
+[6.437740] (-) TimerEvent: {}
+[6.484533] (communication_msgs) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[6.538054] (-) TimerEvent: {}
+[6.638683] (-) TimerEvent: {}
+[6.739579] (-) TimerEvent: {}
+[6.840194] (-) TimerEvent: {}
+[6.887111] (communication_msgs) StdoutLine: {'line': b'-- Found PythonInterp: /usr/bin/python3 (found suitable version "3.10.12", minimum required is "3.6") \n'}
+[6.892271] (communication_msgs) StdoutLine: {'line': b'-- Found python_cmake_module: 0.10.0 (/opt/ros/humble/share/python_cmake_module/cmake)\n'}
+[6.940453] (-) TimerEvent: {}
+[7.041138] (-) TimerEvent: {}
+[7.141861] (-) TimerEvent: {}
+[7.242261] (-) TimerEvent: {}
+[7.342878] (-) TimerEvent: {}
+[7.443525] (-) TimerEvent: {}
+[7.544267] (-) TimerEvent: {}
+[7.644697] (-) TimerEvent: {}
+[7.745667] (-) TimerEvent: {}
+[7.846294] (-) TimerEvent: {}
+[7.946990] (-) TimerEvent: {}
+[8.047637] (-) TimerEvent: {}
+[8.051952] (communication_msgs) StdoutLine: {'line': b'-- Found PythonLibs: /usr/lib/x86_64-linux-gnu/libpython3.10.so (found suitable version "3.10.12", minimum required is "3.5") \n'}
+[8.053100] (communication_msgs) StdoutLine: {'line': b'-- Using PYTHON_EXECUTABLE: /usr/bin/python3\n'}
+[8.053267] (communication_msgs) StdoutLine: {'line': b'-- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.10\n'}
+[8.053376] (communication_msgs) StdoutLine: {'line': b'-- Using PYTHON_LIBRARIES: /usr/lib/x86_64-linux-gnu/libpython3.10.so\n'}
+[8.094486] (communication_msgs) StdoutLine: {'line': b'-- Found PythonExtra: .so  \n'}
+[8.147922] (-) TimerEvent: {}
+[8.248782] (-) TimerEvent: {}
+[8.347902] (communication_msgs) StdoutLine: {'line': b"-- Added test 'copyright' to check source files copyright and LICENSE\n"}
+[8.348966] (-) TimerEvent: {}
+[8.355837] (communication_msgs) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[8.361555] (communication_msgs) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[8.389778] (communication_msgs) StdoutLine: {'line': b'-- Configuring done\n'}
+[8.449178] (-) TimerEvent: {}
+[8.482403] (communication_msgs) StdoutLine: {'line': b'-- Generating done\n'}
+[8.501375] (communication_msgs) StdoutLine: {'line': b'-- Build files have been written to: /home/thaoton1910/swarm_robot/algorithm/src/build/communication_msgs\n'}
+[8.517335] (communication_msgs) CommandEnded: {'returncode': 0}
+[8.517922] (communication_msgs) JobProgress: {'identifier': 'communication_msgs', 'progress': 'build'}
+[8.520373] (communication_msgs) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/thaoton1910/swarm_robot/algorithm/src/build/communication_msgs', '--', '-j12', '-l12'], 'cwd': '/home/thaoton1910/swarm_robot/algorithm/src/build/communication_msgs', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'thaoton1910'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/thaoton1910'), ('OLDPWD', '/home/thaoton1910/swarm_robot'), ('ROS_PYTHON_VERSION', '3'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('WSL_DISTRO_NAME', 'Ubuntu-22.04-ROS'), ('WAYLAND_DISPLAY', 'wayland-0'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'thaoton1910'), ('NAME', 'ubuntu-2204-ros'), ('WSL_INTEROP', '/run/WSL/927_interop'), ('PULSE_SERVER', 'unix:/mnt/wslg/PulseServer'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('TERM', 'xterm-256color'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/Program Files/WindowsApps/MicrosoftCorporationII.WindowsSubsystemForLinux_2.5.9.0_x64__8wekyb3d8bbwe:/mnt/c/Program Files (x86)/VMware/VMware Workstation/bin/:/mnt/c/WINDOWS/system32:/mnt/c/WINDOWS:/mnt/c/WINDOWS/System32/Wbem:/mnt/c/WINDOWS/System32/WindowsPowerShell/v1.0/:/mnt/c/WINDOWS/System32/OpenSSH/:/mnt/c/Program Files/dotnet/:/mnt/d/MathLab/bin:/mnt/d/Calulator:/mnt/c/Program Files/Git/cmd:/mnt/c/Program Files/PuTTY/:/mnt/c/Users/Dell/AppData/Local/Programs/Python/Python310/Scripts/:/mnt/c/Users/Dell/AppData/Local/Programs/Python/Python310/:/mnt/c/Users/Dell/AppData/Local/Programs/Python/Launcher/:/mnt/c/Users/Dell/AppData/Local/Microsoft/WindowsApps:/mnt/c/Users/Dell/AppData/Local/Programs/Microsoft VS Code/bin:/mnt/c/Users/Dell/.dotnet/tools:/snap/bin'), ('XDG_RUNTIME_DIR', '/run/user/1000/'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('PWD', '/home/thaoton1910/swarm_robot/algorithm/src/build/communication_msgs'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('WSL2_GUI_APPS_ENABLED', '1'), ('HOSTTYPE', 'x86_64'), ('WSLENV', ''), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[8.549387] (-) TimerEvent: {}
+[8.586284] (communication_msgs) StdoutLine: {'line': b'[  1%] \x1b[34m\x1b[1mGenerating C code for ROS interfaces\x1b[0m\n'}
+[8.607456] (communication_msgs) StdoutLine: {'line': b'[  2%] \x1b[34m\x1b[1mGenerating C++ code for ROS interfaces\x1b[0m\n'}
+[8.626120] (communication_msgs) StdoutLine: {'line': b'[  2%] Built target ament_cmake_python_symlink_communication_msgs\n'}
+[8.649571] (-) TimerEvent: {}
+[8.750172] (-) TimerEvent: {}
+[8.850828] (-) TimerEvent: {}
+[8.952014] (-) TimerEvent: {}
+[9.052703] (-) TimerEvent: {}
+[9.153363] (-) TimerEvent: {}
+[9.238403] (communication_msgs) StdoutLine: {'line': b'running egg_info\n'}
+[9.240427] (communication_msgs) StdoutLine: {'line': b'creating communication_msgs.egg-info\n'}
+[9.241461] (communication_msgs) StdoutLine: {'line': b'writing communication_msgs.egg-info/PKG-INFO\n'}
+[9.242053] (communication_msgs) StdoutLine: {'line': b'writing dependency_links to communication_msgs.egg-info/dependency_links.txt\n'}
+[9.242397] (communication_msgs) StdoutLine: {'line': b'writing top-level names to communication_msgs.egg-info/top_level.txt\n'}
+[9.242799] (communication_msgs) StdoutLine: {'line': b"writing manifest file 'communication_msgs.egg-info/SOURCES.txt'\n"}
+[9.248530] (communication_msgs) StdoutLine: {'line': b"reading manifest file 'communication_msgs.egg-info/SOURCES.txt'\n"}
+[9.250341] (communication_msgs) StdoutLine: {'line': b"writing manifest file 'communication_msgs.egg-info/SOURCES.txt'\n"}
+[9.253559] (-) TimerEvent: {}
+[9.315637] (communication_msgs) StdoutLine: {'line': b'[  2%] Built target ament_cmake_python_build_communication_msgs_egg\n'}
+[9.353786] (-) TimerEvent: {}
+[9.454459] (-) TimerEvent: {}
+[9.555257] (-) TimerEvent: {}
+[9.659709] (-) TimerEvent: {}
+[9.760627] (-) TimerEvent: {}
+[9.771583] (communication_msgs) StdoutLine: {'line': b'[  2%] Built target communication_msgs__cpp\n'}
+[9.813637] (communication_msgs) StdoutLine: {'line': b'[  3%] \x1b[34m\x1b[1mGenerating C++ type support for eProsima Fast-RTPS\x1b[0m\n'}
+[9.815783] (communication_msgs) StdoutLine: {'line': b'[  6%] \x1b[34m\x1b[1mGenerating C++ introspection for ROS interfaces\x1b[0m\n'}
+[9.816438] (communication_msgs) StdoutLine: {'line': b'[  6%] \x1b[34m\x1b[1mGenerating C++ type support dispatch for ROS interfaces\x1b[0m\n'}
+[9.860843] (-) TimerEvent: {}
+[9.867013] (communication_msgs) StdoutLine: {'line': b'[  8%] \x1b[32mBuilding C object CMakeFiles/communication_msgs__rosidl_generator_c.dir/rosidl_generator_c/communication_msgs/msg/detail/robot__functions.c.o\x1b[0m\n'}
+[9.870111] (communication_msgs) StdoutLine: {'line': b'[  8%] \x1b[32mBuilding C object CMakeFiles/communication_msgs__rosidl_generator_c.dir/rosidl_generator_c/communication_msgs/msg/detail/task__functions.c.o\x1b[0m\n'}
+[9.872754] (communication_msgs) StdoutLine: {'line': b'[ 10%] \x1b[32mBuilding C object CMakeFiles/communication_msgs__rosidl_generator_c.dir/rosidl_generator_c/communication_msgs/msg/detail/task_allocation_array__functions.c.o\x1b[0m\n'}
+[9.873109] (communication_msgs) StdoutLine: {'line': b'[ 11%] \x1b[32mBuilding C object CMakeFiles/communication_msgs__rosidl_generator_c.dir/rosidl_generator_c/communication_msgs/msg/detail/robot_odom__functions.c.o\x1b[0m\n'}
+[9.873282] (communication_msgs) StdoutLine: {'line': b'[ 12%] \x1b[32mBuilding C object CMakeFiles/communication_msgs__rosidl_generator_c.dir/rosidl_generator_c/communication_msgs/msg/detail/task_allocation__functions.c.o\x1b[0m\n'}
+[9.873466] (communication_msgs) StdoutLine: {'line': b'[ 13%] \x1b[32mBuilding C object CMakeFiles/communication_msgs__rosidl_generator_c.dir/rosidl_generator_c/communication_msgs/msg/detail/robot_status__functions.c.o\x1b[0m\n'}
+[9.874002] (communication_msgs) StdoutLine: {'line': b'[ 15%] \x1b[32mBuilding C object CMakeFiles/communication_msgs__rosidl_generator_c.dir/rosidl_generator_c/communication_msgs/msg/detail/robots__functions.c.o\x1b[0m\n'}
+[9.961125] (-) TimerEvent: {}
+[10.064001] (-) TimerEvent: {}
+[10.129160] (communication_msgs) StdoutLine: {'line': b'[ 16%] \x1b[32m\x1b[1mLinking C shared library libcommunication_msgs__rosidl_generator_c.so\x1b[0m\n'}
+[10.164227] (-) TimerEvent: {}
+[10.265771] (-) TimerEvent: {}
+[10.366389] (-) TimerEvent: {}
+[10.467319] (-) TimerEvent: {}
+[10.498827] (communication_msgs) StdoutLine: {'line': b'[ 16%] Built target communication_msgs__rosidl_generator_c\n'}
+[10.528075] (communication_msgs) StdoutLine: {'line': b'[ 17%] \x1b[34m\x1b[1mGenerating C type support dispatch for ROS interfaces\x1b[0m\n'}
+[10.528682] (communication_msgs) StdoutLine: {'line': b'[ 18%] \x1b[34m\x1b[1mGenerating C type support for eProsima Fast-RTPS\x1b[0m\n'}
+[10.528870] (communication_msgs) StdoutLine: {'line': b'[ 20%] \x1b[34m\x1b[1mGenerating C introspection for ROS interfaces\x1b[0m\n'}
+[10.567536] (-) TimerEvent: {}
+[10.668357] (-) TimerEvent: {}
+[10.769088] (-) TimerEvent: {}
+[10.870215] (-) TimerEvent: {}
+[10.911789] (communication_msgs) StdoutLine: {'line': b'[ 21%] \x1b[32mBuilding CXX object CMakeFiles/communication_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/communication_msgs/msg/robot_odom__type_support.cpp.o\x1b[0m\n'}
+[10.915700] (communication_msgs) StdoutLine: {'line': b'[ 22%] \x1b[32mBuilding CXX object CMakeFiles/communication_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/communication_msgs/msg/task_allocation__type_support.cpp.o\x1b[0m\n'}
+[10.918331] (communication_msgs) StdoutLine: {'line': b'[ 24%] \x1b[32mBuilding CXX object CMakeFiles/communication_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/communication_msgs/msg/robots__type_support.cpp.o\x1b[0m\n'}
+[10.918930] (communication_msgs) StdoutLine: {'line': b'[ 26%] \x1b[32mBuilding CXX object CMakeFiles/communication_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/communication_msgs/msg/task_allocation_array__type_support.cpp.o\x1b[0m\n'}
+[10.919558] (communication_msgs) StdoutLine: {'line': b'[ 26%] \x1b[32mBuilding CXX object CMakeFiles/communication_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/communication_msgs/msg/task__type_support.cpp.o\x1b[0m\n'}
+[10.923930] (communication_msgs) StdoutLine: {'line': b'[ 27%] \x1b[32mBuilding CXX object CMakeFiles/communication_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/communication_msgs/msg/robot__type_support.cpp.o\x1b[0m\n'}
+[10.929400] (communication_msgs) StdoutLine: {'line': b'[ 29%] \x1b[32mBuilding CXX object CMakeFiles/communication_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/communication_msgs/msg/robot_status__type_support.cpp.o\x1b[0m\n'}
+[10.973458] (-) TimerEvent: {}
+[11.074095] (-) TimerEvent: {}
+[11.174691] (-) TimerEvent: {}
+[11.275266] (-) TimerEvent: {}
+[11.376284] (-) TimerEvent: {}
+[11.477315] (-) TimerEvent: {}
+[11.567953] (communication_msgs) StdoutLine: {'line': b'[ 30%] \x1b[32mBuilding CXX object CMakeFiles/communication_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/communication_msgs/msg/detail/robot__type_support.cpp.o\x1b[0m\n'}
+[11.579713] (-) TimerEvent: {}
+[11.680211] (-) TimerEvent: {}
+[11.780818] (-) TimerEvent: {}
+[11.859736] (communication_msgs) StdoutLine: {'line': b'[ 31%] \x1b[32mBuilding CXX object CMakeFiles/communication_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/communication_msgs/msg/detail/dds_fastrtps/robot__type_support.cpp.o\x1b[0m\n'}
+[11.882793] (-) TimerEvent: {}
+[11.987917] (-) TimerEvent: {}
+[12.088800] (-) TimerEvent: {}
+[12.189786] (-) TimerEvent: {}
+[12.295626] (-) TimerEvent: {}
+[12.300641] (communication_msgs) StdoutLine: {'line': b'[ 32%] \x1b[32mBuilding CXX object CMakeFiles/communication_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/communication_msgs/msg/robot__type_support.cpp.o\x1b[0m\n'}
+[12.373732] (communication_msgs) StdoutLine: {'line': b'[ 34%] \x1b[32mBuilding CXX object CMakeFiles/communication_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/communication_msgs/msg/detail/task__type_support.cpp.o\x1b[0m\n'}
+[12.374135] (communication_msgs) StdoutLine: {'line': b'[ 35%] \x1b[32mBuilding CXX object CMakeFiles/communication_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/communication_msgs/msg/task__type_support.cpp.o\x1b[0m\n'}
+[12.395748] (communication_msgs) StdoutLine: {'line': b'[ 36%] \x1b[32mBuilding CXX object CMakeFiles/communication_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/communication_msgs/msg/task_allocation__type_support.cpp.o\x1b[0m\n'}
+[12.396163] (-) TimerEvent: {}
+[12.409948] (communication_msgs) StdoutLine: {'line': b'[ 37%] \x1b[32mBuilding CXX object CMakeFiles/communication_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/communication_msgs/msg/detail/dds_fastrtps/task__type_support.cpp.o\x1b[0m\n'}
+[12.424598] (communication_msgs) StdoutLine: {'line': b'[ 39%] \x1b[32mBuilding CXX object CMakeFiles/communication_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/communication_msgs/msg/detail/dds_fastrtps/task_allocation__type_support.cpp.o\x1b[0m\n'}
+[12.434300] (communication_msgs) StdoutLine: {'line': b'[ 40%] \x1b[32mBuilding CXX object CMakeFiles/communication_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/communication_msgs/msg/detail/dds_fastrtps/task_allocation_array__type_support.cpp.o\x1b[0m\n'}
+[12.467412] (communication_msgs) StdoutLine: {'line': b'[ 41%] \x1b[32mBuilding CXX object CMakeFiles/communication_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/communication_msgs/msg/task_allocation_array__type_support.cpp.o\x1b[0m\n'}
+[12.473219] (communication_msgs) StdoutLine: {'line': b'[ 43%] \x1b[32mBuilding C object CMakeFiles/communication_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/communication_msgs/msg/detail/robot__type_support.c.o\x1b[0m\n'}
+[12.496410] (-) TimerEvent: {}
+[12.497772] (communication_msgs) StdoutLine: {'line': b'[ 44%] \x1b[32mBuilding C object CMakeFiles/communication_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/communication_msgs/msg/detail/task__type_support.c.o\x1b[0m\n'}
+[12.532263] (communication_msgs) StdoutLine: {'line': b'[ 45%] \x1b[32mBuilding CXX object CMakeFiles/communication_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/communication_msgs/msg/robot_status__type_support.cpp.o\x1b[0m\n'}
+[12.599190] (-) TimerEvent: {}
+[12.607833] (communication_msgs) StdoutLine: {'line': b'[ 46%] \x1b[32mBuilding CXX object CMakeFiles/communication_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/communication_msgs/msg/detail/dds_fastrtps/robot_status__type_support.cpp.o\x1b[0m\n'}
+[12.619771] (communication_msgs) StdoutLine: {'line': b'[ 48%] \x1b[32mBuilding CXX object CMakeFiles/communication_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/communication_msgs/msg/detail/task_allocation__type_support.cpp.o\x1b[0m\n'}
+[12.625143] (communication_msgs) StdoutLine: {'line': b'[ 49%] \x1b[32mBuilding C object CMakeFiles/communication_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/communication_msgs/msg/detail/task_allocation__type_support.c.o\x1b[0m\n'}
+[12.636684] (communication_msgs) StdoutLine: {'line': b'[ 50%] \x1b[32m\x1b[1mLinking CXX shared library libcommunication_msgs__rosidl_typesupport_cpp.so\x1b[0m\n'}
+[12.641514] (communication_msgs) StdoutLine: {'line': b'[ 51%] \x1b[32mBuilding CXX object CMakeFiles/communication_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/communication_msgs/msg/detail/robot__type_support_c.cpp.o\x1b[0m\n'}
+[12.651231] (communication_msgs) StdoutLine: {'line': b'[ 53%] \x1b[32mBuilding CXX object CMakeFiles/communication_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/communication_msgs/msg/robot_odom__type_support.cpp.o\x1b[0m\n'}
+[12.699457] (-) TimerEvent: {}
+[12.766850] (communication_msgs) StdoutLine: {'line': b'[ 54%] \x1b[32mBuilding CXX object CMakeFiles/communication_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/communication_msgs/msg/robots__type_support.cpp.o\x1b[0m\n'}
+[12.798473] (communication_msgs) StdoutLine: {'line': b'[ 55%] \x1b[32mBuilding C object CMakeFiles/communication_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/communication_msgs/msg/detail/task_allocation_array__type_support.c.o\x1b[0m\n'}
+[12.799604] (-) TimerEvent: {}
+[12.906995] (-) TimerEvent: {}
+[12.921975] (communication_msgs) StdoutLine: {'line': b'[ 56%] \x1b[32m\x1b[1mLinking CXX shared library libcommunication_msgs__rosidl_typesupport_c.so\x1b[0m\n'}
+[13.007647] (-) TimerEvent: {}
+[13.018722] (communication_msgs) StdoutLine: {'line': b'[ 58%] \x1b[32mBuilding C object CMakeFiles/communication_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/communication_msgs/msg/detail/robot_status__type_support.c.o\x1b[0m\n'}
+[13.107675] (-) TimerEvent: {}
+[13.176881] (communication_msgs) StdoutLine: {'line': b'[ 59%] \x1b[32mBuilding C object CMakeFiles/communication_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/communication_msgs/msg/detail/robot_odom__type_support.c.o\x1b[0m\n'}
+[13.207847] (-) TimerEvent: {}
+[13.312240] (-) TimerEvent: {}
+[13.316579] (communication_msgs) StdoutLine: {'line': b'[ 60%] \x1b[32mBuilding C object CMakeFiles/communication_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/communication_msgs/msg/detail/robots__type_support.c.o\x1b[0m\n'}
+[13.407606] (communication_msgs) StdoutLine: {'line': b'[ 60%] Built target communication_msgs__rosidl_typesupport_cpp\n'}
+[13.414012] (-) TimerEvent: {}
+[13.447780] (communication_msgs) StdoutLine: {'line': b'[ 62%] \x1b[32mBuilding CXX object CMakeFiles/communication_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/communication_msgs/msg/detail/task_allocation_array__type_support.cpp.o\x1b[0m\n'}
+[13.503797] (communication_msgs) StdoutLine: {'line': b'[ 63%] \x1b[32m\x1b[1mLinking C shared library libcommunication_msgs__rosidl_typesupport_introspection_c.so\x1b[0m\n'}
+[13.516481] (-) TimerEvent: {}
+[13.517263] (communication_msgs) StdoutLine: {'line': b'[ 64%] \x1b[32mBuilding CXX object CMakeFiles/communication_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/communication_msgs/msg/detail/robot_status__type_support.cpp.o\x1b[0m\n'}
+[13.594508] (communication_msgs) StdoutLine: {'line': b'[ 64%] Built target communication_msgs__rosidl_typesupport_c\n'}
+[13.617447] (-) TimerEvent: {}
+[13.659100] (communication_msgs) StdoutLine: {'line': b'[ 65%] \x1b[32mBuilding CXX object CMakeFiles/communication_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/communication_msgs/msg/detail/dds_fastrtps/robot_odom__type_support.cpp.o\x1b[0m\n'}
+[13.717775] (-) TimerEvent: {}
+[13.819774] (-) TimerEvent: {}
+[13.923651] (-) TimerEvent: {}
+[14.024271] (-) TimerEvent: {}
+[14.127701] (-) TimerEvent: {}
+[14.229075] (-) TimerEvent: {}
+[14.313567] (communication_msgs) StdoutLine: {'line': b'[ 67%] \x1b[32mBuilding CXX object CMakeFiles/communication_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/communication_msgs/msg/detail/dds_fastrtps/robots__type_support.cpp.o\x1b[0m\n'}
+[14.331049] (-) TimerEvent: {}
+[14.444291] (-) TimerEvent: {}
+[14.492266] (communication_msgs) StdoutLine: {'line': b'[ 68%] \x1b[32mBuilding CXX object CMakeFiles/communication_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/communication_msgs/msg/detail/robot_odom__type_support.cpp.o\x1b[0m\n'}
+[14.543910] (-) TimerEvent: {}
+[14.595718] (communication_msgs) StdoutLine: {'line': b'[ 69%] \x1b[32mBuilding CXX object CMakeFiles/communication_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/communication_msgs/msg/detail/robots__type_support.cpp.o\x1b[0m\n'}
+[14.644724] (-) TimerEvent: {}
+[14.745516] (-) TimerEvent: {}
+[14.836363] (communication_msgs) StdoutLine: {'line': b'[ 70%] \x1b[32mBuilding CXX object CMakeFiles/communication_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/communication_msgs/msg/detail/task__type_support_c.cpp.o\x1b[0m\n'}
+[14.845707] (-) TimerEvent: {}
+[14.946283] (-) TimerEvent: {}
+[14.968616] (communication_msgs) StdoutLine: {'line': b'[ 70%] Built target communication_msgs__rosidl_typesupport_introspection_c\n'}
+[15.010065] (communication_msgs) StdoutLine: {'line': b'[ 72%] \x1b[32mBuilding CXX object CMakeFiles/communication_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/communication_msgs/msg/detail/task_allocation_array__type_support_c.cpp.o\x1b[0m\n'}
+[15.032111] (communication_msgs) StdoutLine: {'line': b'[ 73%] \x1b[32mBuilding CXX object CMakeFiles/communication_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/communication_msgs/msg/detail/task_allocation__type_support_c.cpp.o\x1b[0m\n'}
+[15.044520] (communication_msgs) StdoutLine: {'line': b'[ 74%] \x1b[32mBuilding CXX object CMakeFiles/communication_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/communication_msgs/msg/detail/robot_status__type_support_c.cpp.o\x1b[0m\n'}
+[15.046536] (-) TimerEvent: {}
+[15.147295] (-) TimerEvent: {}
+[15.196169] (communication_msgs) StdoutLine: {'line': b'[ 75%] \x1b[32mBuilding CXX object CMakeFiles/communication_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/communication_msgs/msg/detail/robot_odom__type_support_c.cpp.o\x1b[0m\n'}
+[15.248189] (-) TimerEvent: {}
+[15.350173] (-) TimerEvent: {}
+[15.406792] (communication_msgs) StdoutLine: {'line': b'[ 77%] \x1b[32mBuilding CXX object CMakeFiles/communication_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/communication_msgs/msg/detail/robots__type_support_c.cpp.o\x1b[0m\n'}
+[15.451599] (-) TimerEvent: {}
+[15.555946] (-) TimerEvent: {}
+[15.657967] (-) TimerEvent: {}
+[15.763616] (-) TimerEvent: {}
+[15.864194] (-) TimerEvent: {}
+[15.967706] (-) TimerEvent: {}
+[16.068374] (-) TimerEvent: {}
+[16.172410] (-) TimerEvent: {}
+[16.273241] (-) TimerEvent: {}
+[16.376277] (-) TimerEvent: {}
+[16.473927] (communication_msgs) StdoutLine: {'line': b'[ 78%] \x1b[32m\x1b[1mLinking CXX shared library libcommunication_msgs__rosidl_typesupport_fastrtps_cpp.so\x1b[0m\n'}
+[16.476517] (-) TimerEvent: {}
+[16.580060] (-) TimerEvent: {}
+[16.680765] (-) TimerEvent: {}
+[16.781593] (-) TimerEvent: {}
+[16.786067] (communication_msgs) StdoutLine: {'line': b'[ 79%] \x1b[32m\x1b[1mLinking CXX shared library libcommunication_msgs__rosidl_typesupport_fastrtps_c.so\x1b[0m\n'}
+[16.819092] (communication_msgs) StdoutLine: {'line': b'[ 81%] \x1b[32m\x1b[1mLinking CXX shared library libcommunication_msgs__rosidl_typesupport_introspection_cpp.so\x1b[0m\n'}
+[16.881821] (-) TimerEvent: {}
+[16.977059] (communication_msgs) StdoutLine: {'line': b'[ 81%] Built target communication_msgs__rosidl_typesupport_fastrtps_cpp\n'}
+[16.982288] (-) TimerEvent: {}
+[17.082992] (-) TimerEvent: {}
+[17.183912] (-) TimerEvent: {}
+[17.215226] (communication_msgs) StdoutLine: {'line': b'[ 81%] Built target communication_msgs__rosidl_typesupport_fastrtps_c\n'}
+[17.229958] (communication_msgs) StdoutLine: {'line': b'[ 81%] Built target communication_msgs__rosidl_typesupport_introspection_cpp\n'}
+[17.267720] (communication_msgs) StdoutLine: {'line': b'[ 81%] Built target communication_msgs\n'}
+[17.284058] (-) TimerEvent: {}
+[17.309165] (communication_msgs) StdoutLine: {'line': b'[ 82%] \x1b[34m\x1b[1mGenerating Python code for ROS interfaces\x1b[0m\n'}
+[17.384186] (-) TimerEvent: {}
+[17.484702] (-) TimerEvent: {}
+[17.585332] (-) TimerEvent: {}
+[17.685971] (-) TimerEvent: {}
+[17.786386] (-) TimerEvent: {}
+[17.886985] (-) TimerEvent: {}
+[17.987813] (-) TimerEvent: {}
+[18.088401] (-) TimerEvent: {}
+[18.188974] (-) TimerEvent: {}
+[18.289626] (-) TimerEvent: {}
+[18.390104] (-) TimerEvent: {}
+[18.490615] (-) TimerEvent: {}
+[18.591414] (-) TimerEvent: {}
+[18.595533] (communication_msgs) StdoutLine: {'line': b'[ 82%] Built target communication_msgs__py\n'}
+[18.651840] (communication_msgs) StdoutLine: {'line': b'[ 83%] \x1b[32mBuilding C object CMakeFiles/communication_msgs__rosidl_generator_py.dir/rosidl_generator_py/communication_msgs/msg/_task_allocation_s.c.o\x1b[0m\n'}
+[18.654936] (communication_msgs) StdoutLine: {'line': b'[ 84%] \x1b[32mBuilding C object CMakeFiles/communication_msgs__rosidl_generator_py.dir/rosidl_generator_py/communication_msgs/msg/_task_s.c.o\x1b[0m\n'}
+[18.655340] (communication_msgs) StdoutLine: {'line': b'[ 86%] \x1b[32mBuilding C object CMakeFiles/communication_msgs__rosidl_generator_py.dir/rosidl_generator_py/communication_msgs/msg/_task_allocation_array_s.c.o\x1b[0m\n'}
+[18.655509] (communication_msgs) StdoutLine: {'line': b'[ 87%] \x1b[32mBuilding C object CMakeFiles/communication_msgs__rosidl_generator_py.dir/rosidl_generator_py/communication_msgs/msg/_robot_status_s.c.o\x1b[0m\n'}
+[18.655626] (communication_msgs) StdoutLine: {'line': b'[ 88%] \x1b[32mBuilding C object CMakeFiles/communication_msgs__rosidl_generator_py.dir/rosidl_generator_py/communication_msgs/msg/_robot_odom_s.c.o\x1b[0m\n'}
+[18.661618] (communication_msgs) StdoutLine: {'line': b'[ 89%] \x1b[32mBuilding C object CMakeFiles/communication_msgs__rosidl_generator_py.dir/rosidl_generator_py/communication_msgs/msg/_robot_s.c.o\x1b[0m\n'}
+[18.662451] (communication_msgs) StdoutLine: {'line': b'[ 91%] \x1b[32mBuilding C object CMakeFiles/communication_msgs__rosidl_generator_py.dir/rosidl_generator_py/communication_msgs/msg/_robots_s.c.o\x1b[0m\n'}
+[18.691843] (-) TimerEvent: {}
+[18.792945] (-) TimerEvent: {}
+[18.894203] (-) TimerEvent: {}
+[18.994916] (-) TimerEvent: {}
+[19.095585] (-) TimerEvent: {}
+[19.198514] (-) TimerEvent: {}
+[19.275628] (communication_msgs) StdoutLine: {'line': b'[ 92%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/communication_msgs/libcommunication_msgs__rosidl_generator_py.so\x1b[0m\n'}
+[19.298809] (-) TimerEvent: {}
+[19.399657] (-) TimerEvent: {}
+[19.500409] (-) TimerEvent: {}
+[19.601151] (-) TimerEvent: {}
+[19.675624] (communication_msgs) StdoutLine: {'line': b'[ 92%] Built target communication_msgs__rosidl_generator_py\n'}
+[19.701419] (-) TimerEvent: {}
+[19.742504] (communication_msgs) StdoutLine: {'line': b'[ 93%] \x1b[32mBuilding C object CMakeFiles/communication_msgs__rosidl_typesupport_c__pyext.dir/rosidl_generator_py/communication_msgs/_communication_msgs_s.ep.rosidl_typesupport_c.c.o\x1b[0m\n'}
+[19.746689] (communication_msgs) StdoutLine: {'line': b'[ 96%] \x1b[32mBuilding C object CMakeFiles/communication_msgs__rosidl_typesupport_fastrtps_c__pyext.dir/rosidl_generator_py/communication_msgs/_communication_msgs_s.ep.rosidl_typesupport_fastrtps_c.c.o\x1b[0m\n'}
+[19.747131] (communication_msgs) StdoutLine: {'line': b'[ 96%] \x1b[32mBuilding C object CMakeFiles/communication_msgs__rosidl_typesupport_introspection_c__pyext.dir/rosidl_generator_py/communication_msgs/_communication_msgs_s.ep.rosidl_typesupport_introspection_c.c.o\x1b[0m\n'}
+[19.801597] (-) TimerEvent: {}
+[19.902852] (-) TimerEvent: {}
+[20.005123] (-) TimerEvent: {}
+[20.106758] (-) TimerEvent: {}
+[20.141779] (communication_msgs) StdoutLine: {'line': b'[ 97%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/communication_msgs/communication_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so\x1b[0m\n'}
+[20.142557] (communication_msgs) StdoutLine: {'line': b'[ 98%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/communication_msgs/communication_msgs_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so\x1b[0m\n'}
+[20.163820] (communication_msgs) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/communication_msgs/communication_msgs_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so\x1b[0m\n'}
+[20.206804] (-) TimerEvent: {}
+[20.310040] (-) TimerEvent: {}
+[20.411306] (-) TimerEvent: {}
+[20.471388] (communication_msgs) StdoutLine: {'line': b'[100%] Built target communication_msgs__rosidl_typesupport_c__pyext\n'}
+[20.478874] (communication_msgs) StdoutLine: {'line': b'[100%] Built target communication_msgs__rosidl_typesupport_fastrtps_c__pyext\n'}
+[20.511698] (-) TimerEvent: {}
+[20.594765] (communication_msgs) StdoutLine: {'line': b'[100%] Built target communication_msgs__rosidl_typesupport_introspection_c__pyext\n'}
+[20.612100] (-) TimerEvent: {}
+[20.634133] (communication_msgs) CommandEnded: {'returncode': 0}
+[20.638103] (communication_msgs) JobProgress: {'identifier': 'communication_msgs', 'progress': 'install'}
+[20.662806] (communication_msgs) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/thaoton1910/swarm_robot/algorithm/src/build/communication_msgs'], 'cwd': '/home/thaoton1910/swarm_robot/algorithm/src/build/communication_msgs', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'thaoton1910'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/thaoton1910'), ('OLDPWD', '/home/thaoton1910/swarm_robot'), ('ROS_PYTHON_VERSION', '3'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('WSL_DISTRO_NAME', 'Ubuntu-22.04-ROS'), ('WAYLAND_DISPLAY', 'wayland-0'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'thaoton1910'), ('NAME', 'ubuntu-2204-ros'), ('WSL_INTEROP', '/run/WSL/927_interop'), ('PULSE_SERVER', 'unix:/mnt/wslg/PulseServer'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('TERM', 'xterm-256color'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/Program Files/WindowsApps/MicrosoftCorporationII.WindowsSubsystemForLinux_2.5.9.0_x64__8wekyb3d8bbwe:/mnt/c/Program Files (x86)/VMware/VMware Workstation/bin/:/mnt/c/WINDOWS/system32:/mnt/c/WINDOWS:/mnt/c/WINDOWS/System32/Wbem:/mnt/c/WINDOWS/System32/WindowsPowerShell/v1.0/:/mnt/c/WINDOWS/System32/OpenSSH/:/mnt/c/Program Files/dotnet/:/mnt/d/MathLab/bin:/mnt/d/Calulator:/mnt/c/Program Files/Git/cmd:/mnt/c/Program Files/PuTTY/:/mnt/c/Users/Dell/AppData/Local/Programs/Python/Python310/Scripts/:/mnt/c/Users/Dell/AppData/Local/Programs/Python/Python310/:/mnt/c/Users/Dell/AppData/Local/Programs/Python/Launcher/:/mnt/c/Users/Dell/AppData/Local/Microsoft/WindowsApps:/mnt/c/Users/Dell/AppData/Local/Programs/Microsoft VS Code/bin:/mnt/c/Users/Dell/.dotnet/tools:/snap/bin'), ('XDG_RUNTIME_DIR', '/run/user/1000/'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('PWD', '/home/thaoton1910/swarm_robot/algorithm/src/build/communication_msgs'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('WSL2_GUI_APPS_ENABLED', '1'), ('HOSTTYPE', 'x86_64'), ('WSLENV', ''), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[20.682433] (communication_msgs) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[20.684051] (communication_msgs) StdoutLine: {'line': b'-- Execute custom install script\n'}
+[20.687199] (communication_msgs) StdoutLine: {'line': b'-- Symlinking: /home/thaoton1910/swarm_robot/algorithm/src/install/communication_msgs/share/ament_index/resource_index/rosidl_interfaces/communication_msgs\n'}
+[20.712423] (-) TimerEvent: {}
+[20.718510] (communication_msgs) StdoutLine: {'line': b'-- Symlinking: /home/thaoton1910/swarm_robot/algorithm/src/install/communication_msgs/include/communication_msgs/communication_msgs/msg/detail/robot__functions.h\n'}
+[20.743784] (communication_msgs) StdoutLine: {'line': b'-- Symlinking: /home/thaoton1910/swarm_robot/algorithm/src/install/communication_msgs/include/communication_msgs/communication_msgs/msg/detail/robot__struct.h\n'}
+[20.769232] (communication_msgs) StdoutLine: {'line': b'-- Symlinking: /home/thaoton1910/swarm_robot/algorithm/src/install/communication_msgs/include/communication_msgs/communication_msgs/msg/detail/robot__type_support.h\n'}
+[20.789920] (communication_msgs) StdoutLine: {'line': b'-- Symlinking: /home/thaoton1910/swarm_robot/algorithm/src/install/communication_msgs/include/communication_msgs/communication_msgs/msg/detail/robot_odom__functions.h\n'}
+[20.812664] (-) TimerEvent: {}
+[20.819319] (communication_msgs) StdoutLine: {'line': b'-- Symlinking: /home/thaoton1910/swarm_robot/algorithm/src/install/communication_msgs/include/communication_msgs/communication_msgs/msg/detail/robot_odom__struct.h\n'}
+[20.845287] (communication_msgs) StdoutLine: {'line': b'-- Symlinking: /home/thaoton1910/swarm_robot/algorithm/src/install/communication_msgs/include/communication_msgs/communication_msgs/msg/detail/robot_odom__type_support.h\n'}
+[20.865948] (communication_msgs) StdoutLine: {'line': b'-- Symlinking: /home/thaoton1910/swarm_robot/algorithm/src/install/communication_msgs/include/communication_msgs/communication_msgs/msg/detail/robot_status__functions.h\n'}
+[20.885984] (communication_msgs) StdoutLine: {'line': b'-- Symlinking: /home/thaoton1910/swarm_robot/algorithm/src/install/communication_msgs/include/communication_msgs/communication_msgs/msg/detail/robot_status__struct.h\n'}
+[20.912561] (communication_msgs) StdoutLine: {'line': b'-- Symlinking: /home/thaoton1910/swarm_robot/algorithm/src/install/communication_msgs/include/communication_msgs/communication_msgs/msg/detail/robot_status__type_support.h\n'}
+[20.912948] (-) TimerEvent: {}
+[20.937539] (communication_msgs) StdoutLine: {'line': b'-- Symlinking: /home/thaoton1910/swarm_robot/algorithm/src/install/communication_msgs/include/communication_msgs/communication_msgs/msg/detail/robots__functions.h\n'}
+[20.966879] (communication_msgs) StdoutLine: {'line': b'-- Symlinking: /home/thaoton1910/swarm_robot/algorithm/src/install/communication_msgs/include/communication_msgs/communication_msgs/msg/detail/robots__struct.h\n'}
+[20.990827] (communication_msgs) StdoutLine: {'line': b'-- Symlinking: /home/thaoton1910/swarm_robot/algorithm/src/install/communication_msgs/include/communication_msgs/communication_msgs/msg/detail/robots__type_support.h\n'}
+[21.013151] (-) TimerEvent: {}
+[21.021902] (communication_msgs) StdoutLine: {'line': b'-- Symlinking: /home/thaoton1910/swarm_robot/algorithm/src/install/communication_msgs/include/communication_msgs/communication_msgs/msg/detail/task__functions.h\n'}
+[21.054945] (communication_msgs) StdoutLine: {'line': b'-- Symlinking: /home/thaoton1910/swarm_robot/algorithm/src/install/communication_msgs/include/communication_msgs/communication_msgs/msg/detail/task__struct.h\n'}
+[21.088299] (communication_msgs) StdoutLine: {'line': b'-- Symlinking: /home/thaoton1910/swarm_robot/algorithm/src/install/communication_msgs/include/communication_msgs/communication_msgs/msg/detail/task__type_support.h\n'}
+[21.113918] (-) TimerEvent: {}
+[21.136507] (communication_msgs) StdoutLine: {'line': b'-- Symlinking: /home/thaoton1910/swarm_robot/algorithm/src/install/communication_msgs/include/communication_msgs/communication_msgs/msg/detail/task_allocation__functions.h\n'}
+[21.166589] (communication_msgs) StdoutLine: {'line': b'-- Symlinking: /home/thaoton1910/swarm_robot/algorithm/src/install/communication_msgs/include/communication_msgs/communication_msgs/msg/detail/task_allocation__struct.h\n'}
+[21.193056] (communication_msgs) StdoutLine: {'line': b'-- Symlinking: /home/thaoton1910/swarm_robot/algorithm/src/install/communication_msgs/include/communication_msgs/communication_msgs/msg/detail/task_allocation__type_support.h\n'}
+[21.214297] (-) TimerEvent: {}
+[21.225614] (communication_msgs) StdoutLine: {'line': b'-- Symlinking: /home/thaoton1910/swarm_robot/algorithm/src/install/communication_msgs/include/communication_msgs/communication_msgs/msg/detail/task_allocation_array__functions.h\n'}
+[21.260885] (communication_msgs) StdoutLine: {'line': b'-- Symlinking: /home/thaoton1910/swarm_robot/algorithm/src/install/communication_msgs/include/communication_msgs/communication_msgs/msg/detail/task_allocation_array__struct.h\n'}
+[21.295551] (communication_msgs) StdoutLine: {'line': b'-- Symlinking: /home/thaoton1910/swarm_robot/algorithm/src/install/communication_msgs/include/communication_msgs/communication_msgs/msg/detail/task_allocation_array__type_support.h\n'}
+[21.314639] (-) TimerEvent: {}
+[21.324507] (communication_msgs) StdoutLine: {'line': b'-- Symlinking: /home/thaoton1910/swarm_robot/algorithm/src/install/communication_msgs/include/communication_msgs/communication_msgs/msg/robot.h\n'}
+[21.353499] (communication_msgs) StdoutLine: {'line': b'-- Symlinking: /home/thaoton1910/swarm_robot/algorithm/src/install/communication_msgs/include/communication_msgs/communication_msgs/msg/robot_odom.h\n'}
+[21.378324] (communication_msgs) StdoutLine: {'line': b'-- Symlinking: /home/thaoton1910/swarm_robot/algorithm/src/install/communication_msgs/include/communication_msgs/communication_msgs/msg/robot_status.h\n'}
+[21.410309] (communication_msgs) StdoutLine: {'line': b'-- Symlinking: /home/thaoton1910/swarm_robot/algorithm/src/install/communication_msgs/include/communication_msgs/communication_msgs/msg/robots.h\n'}
+[21.414935] (-) TimerEvent: {}
+[21.437248] (communication_msgs) StdoutLine: {'line': b'-- Symlinking: /home/thaoton1910/swarm_robot/algorithm/src/install/communication_msgs/include/communication_msgs/communication_msgs/msg/rosidl_generator_c__visibility_control.h\n'}
+[21.464975] (communication_msgs) StdoutLine: {'line': b'-- Symlinking: /home/thaoton1910/swarm_robot/algorithm/src/install/communication_msgs/include/communication_msgs/communication_msgs/msg/task.h\n'}
+[21.489126] (communication_msgs) StdoutLine: {'line': b'-- Symlinking: /home/thaoton1910/swarm_robot/algorithm/src/install/communication_msgs/include/communication_msgs/communication_msgs/msg/task_allocation.h\n'}
+[21.510739] (communication_msgs) StdoutLine: {'line': b'-- Symlinking: /home/thaoton1910/swarm_robot/algorithm/src/install/communication_msgs/include/communication_msgs/communication_msgs/msg/task_allocation_array.h\n'}
+[21.515220] (-) TimerEvent: {}
+[21.540683] (communication_msgs) StdoutLine: {'line': b'-- Symlinking: /home/thaoton1910/swarm_robot/algorithm/src/install/communication_msgs/share/communication_msgs/environment/library_path.sh\n'}
+[21.562742] (communication_msgs) StdoutLine: {'line': b'-- Symlinking: /home/thaoton1910/swarm_robot/algorithm/src/install/communication_msgs/share/communication_msgs/environment/library_path.dsv\n'}
+[21.586914] (communication_msgs) StdoutLine: {'line': b'-- Symlinking: /home/thaoton1910/swarm_robot/algorithm/src/install/communication_msgs/include/communication_msgs/communication_msgs/msg/detail/robot__rosidl_typesupport_fastrtps_c.h\n'}
+[21.611878] (communication_msgs) StdoutLine: {'line': b'-- Symlinking: /home/thaoton1910/swarm_robot/algorithm/src/install/communication_msgs/include/communication_msgs/communication_msgs/msg/detail/robot_odom__rosidl_typesupport_fastrtps_c.h\n'}
+[21.615444] (-) TimerEvent: {}
+[21.635678] (communication_msgs) StdoutLine: {'line': b'-- Symlinking: /home/thaoton1910/swarm_robot/algorithm/src/install/communication_msgs/include/communication_msgs/communication_msgs/msg/detail/robot_status__rosidl_typesupport_fastrtps_c.h\n'}
+[21.656725] (communication_msgs) StdoutLine: {'line': b'-- Symlinking: /home/thaoton1910/swarm_robot/algorithm/src/install/communication_msgs/include/communication_msgs/communication_msgs/msg/detail/robots__rosidl_typesupport_fastrtps_c.h\n'}
+[21.684706] (communication_msgs) StdoutLine: {'line': b'-- Symlinking: /home/thaoton1910/swarm_robot/algorithm/src/install/communication_msgs/include/communication_msgs/communication_msgs/msg/detail/task__rosidl_typesupport_fastrtps_c.h\n'}
+[21.706581] (communication_msgs) StdoutLine: {'line': b'-- Symlinking: /home/thaoton1910/swarm_robot/algorithm/src/install/communication_msgs/include/communication_msgs/communication_msgs/msg/detail/task_allocation__rosidl_typesupport_fastrtps_c.h\n'}
+[21.715865] (-) TimerEvent: {}
+[21.729206] (communication_msgs) StdoutLine: {'line': b'-- Symlinking: /home/thaoton1910/swarm_robot/algorithm/src/install/communication_msgs/include/communication_msgs/communication_msgs/msg/detail/task_allocation_array__rosidl_typesupport_fastrtps_c.h\n'}
+[21.750889] (communication_msgs) StdoutLine: {'line': b'-- Symlinking: /home/thaoton1910/swarm_robot/algorithm/src/install/communication_msgs/include/communication_msgs/communication_msgs/msg/rosidl_typesupport_fastrtps_c__visibility_control.h\n'}
+[21.771598] (communication_msgs) StdoutLine: {'line': b'-- Symlinking: /home/thaoton1910/swarm_robot/algorithm/src/install/communication_msgs/include/communication_msgs/communication_msgs/msg/detail/robot__rosidl_typesupport_introspection_c.h\n'}
+[21.794002] (communication_msgs) StdoutLine: {'line': b'-- Symlinking: /home/thaoton1910/swarm_robot/algorithm/src/install/communication_msgs/include/communication_msgs/communication_msgs/msg/detail/robot_odom__rosidl_typesupport_introspection_c.h\n'}
+[21.816377] (-) TimerEvent: {}
+[21.817737] (communication_msgs) StdoutLine: {'line': b'-- Symlinking: /home/thaoton1910/swarm_robot/algorithm/src/install/communication_msgs/include/communication_msgs/communication_msgs/msg/detail/robot_status__rosidl_typesupport_introspection_c.h\n'}
+[21.842094] (communication_msgs) StdoutLine: {'line': b'-- Symlinking: /home/thaoton1910/swarm_robot/algorithm/src/install/communication_msgs/include/communication_msgs/communication_msgs/msg/detail/robots__rosidl_typesupport_introspection_c.h\n'}
+[21.861816] (communication_msgs) StdoutLine: {'line': b'-- Symlinking: /home/thaoton1910/swarm_robot/algorithm/src/install/communication_msgs/include/communication_msgs/communication_msgs/msg/detail/task__rosidl_typesupport_introspection_c.h\n'}
+[21.879996] (communication_msgs) StdoutLine: {'line': b'-- Symlinking: /home/thaoton1910/swarm_robot/algorithm/src/install/communication_msgs/include/communication_msgs/communication_msgs/msg/detail/task_allocation__rosidl_typesupport_introspection_c.h\n'}
+[21.902822] (communication_msgs) StdoutLine: {'line': b'-- Symlinking: /home/thaoton1910/swarm_robot/algorithm/src/install/communication_msgs/include/communication_msgs/communication_msgs/msg/detail/task_allocation_array__rosidl_typesupport_introspection_c.h\n'}
+[21.916630] (-) TimerEvent: {}
+[21.922424] (communication_msgs) StdoutLine: {'line': b'-- Symlinking: /home/thaoton1910/swarm_robot/algorithm/src/install/communication_msgs/include/communication_msgs/communication_msgs/msg/rosidl_typesupport_introspection_c__visibility_control.h\n'}
+[21.944715] (communication_msgs) StdoutLine: {'line': b'-- Symlinking: /home/thaoton1910/swarm_robot/algorithm/src/install/communication_msgs/include/communication_msgs/communication_msgs/msg/detail/robot__builder.hpp\n'}
+[21.965048] (communication_msgs) StdoutLine: {'line': b'-- Symlinking: /home/thaoton1910/swarm_robot/algorithm/src/install/communication_msgs/include/communication_msgs/communication_msgs/msg/detail/robot__struct.hpp\n'}
+[21.981823] (communication_msgs) StdoutLine: {'line': b'-- Symlinking: /home/thaoton1910/swarm_robot/algorithm/src/install/communication_msgs/include/communication_msgs/communication_msgs/msg/detail/robot__traits.hpp\n'}
+[22.007401] (communication_msgs) StdoutLine: {'line': b'-- Symlinking: /home/thaoton1910/swarm_robot/algorithm/src/install/communication_msgs/include/communication_msgs/communication_msgs/msg/detail/robot__type_support.hpp\n'}
+[22.016942] (-) TimerEvent: {}
+[22.028450] (communication_msgs) StdoutLine: {'line': b'-- Symlinking: /home/thaoton1910/swarm_robot/algorithm/src/install/communication_msgs/include/communication_msgs/communication_msgs/msg/detail/robot_odom__builder.hpp\n'}
+[22.047207] (communication_msgs) StdoutLine: {'line': b'-- Symlinking: /home/thaoton1910/swarm_robot/algorithm/src/install/communication_msgs/include/communication_msgs/communication_msgs/msg/detail/robot_odom__struct.hpp\n'}
+[22.065786] (communication_msgs) StdoutLine: {'line': b'-- Symlinking: /home/thaoton1910/swarm_robot/algorithm/src/install/communication_msgs/include/communication_msgs/communication_msgs/msg/detail/robot_odom__traits.hpp\n'}
+[22.082895] (communication_msgs) StdoutLine: {'line': b'-- Symlinking: /home/thaoton1910/swarm_robot/algorithm/src/install/communication_msgs/include/communication_msgs/communication_msgs/msg/detail/robot_odom__type_support.hpp\n'}
+[22.104898] (communication_msgs) StdoutLine: {'line': b'-- Symlinking: /home/thaoton1910/swarm_robot/algorithm/src/install/communication_msgs/include/communication_msgs/communication_msgs/msg/detail/robot_status__builder.hpp\n'}
+[22.117207] (-) TimerEvent: {}
+[22.126568] (communication_msgs) StdoutLine: {'line': b'-- Symlinking: /home/thaoton1910/swarm_robot/algorithm/src/install/communication_msgs/include/communication_msgs/communication_msgs/msg/detail/robot_status__struct.hpp\n'}
+[22.147594] (communication_msgs) StdoutLine: {'line': b'-- Symlinking: /home/thaoton1910/swarm_robot/algorithm/src/install/communication_msgs/include/communication_msgs/communication_msgs/msg/detail/robot_status__traits.hpp\n'}
+[22.167266] (communication_msgs) StdoutLine: {'line': b'-- Symlinking: /home/thaoton1910/swarm_robot/algorithm/src/install/communication_msgs/include/communication_msgs/communication_msgs/msg/detail/robot_status__type_support.hpp\n'}
+[22.186187] (communication_msgs) StdoutLine: {'line': b'-- Symlinking: /home/thaoton1910/swarm_robot/algorithm/src/install/communication_msgs/include/communication_msgs/communication_msgs/msg/detail/robots__builder.hpp\n'}
+[22.210900] (communication_msgs) StdoutLine: {'line': b'-- Symlinking: /home/thaoton1910/swarm_robot/algorithm/src/install/communication_msgs/include/communication_msgs/communication_msgs/msg/detail/robots__struct.hpp\n'}
+[22.217415] (-) TimerEvent: {}
+[22.232287] (communication_msgs) StdoutLine: {'line': b'-- Symlinking: /home/thaoton1910/swarm_robot/algorithm/src/install/communication_msgs/include/communication_msgs/communication_msgs/msg/detail/robots__traits.hpp\n'}
+[22.252044] (communication_msgs) StdoutLine: {'line': b'-- Symlinking: /home/thaoton1910/swarm_robot/algorithm/src/install/communication_msgs/include/communication_msgs/communication_msgs/msg/detail/robots__type_support.hpp\n'}
+[22.274208] (communication_msgs) StdoutLine: {'line': b'-- Symlinking: /home/thaoton1910/swarm_robot/algorithm/src/install/communication_msgs/include/communication_msgs/communication_msgs/msg/detail/task__builder.hpp\n'}
+[22.291430] (communication_msgs) StdoutLine: {'line': b'-- Symlinking: /home/thaoton1910/swarm_robot/algorithm/src/install/communication_msgs/include/communication_msgs/communication_msgs/msg/detail/task__struct.hpp\n'}
+[22.310596] (communication_msgs) StdoutLine: {'line': b'-- Symlinking: /home/thaoton1910/swarm_robot/algorithm/src/install/communication_msgs/include/communication_msgs/communication_msgs/msg/detail/task__traits.hpp\n'}
+[22.317628] (-) TimerEvent: {}
+[22.333911] (communication_msgs) StdoutLine: {'line': b'-- Symlinking: /home/thaoton1910/swarm_robot/algorithm/src/install/communication_msgs/include/communication_msgs/communication_msgs/msg/detail/task__type_support.hpp\n'}
+[22.353524] (communication_msgs) StdoutLine: {'line': b'-- Symlinking: /home/thaoton1910/swarm_robot/algorithm/src/install/communication_msgs/include/communication_msgs/communication_msgs/msg/detail/task_allocation__builder.hpp\n'}
+[22.375012] (communication_msgs) StdoutLine: {'line': b'-- Symlinking: /home/thaoton1910/swarm_robot/algorithm/src/install/communication_msgs/include/communication_msgs/communication_msgs/msg/detail/task_allocation__struct.hpp\n'}
+[22.399012] (communication_msgs) StdoutLine: {'line': b'-- Symlinking: /home/thaoton1910/swarm_robot/algorithm/src/install/communication_msgs/include/communication_msgs/communication_msgs/msg/detail/task_allocation__traits.hpp\n'}
+[22.417885] (-) TimerEvent: {}
+[22.422879] (communication_msgs) StdoutLine: {'line': b'-- Symlinking: /home/thaoton1910/swarm_robot/algorithm/src/install/communication_msgs/include/communication_msgs/communication_msgs/msg/detail/task_allocation__type_support.hpp\n'}
+[22.441321] (communication_msgs) StdoutLine: {'line': b'-- Symlinking: /home/thaoton1910/swarm_robot/algorithm/src/install/communication_msgs/include/communication_msgs/communication_msgs/msg/detail/task_allocation_array__builder.hpp\n'}
+[22.460159] (communication_msgs) StdoutLine: {'line': b'-- Symlinking: /home/thaoton1910/swarm_robot/algorithm/src/install/communication_msgs/include/communication_msgs/communication_msgs/msg/detail/task_allocation_array__struct.hpp\n'}
+[22.477528] (communication_msgs) StdoutLine: {'line': b'-- Symlinking: /home/thaoton1910/swarm_robot/algorithm/src/install/communication_msgs/include/communication_msgs/communication_msgs/msg/detail/task_allocation_array__traits.hpp\n'}
+[22.499397] (communication_msgs) StdoutLine: {'line': b'-- Symlinking: /home/thaoton1910/swarm_robot/algorithm/src/install/communication_msgs/include/communication_msgs/communication_msgs/msg/detail/task_allocation_array__type_support.hpp\n'}
+[22.518228] (-) TimerEvent: {}
+[22.525899] (communication_msgs) StdoutLine: {'line': b'-- Symlinking: /home/thaoton1910/swarm_robot/algorithm/src/install/communication_msgs/include/communication_msgs/communication_msgs/msg/robot.hpp\n'}
+[22.548478] (communication_msgs) StdoutLine: {'line': b'-- Symlinking: /home/thaoton1910/swarm_robot/algorithm/src/install/communication_msgs/include/communication_msgs/communication_msgs/msg/robot_odom.hpp\n'}
+[22.571325] (communication_msgs) StdoutLine: {'line': b'-- Symlinking: /home/thaoton1910/swarm_robot/algorithm/src/install/communication_msgs/include/communication_msgs/communication_msgs/msg/robot_status.hpp\n'}
+[22.593317] (communication_msgs) StdoutLine: {'line': b'-- Symlinking: /home/thaoton1910/swarm_robot/algorithm/src/install/communication_msgs/include/communication_msgs/communication_msgs/msg/robots.hpp\n'}
+[22.614262] (communication_msgs) StdoutLine: {'line': b'-- Symlinking: /home/thaoton1910/swarm_robot/algorithm/src/install/communication_msgs/include/communication_msgs/communication_msgs/msg/rosidl_generator_cpp__visibility_control.hpp\n'}
+[22.618448] (-) TimerEvent: {}
+[22.638518] (communication_msgs) StdoutLine: {'line': b'-- Symlinking: /home/thaoton1910/swarm_robot/algorithm/src/install/communication_msgs/include/communication_msgs/communication_msgs/msg/task.hpp\n'}
+[22.658981] (communication_msgs) StdoutLine: {'line': b'-- Symlinking: /home/thaoton1910/swarm_robot/algorithm/src/install/communication_msgs/include/communication_msgs/communication_msgs/msg/task_allocation.hpp\n'}
+[22.681741] (communication_msgs) StdoutLine: {'line': b'-- Symlinking: /home/thaoton1910/swarm_robot/algorithm/src/install/communication_msgs/include/communication_msgs/communication_msgs/msg/task_allocation_array.hpp\n'}
+[22.708938] (communication_msgs) StdoutLine: {'line': b'-- Symlinking: /home/thaoton1910/swarm_robot/algorithm/src/install/communication_msgs/include/communication_msgs/communication_msgs/msg/detail/robot__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[22.718673] (-) TimerEvent: {}
+[22.731552] (communication_msgs) StdoutLine: {'line': b'-- Symlinking: /home/thaoton1910/swarm_robot/algorithm/src/install/communication_msgs/include/communication_msgs/communication_msgs/msg/detail/robot_odom__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[22.756886] (communication_msgs) StdoutLine: {'line': b'-- Symlinking: /home/thaoton1910/swarm_robot/algorithm/src/install/communication_msgs/include/communication_msgs/communication_msgs/msg/detail/robot_status__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[22.776163] (communication_msgs) StdoutLine: {'line': b'-- Symlinking: /home/thaoton1910/swarm_robot/algorithm/src/install/communication_msgs/include/communication_msgs/communication_msgs/msg/detail/robots__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[22.796959] (communication_msgs) StdoutLine: {'line': b'-- Symlinking: /home/thaoton1910/swarm_robot/algorithm/src/install/communication_msgs/include/communication_msgs/communication_msgs/msg/detail/task__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[22.819044] (-) TimerEvent: {}
+[22.821453] (communication_msgs) StdoutLine: {'line': b'-- Symlinking: /home/thaoton1910/swarm_robot/algorithm/src/install/communication_msgs/include/communication_msgs/communication_msgs/msg/detail/task_allocation__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[22.845642] (communication_msgs) StdoutLine: {'line': b'-- Symlinking: /home/thaoton1910/swarm_robot/algorithm/src/install/communication_msgs/include/communication_msgs/communication_msgs/msg/detail/task_allocation_array__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[22.867844] (communication_msgs) StdoutLine: {'line': b'-- Symlinking: /home/thaoton1910/swarm_robot/algorithm/src/install/communication_msgs/include/communication_msgs/communication_msgs/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h\n'}
+[22.887292] (communication_msgs) StdoutLine: {'line': b'-- Symlinking: /home/thaoton1910/swarm_robot/algorithm/src/install/communication_msgs/include/communication_msgs/communication_msgs/msg/detail/robot__rosidl_typesupport_introspection_cpp.hpp\n'}
+[22.904159] (communication_msgs) StdoutLine: {'line': b'-- Symlinking: /home/thaoton1910/swarm_robot/algorithm/src/install/communication_msgs/include/communication_msgs/communication_msgs/msg/detail/robot_odom__rosidl_typesupport_introspection_cpp.hpp\n'}
+[22.919215] (-) TimerEvent: {}
+[22.923782] (communication_msgs) StdoutLine: {'line': b'-- Symlinking: /home/thaoton1910/swarm_robot/algorithm/src/install/communication_msgs/include/communication_msgs/communication_msgs/msg/detail/robot_status__rosidl_typesupport_introspection_cpp.hpp\n'}
+[22.943893] (communication_msgs) StdoutLine: {'line': b'-- Symlinking: /home/thaoton1910/swarm_robot/algorithm/src/install/communication_msgs/include/communication_msgs/communication_msgs/msg/detail/robots__rosidl_typesupport_introspection_cpp.hpp\n'}
+[22.966806] (communication_msgs) StdoutLine: {'line': b'-- Symlinking: /home/thaoton1910/swarm_robot/algorithm/src/install/communication_msgs/include/communication_msgs/communication_msgs/msg/detail/task__rosidl_typesupport_introspection_cpp.hpp\n'}
+[22.984246] (communication_msgs) StdoutLine: {'line': b'-- Symlinking: /home/thaoton1910/swarm_robot/algorithm/src/install/communication_msgs/include/communication_msgs/communication_msgs/msg/detail/task_allocation__rosidl_typesupport_introspection_cpp.hpp\n'}
+[23.001061] (communication_msgs) StdoutLine: {'line': b'-- Symlinking: /home/thaoton1910/swarm_robot/algorithm/src/install/communication_msgs/include/communication_msgs/communication_msgs/msg/detail/task_allocation_array__rosidl_typesupport_introspection_cpp.hpp\n'}
+[23.019414] (-) TimerEvent: {}
+[23.020544] (communication_msgs) StdoutLine: {'line': b'-- Symlinking: /home/thaoton1910/swarm_robot/algorithm/src/install/communication_msgs/share/communication_msgs/environment/pythonpath.sh\n'}
+[23.048094] (communication_msgs) StdoutLine: {'line': b'-- Symlinking: /home/thaoton1910/swarm_robot/algorithm/src/install/communication_msgs/share/communication_msgs/environment/pythonpath.dsv\n'}
+[23.069908] (communication_msgs) StdoutLine: {'line': b'-- Symlinking: /home/thaoton1910/swarm_robot/algorithm/src/install/communication_msgs/local/lib/python3.10/dist-packages/communication_msgs-0.0.0-py3.10.egg-info/PKG-INFO\n'}
+[23.090292] (communication_msgs) StdoutLine: {'line': b'-- Symlinking: /home/thaoton1910/swarm_robot/algorithm/src/install/communication_msgs/local/lib/python3.10/dist-packages/communication_msgs-0.0.0-py3.10.egg-info/SOURCES.txt\n'}
+[23.114119] (communication_msgs) StdoutLine: {'line': b'-- Symlinking: /home/thaoton1910/swarm_robot/algorithm/src/install/communication_msgs/local/lib/python3.10/dist-packages/communication_msgs-0.0.0-py3.10.egg-info/dependency_links.txt\n'}
+[23.119734] (-) TimerEvent: {}
+[23.131019] (communication_msgs) StdoutLine: {'line': b'-- Symlinking: /home/thaoton1910/swarm_robot/algorithm/src/install/communication_msgs/local/lib/python3.10/dist-packages/communication_msgs-0.0.0-py3.10.egg-info/top_level.txt\n'}
+[23.156056] (communication_msgs) StdoutLine: {'line': b'-- Symlinking: /home/thaoton1910/swarm_robot/algorithm/src/install/communication_msgs/local/lib/python3.10/dist-packages/communication_msgs/__init__.py\n'}
+[23.182396] (communication_msgs) StdoutLine: {'line': b'-- Symlinking: /home/thaoton1910/swarm_robot/algorithm/src/install/communication_msgs/local/lib/python3.10/dist-packages/communication_msgs/_communication_msgs_s.ep.rosidl_typesupport_c.c\n'}
+[23.205324] (communication_msgs) StdoutLine: {'line': b'-- Symlinking: /home/thaoton1910/swarm_robot/algorithm/src/install/communication_msgs/local/lib/python3.10/dist-packages/communication_msgs/_communication_msgs_s.ep.rosidl_typesupport_fastrtps_c.c\n'}
+[23.219948] (-) TimerEvent: {}
+[23.230794] (communication_msgs) StdoutLine: {'line': b'-- Symlinking: /home/thaoton1910/swarm_robot/algorithm/src/install/communication_msgs/local/lib/python3.10/dist-packages/communication_msgs/_communication_msgs_s.ep.rosidl_typesupport_introspection_c.c\n'}
+[23.259377] (communication_msgs) StdoutLine: {'line': b'-- Symlinking: /home/thaoton1910/swarm_robot/algorithm/src/install/communication_msgs/local/lib/python3.10/dist-packages/communication_msgs/communication_msgs_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so\n'}
+[23.281372] (communication_msgs) StdoutLine: {'line': b'-- Symlinking: /home/thaoton1910/swarm_robot/algorithm/src/install/communication_msgs/local/lib/python3.10/dist-packages/communication_msgs/communication_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so\n'}
+[23.305339] (communication_msgs) StdoutLine: {'line': b'-- Symlinking: /home/thaoton1910/swarm_robot/algorithm/src/install/communication_msgs/local/lib/python3.10/dist-packages/communication_msgs/communication_msgs_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so\n'}
+[23.320245] (-) TimerEvent: {}
+[23.328331] (communication_msgs) StdoutLine: {'line': b'-- Symlinking: /home/thaoton1910/swarm_robot/algorithm/src/install/communication_msgs/local/lib/python3.10/dist-packages/communication_msgs/libcommunication_msgs__rosidl_generator_py.so\n'}
+[23.354436] (communication_msgs) StdoutLine: {'line': b'-- Symlinking: /home/thaoton1910/swarm_robot/algorithm/src/install/communication_msgs/local/lib/python3.10/dist-packages/communication_msgs/msg/__init__.py\n'}
+[23.379194] (communication_msgs) StdoutLine: {'line': b'-- Symlinking: /home/thaoton1910/swarm_robot/algorithm/src/install/communication_msgs/local/lib/python3.10/dist-packages/communication_msgs/msg/_robot.py\n'}
+[23.401453] (communication_msgs) StdoutLine: {'line': b'-- Symlinking: /home/thaoton1910/swarm_robot/algorithm/src/install/communication_msgs/local/lib/python3.10/dist-packages/communication_msgs/msg/_robot_odom.py\n'}
+[23.420484] (-) TimerEvent: {}
+[23.422280] (communication_msgs) StdoutLine: {'line': b'-- Symlinking: /home/thaoton1910/swarm_robot/algorithm/src/install/communication_msgs/local/lib/python3.10/dist-packages/communication_msgs/msg/_robot_odom_s.c\n'}
+[23.446152] (communication_msgs) StdoutLine: {'line': b'-- Symlinking: /home/thaoton1910/swarm_robot/algorithm/src/install/communication_msgs/local/lib/python3.10/dist-packages/communication_msgs/msg/_robot_s.c\n'}
+[23.468495] (communication_msgs) StdoutLine: {'line': b'-- Symlinking: /home/thaoton1910/swarm_robot/algorithm/src/install/communication_msgs/local/lib/python3.10/dist-packages/communication_msgs/msg/_robot_status.py\n'}
+[23.490351] (communication_msgs) StdoutLine: {'line': b'-- Symlinking: /home/thaoton1910/swarm_robot/algorithm/src/install/communication_msgs/local/lib/python3.10/dist-packages/communication_msgs/msg/_robot_status_s.c\n'}
+[23.512386] (communication_msgs) StdoutLine: {'line': b'-- Symlinking: /home/thaoton1910/swarm_robot/algorithm/src/install/communication_msgs/local/lib/python3.10/dist-packages/communication_msgs/msg/_robots.py\n'}
+[23.520778] (-) TimerEvent: {}
+[23.532104] (communication_msgs) StdoutLine: {'line': b'-- Symlinking: /home/thaoton1910/swarm_robot/algorithm/src/install/communication_msgs/local/lib/python3.10/dist-packages/communication_msgs/msg/_robots_s.c\n'}
+[23.553770] (communication_msgs) StdoutLine: {'line': b'-- Symlinking: /home/thaoton1910/swarm_robot/algorithm/src/install/communication_msgs/local/lib/python3.10/dist-packages/communication_msgs/msg/_task.py\n'}
+[23.580240] (communication_msgs) StdoutLine: {'line': b'-- Symlinking: /home/thaoton1910/swarm_robot/algorithm/src/install/communication_msgs/local/lib/python3.10/dist-packages/communication_msgs/msg/_task_allocation.py\n'}
+[23.608322] (communication_msgs) StdoutLine: {'line': b'-- Symlinking: /home/thaoton1910/swarm_robot/algorithm/src/install/communication_msgs/local/lib/python3.10/dist-packages/communication_msgs/msg/_task_allocation_array.py\n'}
+[23.620997] (-) TimerEvent: {}
+[23.641892] (communication_msgs) StdoutLine: {'line': b'-- Symlinking: /home/thaoton1910/swarm_robot/algorithm/src/install/communication_msgs/local/lib/python3.10/dist-packages/communication_msgs/msg/_task_allocation_array_s.c\n'}
+[23.667739] (communication_msgs) StdoutLine: {'line': b'-- Symlinking: /home/thaoton1910/swarm_robot/algorithm/src/install/communication_msgs/local/lib/python3.10/dist-packages/communication_msgs/msg/_task_allocation_s.c\n'}
+[23.694295] (communication_msgs) StdoutLine: {'line': b'-- Symlinking: /home/thaoton1910/swarm_robot/algorithm/src/install/communication_msgs/local/lib/python3.10/dist-packages/communication_msgs/msg/_task_s.c\n'}
+[23.721250] (-) TimerEvent: {}
+[23.729123] (communication_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/thaoton1910/swarm_robot/algorithm/src/install/communication_msgs/local/lib/python3.10/dist-packages/communication_msgs/communication_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so\n'}
+[23.729848] (communication_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/thaoton1910/swarm_robot/algorithm/src/install/communication_msgs/local/lib/python3.10/dist-packages/communication_msgs/communication_msgs_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so\n'}
+[23.730650] (communication_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/thaoton1910/swarm_robot/algorithm/src/install/communication_msgs/local/lib/python3.10/dist-packages/communication_msgs/communication_msgs_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so\n'}
+[23.731896] (communication_msgs) StdoutLine: {'line': b'-- Symlinking: /home/thaoton1910/swarm_robot/algorithm/src/install/communication_msgs/share/communication_msgs/msg/Robot.idl\n'}
+[23.760283] (communication_msgs) StdoutLine: {'line': b'-- Symlinking: /home/thaoton1910/swarm_robot/algorithm/src/install/communication_msgs/share/communication_msgs/msg/Task.idl\n'}
+[23.787821] (communication_msgs) StdoutLine: {'line': b'-- Symlinking: /home/thaoton1910/swarm_robot/algorithm/src/install/communication_msgs/share/communication_msgs/msg/TaskAllocation.idl\n'}
+[23.814987] (communication_msgs) StdoutLine: {'line': b'-- Symlinking: /home/thaoton1910/swarm_robot/algorithm/src/install/communication_msgs/share/communication_msgs/msg/TaskAllocationArray.idl\n'}
+[23.821524] (-) TimerEvent: {}
+[23.842102] (communication_msgs) StdoutLine: {'line': b'-- Symlinking: /home/thaoton1910/swarm_robot/algorithm/src/install/communication_msgs/share/communication_msgs/msg/RobotStatus.idl\n'}
+[23.864023] (communication_msgs) StdoutLine: {'line': b'-- Symlinking: /home/thaoton1910/swarm_robot/algorithm/src/install/communication_msgs/share/communication_msgs/msg/RobotOdom.idl\n'}
+[23.885709] (communication_msgs) StdoutLine: {'line': b'-- Symlinking: /home/thaoton1910/swarm_robot/algorithm/src/install/communication_msgs/share/communication_msgs/msg/Robots.idl\n'}
+[23.908854] (communication_msgs) StdoutLine: {'line': b'-- Symlinking: /home/thaoton1910/swarm_robot/algorithm/src/install/communication_msgs/share/communication_msgs/msg/Robot.msg\n'}
+[23.921774] (-) TimerEvent: {}
+[23.931831] (communication_msgs) StdoutLine: {'line': b'-- Symlinking: /home/thaoton1910/swarm_robot/algorithm/src/install/communication_msgs/share/communication_msgs/msg/Task.msg\n'}
+[23.953023] (communication_msgs) StdoutLine: {'line': b'-- Symlinking: /home/thaoton1910/swarm_robot/algorithm/src/install/communication_msgs/share/communication_msgs/msg/TaskAllocation.msg\n'}
+[23.975567] (communication_msgs) StdoutLine: {'line': b'-- Symlinking: /home/thaoton1910/swarm_robot/algorithm/src/install/communication_msgs/share/communication_msgs/msg/TaskAllocationArray.msg\n'}
+[23.998196] (communication_msgs) StdoutLine: {'line': b'-- Symlinking: /home/thaoton1910/swarm_robot/algorithm/src/install/communication_msgs/share/communication_msgs/msg/RobotStatus.msg\n'}
+[24.022022] (-) TimerEvent: {}
+[24.022829] (communication_msgs) StdoutLine: {'line': b'-- Symlinking: /home/thaoton1910/swarm_robot/algorithm/src/install/communication_msgs/share/communication_msgs/msg/RobotOdom.msg\n'}
+[24.050580] (communication_msgs) StdoutLine: {'line': b'-- Symlinking: /home/thaoton1910/swarm_robot/algorithm/src/install/communication_msgs/share/communication_msgs/msg/Robots.msg\n'}
+[24.074827] (communication_msgs) StdoutLine: {'line': b'-- Symlinking: /home/thaoton1910/swarm_robot/algorithm/src/install/communication_msgs/share/ament_index/resource_index/package_run_dependencies/communication_msgs\n'}
+[24.102695] (communication_msgs) StdoutLine: {'line': b'-- Symlinking: /home/thaoton1910/swarm_robot/algorithm/src/install/communication_msgs/share/ament_index/resource_index/parent_prefix_path/communication_msgs\n'}
+[24.122258] (-) TimerEvent: {}
+[24.136243] (communication_msgs) StdoutLine: {'line': b'-- Symlinking: /home/thaoton1910/swarm_robot/algorithm/src/install/communication_msgs/share/communication_msgs/environment/ament_prefix_path.sh\n'}
+[24.157867] (communication_msgs) StdoutLine: {'line': b'-- Symlinking: /home/thaoton1910/swarm_robot/algorithm/src/install/communication_msgs/share/communication_msgs/environment/ament_prefix_path.dsv\n'}
+[24.183603] (communication_msgs) StdoutLine: {'line': b'-- Symlinking: /home/thaoton1910/swarm_robot/algorithm/src/install/communication_msgs/share/communication_msgs/environment/path.sh\n'}
+[24.207854] (communication_msgs) StdoutLine: {'line': b'-- Symlinking: /home/thaoton1910/swarm_robot/algorithm/src/install/communication_msgs/share/communication_msgs/environment/path.dsv\n'}
+[24.222655] (-) TimerEvent: {}
+[24.227749] (communication_msgs) StdoutLine: {'line': b'-- Symlinking: /home/thaoton1910/swarm_robot/algorithm/src/install/communication_msgs/share/communication_msgs/local_setup.bash\n'}
+[24.247745] (communication_msgs) StdoutLine: {'line': b'-- Symlinking: /home/thaoton1910/swarm_robot/algorithm/src/install/communication_msgs/share/communication_msgs/local_setup.sh\n'}
+[24.269014] (communication_msgs) StdoutLine: {'line': b'-- Symlinking: /home/thaoton1910/swarm_robot/algorithm/src/install/communication_msgs/share/communication_msgs/local_setup.zsh\n'}
+[24.287614] (communication_msgs) StdoutLine: {'line': b'-- Symlinking: /home/thaoton1910/swarm_robot/algorithm/src/install/communication_msgs/share/communication_msgs/local_setup.dsv\n'}
+[24.305917] (communication_msgs) StdoutLine: {'line': b'-- Symlinking: /home/thaoton1910/swarm_robot/algorithm/src/install/communication_msgs/share/communication_msgs/package.dsv\n'}
+[24.322974] (-) TimerEvent: {}
+[24.324618] (communication_msgs) StdoutLine: {'line': b'-- Symlinking: /home/thaoton1910/swarm_robot/algorithm/src/install/communication_msgs/share/ament_index/resource_index/packages/communication_msgs\n'}
+[24.345078] (communication_msgs) StdoutLine: {'line': b'-- Symlinking: /home/thaoton1910/swarm_robot/algorithm/src/install/communication_msgs/share/communication_msgs/cmake/rosidl_cmake-extras.cmake\n'}
+[24.362708] (communication_msgs) StdoutLine: {'line': b'-- Symlinking: /home/thaoton1910/swarm_robot/algorithm/src/install/communication_msgs/share/communication_msgs/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[24.378973] (communication_msgs) StdoutLine: {'line': b'-- Symlinking: /home/thaoton1910/swarm_robot/algorithm/src/install/communication_msgs/share/communication_msgs/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[24.396876] (communication_msgs) StdoutLine: {'line': b'-- Symlinking: /home/thaoton1910/swarm_robot/algorithm/src/install/communication_msgs/share/communication_msgs/cmake/ament_cmake_export_libraries-extras.cmake\n'}
+[24.414196] (communication_msgs) StdoutLine: {'line': b'-- Symlinking: /home/thaoton1910/swarm_robot/algorithm/src/install/communication_msgs/share/communication_msgs/cmake/ament_cmake_export_targets-extras.cmake\n'}
+[24.423314] (-) TimerEvent: {}
+[24.438271] (communication_msgs) StdoutLine: {'line': b'-- Symlinking: /home/thaoton1910/swarm_robot/algorithm/src/install/communication_msgs/share/communication_msgs/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake\n'}
+[24.455283] (communication_msgs) StdoutLine: {'line': b'-- Symlinking: /home/thaoton1910/swarm_robot/algorithm/src/install/communication_msgs/share/communication_msgs/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake\n'}
+[24.471661] (communication_msgs) StdoutLine: {'line': b'-- Symlinking: /home/thaoton1910/swarm_robot/algorithm/src/install/communication_msgs/share/communication_msgs/cmake/communication_msgsConfig.cmake\n'}
+[24.488275] (communication_msgs) StdoutLine: {'line': b'-- Symlinking: /home/thaoton1910/swarm_robot/algorithm/src/install/communication_msgs/share/communication_msgs/cmake/communication_msgsConfig-version.cmake\n'}
+[24.504941] (communication_msgs) StdoutLine: {'line': b'-- Symlinking: /home/thaoton1910/swarm_robot/algorithm/src/install/communication_msgs/share/communication_msgs/package.xml\n'}
+[24.520299] (communication_msgs) StdoutLine: {'line': b'-- Installing: /home/thaoton1910/swarm_robot/algorithm/src/install/communication_msgs/lib/libcommunication_msgs__rosidl_generator_c.so\n'}
+[24.520757] (communication_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/thaoton1910/swarm_robot/algorithm/src/install/communication_msgs/lib/libcommunication_msgs__rosidl_generator_c.so" to ""\n'}
+[24.520935] (communication_msgs) StdoutLine: {'line': b'-- Installing: /home/thaoton1910/swarm_robot/algorithm/src/install/communication_msgs/lib/libcommunication_msgs__rosidl_typesupport_fastrtps_c.so\n'}
+[24.521266] (communication_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/thaoton1910/swarm_robot/algorithm/src/install/communication_msgs/lib/libcommunication_msgs__rosidl_typesupport_fastrtps_c.so" to ""\n'}
+[24.521541] (communication_msgs) StdoutLine: {'line': b'-- Installing: /home/thaoton1910/swarm_robot/algorithm/src/install/communication_msgs/lib/libcommunication_msgs__rosidl_typesupport_introspection_c.so\n'}
+[24.521933] (communication_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/thaoton1910/swarm_robot/algorithm/src/install/communication_msgs/lib/libcommunication_msgs__rosidl_typesupport_introspection_c.so" to ""\n'}
+[24.522301] (communication_msgs) StdoutLine: {'line': b'-- Installing: /home/thaoton1910/swarm_robot/algorithm/src/install/communication_msgs/lib/libcommunication_msgs__rosidl_typesupport_c.so\n'}
+[24.522399] (communication_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/thaoton1910/swarm_robot/algorithm/src/install/communication_msgs/lib/libcommunication_msgs__rosidl_typesupport_c.so" to ""\n'}
+[24.522466] (communication_msgs) StdoutLine: {'line': b'-- Installing: /home/thaoton1910/swarm_robot/algorithm/src/install/communication_msgs/lib/libcommunication_msgs__rosidl_typesupport_fastrtps_cpp.so\n'}
+[24.522953] (communication_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/thaoton1910/swarm_robot/algorithm/src/install/communication_msgs/lib/libcommunication_msgs__rosidl_typesupport_fastrtps_cpp.so" to ""\n'}
+[24.523247] (communication_msgs) StdoutLine: {'line': b'-- Installing: /home/thaoton1910/swarm_robot/algorithm/src/install/communication_msgs/lib/libcommunication_msgs__rosidl_typesupport_introspection_cpp.so\n'}
+[24.523353] (-) TimerEvent: {}
+[24.523888] (communication_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/thaoton1910/swarm_robot/algorithm/src/install/communication_msgs/lib/libcommunication_msgs__rosidl_typesupport_introspection_cpp.so" to ""\n'}
+[24.524183] (communication_msgs) StdoutLine: {'line': b'-- Installing: /home/thaoton1910/swarm_robot/algorithm/src/install/communication_msgs/lib/libcommunication_msgs__rosidl_typesupport_cpp.so\n'}
+[24.524678] (communication_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/thaoton1910/swarm_robot/algorithm/src/install/communication_msgs/lib/libcommunication_msgs__rosidl_typesupport_cpp.so" to ""\n'}
+[24.593046] (communication_msgs) StdoutLine: {'line': b"Listing '/home/thaoton1910/swarm_robot/algorithm/src/install/communication_msgs/local/lib/python3.10/dist-packages/communication_msgs'...\n"}
+[24.593997] (communication_msgs) StdoutLine: {'line': b"Compiling '/home/thaoton1910/swarm_robot/algorithm/src/install/communication_msgs/local/lib/python3.10/dist-packages/communication_msgs/__init__.py'...\n"}
+[24.594114] (communication_msgs) StdoutLine: {'line': b"Listing '/home/thaoton1910/swarm_robot/algorithm/src/install/communication_msgs/local/lib/python3.10/dist-packages/communication_msgs/msg'...\n"}
+[24.594178] (communication_msgs) StdoutLine: {'line': b"Compiling '/home/thaoton1910/swarm_robot/algorithm/src/install/communication_msgs/local/lib/python3.10/dist-packages/communication_msgs/msg/__init__.py'...\n"}
+[24.594260] (communication_msgs) StdoutLine: {'line': b"Compiling '/home/thaoton1910/swarm_robot/algorithm/src/install/communication_msgs/local/lib/python3.10/dist-packages/communication_msgs/msg/_robot.py'...\n"}
+[24.594323] (communication_msgs) StdoutLine: {'line': b"Compiling '/home/thaoton1910/swarm_robot/algorithm/src/install/communication_msgs/local/lib/python3.10/dist-packages/communication_msgs/msg/_robot_odom.py'...\n"}
+[24.594381] (communication_msgs) StdoutLine: {'line': b"Compiling '/home/thaoton1910/swarm_robot/algorithm/src/install/communication_msgs/local/lib/python3.10/dist-packages/communication_msgs/msg/_robot_status.py'...\n"}
+[24.594437] (communication_msgs) StdoutLine: {'line': b"Compiling '/home/thaoton1910/swarm_robot/algorithm/src/install/communication_msgs/local/lib/python3.10/dist-packages/communication_msgs/msg/_robots.py'...\n"}
+[24.594521] (communication_msgs) StdoutLine: {'line': b"Compiling '/home/thaoton1910/swarm_robot/algorithm/src/install/communication_msgs/local/lib/python3.10/dist-packages/communication_msgs/msg/_task.py'...\n"}
+[24.594606] (communication_msgs) StdoutLine: {'line': b"Compiling '/home/thaoton1910/swarm_robot/algorithm/src/install/communication_msgs/local/lib/python3.10/dist-packages/communication_msgs/msg/_task_allocation.py'...\n"}
+[24.594693] (communication_msgs) StdoutLine: {'line': b"Compiling '/home/thaoton1910/swarm_robot/algorithm/src/install/communication_msgs/local/lib/python3.10/dist-packages/communication_msgs/msg/_task_allocation_array.py'...\n"}
+[24.604071] (communication_msgs) StdoutLine: {'line': b'-- Installing: /home/thaoton1910/swarm_robot/algorithm/src/install/communication_msgs/lib/libcommunication_msgs__rosidl_generator_py.so\n'}
+[24.605335] (communication_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/thaoton1910/swarm_robot/algorithm/src/install/communication_msgs/lib/libcommunication_msgs__rosidl_generator_py.so" to ""\n'}
+[24.606031] (communication_msgs) StdoutLine: {'line': b'-- Installing: /home/thaoton1910/swarm_robot/algorithm/src/install/communication_msgs/share/communication_msgs/cmake/export_communication_msgs__rosidl_generator_cExport.cmake\n'}
+[24.606201] (communication_msgs) StdoutLine: {'line': b'-- Installing: /home/thaoton1910/swarm_robot/algorithm/src/install/communication_msgs/share/communication_msgs/cmake/export_communication_msgs__rosidl_generator_cExport-noconfig.cmake\n'}
+[24.606631] (communication_msgs) StdoutLine: {'line': b'-- Installing: /home/thaoton1910/swarm_robot/algorithm/src/install/communication_msgs/share/communication_msgs/cmake/export_communication_msgs__rosidl_typesupport_fastrtps_cExport.cmake\n'}
+[24.606809] (communication_msgs) StdoutLine: {'line': b'-- Installing: /home/thaoton1910/swarm_robot/algorithm/src/install/communication_msgs/share/communication_msgs/cmake/export_communication_msgs__rosidl_typesupport_fastrtps_cExport-noconfig.cmake\n'}
+[24.607169] (communication_msgs) StdoutLine: {'line': b'-- Installing: /home/thaoton1910/swarm_robot/algorithm/src/install/communication_msgs/share/communication_msgs/cmake/communication_msgs__rosidl_typesupport_introspection_cExport.cmake\n'}
+[24.607607] (communication_msgs) StdoutLine: {'line': b'-- Installing: /home/thaoton1910/swarm_robot/algorithm/src/install/communication_msgs/share/communication_msgs/cmake/communication_msgs__rosidl_typesupport_introspection_cExport-noconfig.cmake\n'}
+[24.608353] (communication_msgs) StdoutLine: {'line': b'-- Installing: /home/thaoton1910/swarm_robot/algorithm/src/install/communication_msgs/share/communication_msgs/cmake/communication_msgs__rosidl_typesupport_cExport.cmake\n'}
+[24.609164] (communication_msgs) StdoutLine: {'line': b'-- Installing: /home/thaoton1910/swarm_robot/algorithm/src/install/communication_msgs/share/communication_msgs/cmake/communication_msgs__rosidl_typesupport_cExport-noconfig.cmake\n'}
+[24.609284] (communication_msgs) StdoutLine: {'line': b'-- Installing: /home/thaoton1910/swarm_robot/algorithm/src/install/communication_msgs/share/communication_msgs/cmake/export_communication_msgs__rosidl_generator_cppExport.cmake\n'}
+[24.609357] (communication_msgs) StdoutLine: {'line': b'-- Installing: /home/thaoton1910/swarm_robot/algorithm/src/install/communication_msgs/share/communication_msgs/cmake/export_communication_msgs__rosidl_typesupport_fastrtps_cppExport.cmake\n'}
+[24.609565] (communication_msgs) StdoutLine: {'line': b'-- Installing: /home/thaoton1910/swarm_robot/algorithm/src/install/communication_msgs/share/communication_msgs/cmake/export_communication_msgs__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake\n'}
+[24.609719] (communication_msgs) StdoutLine: {'line': b'-- Installing: /home/thaoton1910/swarm_robot/algorithm/src/install/communication_msgs/share/communication_msgs/cmake/communication_msgs__rosidl_typesupport_introspection_cppExport.cmake\n'}
+[24.610581] (communication_msgs) StdoutLine: {'line': b'-- Installing: /home/thaoton1910/swarm_robot/algorithm/src/install/communication_msgs/share/communication_msgs/cmake/communication_msgs__rosidl_typesupport_introspection_cppExport-noconfig.cmake\n'}
+[24.610712] (communication_msgs) StdoutLine: {'line': b'-- Installing: /home/thaoton1910/swarm_robot/algorithm/src/install/communication_msgs/share/communication_msgs/cmake/communication_msgs__rosidl_typesupport_cppExport.cmake\n'}
+[24.610795] (communication_msgs) StdoutLine: {'line': b'-- Installing: /home/thaoton1910/swarm_robot/algorithm/src/install/communication_msgs/share/communication_msgs/cmake/communication_msgs__rosidl_typesupport_cppExport-noconfig.cmake\n'}
+[24.610883] (communication_msgs) StdoutLine: {'line': b'-- Installing: /home/thaoton1910/swarm_robot/algorithm/src/install/communication_msgs/share/communication_msgs/cmake/export_communication_msgs__rosidl_generator_pyExport.cmake\n'}
+[24.610983] (communication_msgs) StdoutLine: {'line': b'-- Installing: /home/thaoton1910/swarm_robot/algorithm/src/install/communication_msgs/share/communication_msgs/cmake/export_communication_msgs__rosidl_generator_pyExport-noconfig.cmake\n'}
+[24.616632] (communication_msgs) CommandEnded: {'returncode': 0}
+[24.623619] (-) TimerEvent: {}
+[24.648246] (communication_msgs) JobEnded: {'identifier': 'communication_msgs', 'rc': 0}
+[24.651032] (-) EventReactorShutdown: {}

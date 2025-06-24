@@ -1,0 +1,14 @@
+{
+	"backtraceGraph" : 
+	{
+		"commands" : [],
+		"files" : [],
+		"nodes" : []
+	},
+	"installers" : [],
+	"paths" : 
+	{
+		"build" : "communication_msgs__py",
+		"source" : "/home/thaoton1910/swarm_robot/algorithm/src/build/communication_msgs/communication_msgs__py"
+	}
+}

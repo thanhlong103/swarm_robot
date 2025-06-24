@@ -1,0 +1,1 @@
+/home/thaoton1910/swarm_robot/algorithm/src/build/communication_msgs/rosidl_typesupport_fastrtps_cpp/communication_msgs/msg/detail/task_allocation__rosidl_typesupport_fastrtps_cpp.hpp

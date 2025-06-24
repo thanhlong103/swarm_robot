@@ -1,0 +1,1 @@
+/home/thaoton1910/swarm_robot/algorithm/src/build/communication_msgs/rosidl_generator_cpp/communication_msgs/msg/detail/task_allocation_array__builder.hpp

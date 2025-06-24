@@ -1,0 +1,1 @@
+/home/thaoton1910/swarm_robot/algorithm/src/build/communication_msgs/rosidl_generator_py/communication_msgs/msg/_task_allocation_array_s.c

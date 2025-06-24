@@ -1,0 +1,12 @@
+{
+  "package_name": "communication_msgs",
+  "non_idl_tuples": [
+    "/home/thaoton1910/swarm_robot/algorithm/src/communication_msgs:msg/Robot.msg",
+    "/home/thaoton1910/swarm_robot/algorithm/src/communication_msgs:msg/Task.msg",
+    "/home/thaoton1910/swarm_robot/algorithm/src/communication_msgs:msg/TaskAllocation.msg",
+    "/home/thaoton1910/swarm_robot/algorithm/src/communication_msgs:msg/TaskAllocationArray.msg",
+    "/home/thaoton1910/swarm_robot/algorithm/src/communication_msgs:msg/RobotStatus.msg",
+    "/home/thaoton1910/swarm_robot/algorithm/src/communication_msgs:msg/RobotOdom.msg",
+    "/home/thaoton1910/swarm_robot/algorithm/src/communication_msgs:msg/Robots.msg"
+  ]
+}

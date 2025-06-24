@@ -1,0 +1,1 @@
+/home/thaoton1910/swarm_robot/algorithm/src/build/communication_msgs/rosidl_cmake/rosidl_cmake_export_typesupport_targets-extras.cmake

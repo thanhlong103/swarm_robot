@@ -1,0 +1,30 @@
+running develop
+running egg_info
+creating slave.egg-info
+writing slave.egg-info/PKG-INFO
+writing dependency_links to slave.egg-info/dependency_links.txt
+writing entry points to slave.egg-info/entry_points.txt
+writing requirements to slave.egg-info/requires.txt
+writing top-level names to slave.egg-info/top_level.txt
+writing manifest file 'slave.egg-info/SOURCES.txt'
+reading manifest file 'slave.egg-info/SOURCES.txt'
+writing manifest file 'slave.egg-info/SOURCES.txt'
+running build_ext
+Creating /home/thaoton1910/swarm_robot/algorithm/src/install/slave/lib/python3.10/site-packages/slave.egg-link (link to .)
+Installing navigation_process script to /home/thaoton1910/swarm_robot/algorithm/src/install/slave/lib/slave
+Installing odom script to /home/thaoton1910/swarm_robot/algorithm/src/install/slave/lib/slave
+Installing send_vel script to /home/thaoton1910/swarm_robot/algorithm/src/install/slave/lib/slave
+Installing waypoint_navigator script to /home/thaoton1910/swarm_robot/algorithm/src/install/slave/lib/slave
+
+Installed /home/thaoton1910/swarm_robot/algorithm/src/build/slave
+running symlink_data
+creating /home/thaoton1910/swarm_robot/algorithm/src/install/slave/share/ament_index
+creating /home/thaoton1910/swarm_robot/algorithm/src/install/slave/share/ament_index/resource_index
+creating /home/thaoton1910/swarm_robot/algorithm/src/install/slave/share/ament_index/resource_index/packages
+symbolically linking /home/thaoton1910/swarm_robot/algorithm/src/build/slave/resource/slave -> /home/thaoton1910/swarm_robot/algorithm/src/install/slave/share/ament_index/resource_index/packages
+symbolically linking /home/thaoton1910/swarm_robot/algorithm/src/build/slave/package.xml -> /home/thaoton1910/swarm_robot/algorithm/src/install/slave/share/slave
+creating /home/thaoton1910/swarm_robot/algorithm/src/install/slave/share/slave/config
+symbolically linking /home/thaoton1910/swarm_robot/algorithm/src/build/slave/config/ekf_config.yaml -> /home/thaoton1910/swarm_robot/algorithm/src/install/slave/share/slave/config
+symbolically linking /home/thaoton1910/swarm_robot/algorithm/src/build/slave/config/waypoints.yaml -> /home/thaoton1910/swarm_robot/algorithm/src/install/slave/share/slave/config
+creating /home/thaoton1910/swarm_robot/algorithm/src/install/slave/share/slave/launch
+symbolically linking /home/thaoton1910/swarm_robot/algorithm/src/build/slave/launch/waypoint_navigator_launch.py -> /home/thaoton1910/swarm_robot/algorithm/src/install/slave/share/slave/launch
