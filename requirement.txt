@@ -1,1 +1,2 @@
-ros-foxy-robot-localization
+ros-humble-xacro
+ros-humble-joint-state-publisher

@@ -1,0 +1,1 @@
+/home/hehe/Documents/GitHub/swarm_robot/slave_ws/build/cartographer/ament_cmake_environment_hooks/local_setup.bash
