@@ -98,4 +98,10 @@ def generate_launch_description():
         #     ],
         #     output="screen",
         # ),
+        Node(
+            package='tf2_ros',
+            executable='static_transform_publisher',
+            name='map_to_odom_broadcaster',
+            arguments=['0','0','0','0','0','0',
+                    'map','odom'],)
     ])
