@@ -6,7 +6,7 @@ ros2 topic pub --once /goal_pose geometry_msgs/msg/PoseStamped "{header: {stamp:
 ros2 launch robot_bringup multi_robot_launch.py use_sim_time:=true
 
 # navigation2
-ros2 launch turtlebot3_navigation2 navigation2.launch.py use_sim_time:=true
+ros2 launch turtlebot3_navigation2 navigation2.launch.py use_sim_time:=true map:=/home/thaoton1910/swarm_robot/simulation_ws/src/turtlebot3_navigation2/map/simumap.yaml
 
 # navigation process
 ros2 run slave navigation_process
