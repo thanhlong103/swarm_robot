@@ -1,0 +1,70 @@
+[0.023s] Invoking command in '/home/thaoton1910/swarm_robot/simulation_ws/src/build/turtlebot3_navigation2': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/thaoton1910/swarm_robot/simulation_ws/src/turtlebot3_navigation2 -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/thaoton1910/swarm_robot/simulation_ws/src/install/turtlebot3_navigation2
+[0.241s] -- The C compiler identification is GNU 11.4.0
+[0.613s] -- The CXX compiler identification is GNU 11.4.0
+[0.848s] -- Detecting C compiler ABI info
+[0.974s] -- Detecting C compiler ABI info - done
+[0.979s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.980s] -- Detecting C compile features
+[0.981s] -- Detecting C compile features - done
+[0.984s] -- Detecting CXX compiler ABI info
+[1.097s] -- Detecting CXX compiler ABI info - done
+[1.103s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[1.103s] -- Detecting CXX compile features
+[1.103s] -- Detecting CXX compile features - done
+[1.111s] -- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)
+[1.239s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[1.317s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[1.432s] -- Configuring done
+[1.437s] -- Generating done
+[1.439s] -- Build files have been written to: /home/thaoton1910/swarm_robot/simulation_ws/src/build/turtlebot3_navigation2
+[1.443s] Invoked command in '/home/thaoton1910/swarm_robot/simulation_ws/src/build/turtlebot3_navigation2' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/thaoton1910/swarm_robot/simulation_ws/src/turtlebot3_navigation2 -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/thaoton1910/swarm_robot/simulation_ws/src/install/turtlebot3_navigation2
+[1.446s] Invoking command in '/home/thaoton1910/swarm_robot/simulation_ws/src/build/turtlebot3_navigation2': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/thaoton1910/swarm_robot/simulation_ws/src/build/turtlebot3_navigation2 -- -j12 -l12
+[1.477s] Invoked command in '/home/thaoton1910/swarm_robot/simulation_ws/src/build/turtlebot3_navigation2' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/thaoton1910/swarm_robot/simulation_ws/src/build/turtlebot3_navigation2 -- -j12 -l12
+[1.485s] Invoking command in '/home/thaoton1910/swarm_robot/simulation_ws/src/build/turtlebot3_navigation2': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/thaoton1910/swarm_robot/simulation_ws/src/build/turtlebot3_navigation2
+[1.493s] -- Install configuration: ""
+[1.493s] -- Execute custom install script
+[1.494s] -- Symlinking: /home/thaoton1910/swarm_robot/simulation_ws/src/install/turtlebot3_navigation2/share/turtlebot3_navigation2/launch/filter_scan.py
+[1.501s] -- Symlinking: /home/thaoton1910/swarm_robot/simulation_ws/src/install/turtlebot3_navigation2/share/turtlebot3_navigation2/launch/navigation2.launch.py
+[1.511s] -- Symlinking: /home/thaoton1910/swarm_robot/simulation_ws/src/install/turtlebot3_navigation2/share/turtlebot3_navigation2/map/art_studio.pgm
+[1.519s] -- Symlinking: /home/thaoton1910/swarm_robot/simulation_ws/src/install/turtlebot3_navigation2/share/turtlebot3_navigation2/map/art_studio.yaml
+[1.525s] -- Symlinking: /home/thaoton1910/swarm_robot/simulation_ws/src/install/turtlebot3_navigation2/share/turtlebot3_navigation2/map/broadway.pgm
+[1.534s] -- Symlinking: /home/thaoton1910/swarm_robot/simulation_ws/src/install/turtlebot3_navigation2/share/turtlebot3_navigation2/map/broadway.yaml
+[1.542s] -- Symlinking: /home/thaoton1910/swarm_robot/simulation_ws/src/install/turtlebot3_navigation2/share/turtlebot3_navigation2/map/experiment.pgm
+[1.549s] -- Symlinking: /home/thaoton1910/swarm_robot/simulation_ws/src/install/turtlebot3_navigation2/share/turtlebot3_navigation2/map/experiment.yaml
+[1.557s] -- Symlinking: /home/thaoton1910/swarm_robot/simulation_ws/src/install/turtlebot3_navigation2/share/turtlebot3_navigation2/map/experiment_2.pgm
+[1.565s] -- Symlinking: /home/thaoton1910/swarm_robot/simulation_ws/src/install/turtlebot3_navigation2/share/turtlebot3_navigation2/map/experiment_2.yaml
+[1.572s] -- Symlinking: /home/thaoton1910/swarm_robot/simulation_ws/src/install/turtlebot3_navigation2/share/turtlebot3_navigation2/map/experiment_map.pgm
+[1.580s] -- Symlinking: /home/thaoton1910/swarm_robot/simulation_ws/src/install/turtlebot3_navigation2/share/turtlebot3_navigation2/map/experiment_map.yaml
+[1.588s] -- Symlinking: /home/thaoton1910/swarm_robot/simulation_ws/src/install/turtlebot3_navigation2/share/turtlebot3_navigation2/map/first_exp_map.pgm
+[1.595s] -- Symlinking: /home/thaoton1910/swarm_robot/simulation_ws/src/install/turtlebot3_navigation2/share/turtlebot3_navigation2/map/first_exp_map.yaml
+[1.604s] -- Symlinking: /home/thaoton1910/swarm_robot/simulation_ws/src/install/turtlebot3_navigation2/share/turtlebot3_navigation2/map/makerspace_map.pgm
+[1.611s] -- Symlinking: /home/thaoton1910/swarm_robot/simulation_ws/src/install/turtlebot3_navigation2/share/turtlebot3_navigation2/map/makerspace_map.yaml
+[1.619s] -- Symlinking: /home/thaoton1910/swarm_robot/simulation_ws/src/install/turtlebot3_navigation2/share/turtlebot3_navigation2/map/map_arti_env.pgm
+[1.625s] -- Symlinking: /home/thaoton1910/swarm_robot/simulation_ws/src/install/turtlebot3_navigation2/share/turtlebot3_navigation2/map/map_arti_env.yaml
+[1.634s] -- Symlinking: /home/thaoton1910/swarm_robot/simulation_ws/src/install/turtlebot3_navigation2/share/turtlebot3_navigation2/map/sim_map.pgm
+[1.642s] -- Symlinking: /home/thaoton1910/swarm_robot/simulation_ws/src/install/turtlebot3_navigation2/share/turtlebot3_navigation2/map/sim_map.yaml
+[1.651s] -- Symlinking: /home/thaoton1910/swarm_robot/simulation_ws/src/install/turtlebot3_navigation2/share/turtlebot3_navigation2/map/simumap.pgm
+[1.657s] -- Symlinking: /home/thaoton1910/swarm_robot/simulation_ws/src/install/turtlebot3_navigation2/share/turtlebot3_navigation2/map/simumap.yaml
+[1.666s] -- Symlinking: /home/thaoton1910/swarm_robot/simulation_ws/src/install/turtlebot3_navigation2/share/turtlebot3_navigation2/map/turtlebot3_world.pgm
+[1.672s] -- Symlinking: /home/thaoton1910/swarm_robot/simulation_ws/src/install/turtlebot3_navigation2/share/turtlebot3_navigation2/map/turtlebot3_world.yaml
+[1.680s] -- Symlinking: /home/thaoton1910/swarm_robot/simulation_ws/src/install/turtlebot3_navigation2/share/turtlebot3_navigation2/param/burger.yaml
+[1.687s] -- Symlinking: /home/thaoton1910/swarm_robot/simulation_ws/src/install/turtlebot3_navigation2/share/turtlebot3_navigation2/param/waffle.yaml
+[1.696s] -- Symlinking: /home/thaoton1910/swarm_robot/simulation_ws/src/install/turtlebot3_navigation2/share/turtlebot3_navigation2/param/waffle_pi.yaml
+[1.703s] -- Symlinking: /home/thaoton1910/swarm_robot/simulation_ws/src/install/turtlebot3_navigation2/share/turtlebot3_navigation2/rviz/nav2_har_view.rviz
+[1.712s] -- Symlinking: /home/thaoton1910/swarm_robot/simulation_ws/src/install/turtlebot3_navigation2/share/turtlebot3_navigation2/rviz/tb3_navigation2.rviz
+[1.719s] -- Symlinking: /home/thaoton1910/swarm_robot/simulation_ws/src/install/turtlebot3_navigation2/share/ament_index/resource_index/package_run_dependencies/turtlebot3_navigation2
+[1.728s] -- Symlinking: /home/thaoton1910/swarm_robot/simulation_ws/src/install/turtlebot3_navigation2/share/ament_index/resource_index/parent_prefix_path/turtlebot3_navigation2
+[1.735s] -- Symlinking: /home/thaoton1910/swarm_robot/simulation_ws/src/install/turtlebot3_navigation2/share/turtlebot3_navigation2/environment/ament_prefix_path.sh
+[1.741s] -- Symlinking: /home/thaoton1910/swarm_robot/simulation_ws/src/install/turtlebot3_navigation2/share/turtlebot3_navigation2/environment/ament_prefix_path.dsv
+[1.748s] -- Symlinking: /home/thaoton1910/swarm_robot/simulation_ws/src/install/turtlebot3_navigation2/share/turtlebot3_navigation2/environment/path.sh
+[1.755s] -- Symlinking: /home/thaoton1910/swarm_robot/simulation_ws/src/install/turtlebot3_navigation2/share/turtlebot3_navigation2/environment/path.dsv
+[1.763s] -- Symlinking: /home/thaoton1910/swarm_robot/simulation_ws/src/install/turtlebot3_navigation2/share/turtlebot3_navigation2/local_setup.bash
+[1.769s] -- Symlinking: /home/thaoton1910/swarm_robot/simulation_ws/src/install/turtlebot3_navigation2/share/turtlebot3_navigation2/local_setup.sh
+[1.776s] -- Symlinking: /home/thaoton1910/swarm_robot/simulation_ws/src/install/turtlebot3_navigation2/share/turtlebot3_navigation2/local_setup.zsh
+[1.782s] -- Symlinking: /home/thaoton1910/swarm_robot/simulation_ws/src/install/turtlebot3_navigation2/share/turtlebot3_navigation2/local_setup.dsv
+[1.789s] -- Symlinking: /home/thaoton1910/swarm_robot/simulation_ws/src/install/turtlebot3_navigation2/share/turtlebot3_navigation2/package.dsv
+[1.798s] -- Symlinking: /home/thaoton1910/swarm_robot/simulation_ws/src/install/turtlebot3_navigation2/share/ament_index/resource_index/packages/turtlebot3_navigation2
+[1.804s] -- Symlinking: /home/thaoton1910/swarm_robot/simulation_ws/src/install/turtlebot3_navigation2/share/turtlebot3_navigation2/cmake/turtlebot3_navigation2Config.cmake
+[1.812s] -- Symlinking: /home/thaoton1910/swarm_robot/simulation_ws/src/install/turtlebot3_navigation2/share/turtlebot3_navigation2/cmake/turtlebot3_navigation2Config-version.cmake
+[1.818s] -- Symlinking: /home/thaoton1910/swarm_robot/simulation_ws/src/install/turtlebot3_navigation2/share/turtlebot3_navigation2/package.xml
+[1.826s] Invoked command in '/home/thaoton1910/swarm_robot/simulation_ws/src/build/turtlebot3_navigation2' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/thaoton1910/swarm_robot/simulation_ws/src/build/turtlebot3_navigation2

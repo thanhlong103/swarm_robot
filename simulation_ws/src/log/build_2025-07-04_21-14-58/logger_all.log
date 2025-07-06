@@ -1,0 +1,252 @@
+[0.123s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build', '--symlink-install', '--allow-overriding', 'turtlebot3_navigation2']
+[0.123s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=True, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=12, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=None, packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, allow_overriding=['turtlebot3_navigation2'], cmake_args=None, cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, verb_parser=<colcon_defaults.argument_parser.defaults.DefaultArgumentsDecorator object at 0x730b78a17d00>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0x730b78b5d090>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0x730b78b5d090>>)
+[0.212s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[0.212s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[0.212s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[0.212s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[0.212s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[0.212s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[0.212s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/thaoton1910/swarm_robot/simulation_ws/src'
+[0.213s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[0.213s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[0.213s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[0.213s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[0.213s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[0.213s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[0.213s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[0.213s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[0.213s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[0.220s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[0.220s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[0.220s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[0.220s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[0.220s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[0.220s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[0.221s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[0.221s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[0.221s] Level 1:colcon.colcon_core.package_identification:_identify(cartographer) by extensions ['ignore', 'ignore_ament_install']
+[0.221s] Level 1:colcon.colcon_core.package_identification:_identify(cartographer) by extension 'ignore'
+[0.221s] Level 1:colcon.colcon_core.package_identification:_identify(cartographer) by extension 'ignore_ament_install'
+[0.221s] Level 1:colcon.colcon_core.package_identification:_identify(cartographer) by extensions ['colcon_pkg']
+[0.221s] Level 1:colcon.colcon_core.package_identification:_identify(cartographer) by extension 'colcon_pkg'
+[0.221s] Level 1:colcon.colcon_core.package_identification:_identify(cartographer) by extensions ['colcon_meta']
+[0.221s] Level 1:colcon.colcon_core.package_identification:_identify(cartographer) by extension 'colcon_meta'
+[0.221s] Level 1:colcon.colcon_core.package_identification:_identify(cartographer) by extensions ['ros']
+[0.221s] Level 1:colcon.colcon_core.package_identification:_identify(cartographer) by extension 'ros'
+[0.222s] DEBUG:colcon.colcon_core.package_identification:Package 'cartographer' with type 'ros.ament_cmake' and name 'cartographer'
+[0.223s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[0.223s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[0.223s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[0.223s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[0.223s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[0.223s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[0.223s] Level 1:colcon.colcon_core.package_identification:_identify(robot_bringup) by extensions ['ignore', 'ignore_ament_install']
+[0.223s] Level 1:colcon.colcon_core.package_identification:_identify(robot_bringup) by extension 'ignore'
+[0.223s] Level 1:colcon.colcon_core.package_identification:_identify(robot_bringup) by extension 'ignore_ament_install'
+[0.223s] Level 1:colcon.colcon_core.package_identification:_identify(robot_bringup) by extensions ['colcon_pkg']
+[0.223s] Level 1:colcon.colcon_core.package_identification:_identify(robot_bringup) by extension 'colcon_pkg'
+[0.223s] Level 1:colcon.colcon_core.package_identification:_identify(robot_bringup) by extensions ['colcon_meta']
+[0.223s] Level 1:colcon.colcon_core.package_identification:_identify(robot_bringup) by extension 'colcon_meta'
+[0.223s] Level 1:colcon.colcon_core.package_identification:_identify(robot_bringup) by extensions ['ros']
+[0.223s] Level 1:colcon.colcon_core.package_identification:_identify(robot_bringup) by extension 'ros'
+[0.223s] DEBUG:colcon.colcon_core.package_identification:Package 'robot_bringup' with type 'ros.ament_cmake' and name 'robot_bringup'
+[0.223s] Level 1:colcon.colcon_core.package_identification:_identify(turtlebot3_navigation2) by extensions ['ignore', 'ignore_ament_install']
+[0.223s] Level 1:colcon.colcon_core.package_identification:_identify(turtlebot3_navigation2) by extension 'ignore'
+[0.224s] Level 1:colcon.colcon_core.package_identification:_identify(turtlebot3_navigation2) by extension 'ignore_ament_install'
+[0.224s] Level 1:colcon.colcon_core.package_identification:_identify(turtlebot3_navigation2) by extensions ['colcon_pkg']
+[0.224s] Level 1:colcon.colcon_core.package_identification:_identify(turtlebot3_navigation2) by extension 'colcon_pkg'
+[0.224s] Level 1:colcon.colcon_core.package_identification:_identify(turtlebot3_navigation2) by extensions ['colcon_meta']
+[0.224s] Level 1:colcon.colcon_core.package_identification:_identify(turtlebot3_navigation2) by extension 'colcon_meta'
+[0.224s] Level 1:colcon.colcon_core.package_identification:_identify(turtlebot3_navigation2) by extensions ['ros']
+[0.224s] Level 1:colcon.colcon_core.package_identification:_identify(turtlebot3_navigation2) by extension 'ros'
+[0.224s] DEBUG:colcon.colcon_core.package_identification:Package 'turtlebot3_navigation2' with type 'ros.ament_cmake' and name 'turtlebot3_navigation2'
+[0.224s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[0.224s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[0.224s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[0.224s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[0.224s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[0.236s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[0.236s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[0.238s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 425 installed packages in /opt/ros/humble
+[0.247s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[0.276s] Level 5:colcon.colcon_core.verb:set package 'cartographer' build argument 'cmake_args' from command line to 'None'
+[0.276s] Level 5:colcon.colcon_core.verb:set package 'cartographer' build argument 'cmake_target' from command line to 'None'
+[0.276s] Level 5:colcon.colcon_core.verb:set package 'cartographer' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.276s] Level 5:colcon.colcon_core.verb:set package 'cartographer' build argument 'cmake_clean_cache' from command line to 'False'
+[0.276s] Level 5:colcon.colcon_core.verb:set package 'cartographer' build argument 'cmake_clean_first' from command line to 'False'
+[0.276s] Level 5:colcon.colcon_core.verb:set package 'cartographer' build argument 'cmake_force_configure' from command line to 'False'
+[0.276s] Level 5:colcon.colcon_core.verb:set package 'cartographer' build argument 'ament_cmake_args' from command line to 'None'
+[0.276s] Level 5:colcon.colcon_core.verb:set package 'cartographer' build argument 'catkin_cmake_args' from command line to 'None'
+[0.276s] Level 5:colcon.colcon_core.verb:set package 'cartographer' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.276s] DEBUG:colcon.colcon_core.verb:Building package 'cartographer' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/thaoton1910/swarm_robot/simulation_ws/src/build/cartographer', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/thaoton1910/swarm_robot/simulation_ws/src/install/cartographer', 'merge_install': False, 'path': '/home/thaoton1910/swarm_robot/simulation_ws/src/cartographer', 'symlink_install': True, 'test_result_base': None}
+[0.276s] Level 5:colcon.colcon_core.verb:set package 'robot_bringup' build argument 'cmake_args' from command line to 'None'
+[0.276s] Level 5:colcon.colcon_core.verb:set package 'robot_bringup' build argument 'cmake_target' from command line to 'None'
+[0.277s] Level 5:colcon.colcon_core.verb:set package 'robot_bringup' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.277s] Level 5:colcon.colcon_core.verb:set package 'robot_bringup' build argument 'cmake_clean_cache' from command line to 'False'
+[0.277s] Level 5:colcon.colcon_core.verb:set package 'robot_bringup' build argument 'cmake_clean_first' from command line to 'False'
+[0.277s] Level 5:colcon.colcon_core.verb:set package 'robot_bringup' build argument 'cmake_force_configure' from command line to 'False'
+[0.277s] Level 5:colcon.colcon_core.verb:set package 'robot_bringup' build argument 'ament_cmake_args' from command line to 'None'
+[0.277s] Level 5:colcon.colcon_core.verb:set package 'robot_bringup' build argument 'catkin_cmake_args' from command line to 'None'
+[0.277s] Level 5:colcon.colcon_core.verb:set package 'robot_bringup' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.277s] DEBUG:colcon.colcon_core.verb:Building package 'robot_bringup' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/thaoton1910/swarm_robot/simulation_ws/src/build/robot_bringup', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/thaoton1910/swarm_robot/simulation_ws/src/install/robot_bringup', 'merge_install': False, 'path': '/home/thaoton1910/swarm_robot/simulation_ws/src/robot_bringup', 'symlink_install': True, 'test_result_base': None}
+[0.277s] Level 5:colcon.colcon_core.verb:set package 'turtlebot3_navigation2' build argument 'cmake_args' from command line to 'None'
+[0.277s] Level 5:colcon.colcon_core.verb:set package 'turtlebot3_navigation2' build argument 'cmake_target' from command line to 'None'
+[0.277s] Level 5:colcon.colcon_core.verb:set package 'turtlebot3_navigation2' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.277s] Level 5:colcon.colcon_core.verb:set package 'turtlebot3_navigation2' build argument 'cmake_clean_cache' from command line to 'False'
+[0.277s] Level 5:colcon.colcon_core.verb:set package 'turtlebot3_navigation2' build argument 'cmake_clean_first' from command line to 'False'
+[0.277s] Level 5:colcon.colcon_core.verb:set package 'turtlebot3_navigation2' build argument 'cmake_force_configure' from command line to 'False'
+[0.277s] Level 5:colcon.colcon_core.verb:set package 'turtlebot3_navigation2' build argument 'ament_cmake_args' from command line to 'None'
+[0.277s] Level 5:colcon.colcon_core.verb:set package 'turtlebot3_navigation2' build argument 'catkin_cmake_args' from command line to 'None'
+[0.277s] Level 5:colcon.colcon_core.verb:set package 'turtlebot3_navigation2' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.277s] DEBUG:colcon.colcon_core.verb:Building package 'turtlebot3_navigation2' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/thaoton1910/swarm_robot/simulation_ws/src/build/turtlebot3_navigation2', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/thaoton1910/swarm_robot/simulation_ws/src/install/turtlebot3_navigation2', 'merge_install': False, 'path': '/home/thaoton1910/swarm_robot/simulation_ws/src/turtlebot3_navigation2', 'symlink_install': True, 'test_result_base': None}
+[0.277s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[0.278s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[0.278s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/thaoton1910/swarm_robot/simulation_ws/src/cartographer' with build type 'ament_cmake'
+[0.279s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/thaoton1910/swarm_robot/simulation_ws/src/cartographer'
+[0.280s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[0.280s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.280s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.283s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/thaoton1910/swarm_robot/simulation_ws/src/robot_bringup' with build type 'ament_cmake'
+[0.283s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/thaoton1910/swarm_robot/simulation_ws/src/robot_bringup'
+[0.284s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.284s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.286s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/thaoton1910/swarm_robot/simulation_ws/src/turtlebot3_navigation2' with build type 'ament_cmake'
+[0.287s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/thaoton1910/swarm_robot/simulation_ws/src/turtlebot3_navigation2'
+[0.287s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.287s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.294s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/thaoton1910/swarm_robot/simulation_ws/src/build/cartographer': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/thaoton1910/swarm_robot/simulation_ws/src/build/cartographer -- -j12 -l12
+[0.305s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/thaoton1910/swarm_robot/simulation_ws/src/build/robot_bringup': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/thaoton1910/swarm_robot/simulation_ws/src/build/robot_bringup -- -j12 -l12
+[0.308s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/thaoton1910/swarm_robot/simulation_ws/src/build/turtlebot3_navigation2': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/thaoton1910/swarm_robot/simulation_ws/src/build/turtlebot3_navigation2 -- -j12 -l12
+[0.327s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/thaoton1910/swarm_robot/simulation_ws/src/build/cartographer' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/thaoton1910/swarm_robot/simulation_ws/src/build/cartographer -- -j12 -l12
+[0.335s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/thaoton1910/swarm_robot/simulation_ws/src/build/cartographer': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/thaoton1910/swarm_robot/simulation_ws/src/build/cartographer
+[0.336s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/thaoton1910/swarm_robot/simulation_ws/src/build/robot_bringup' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/thaoton1910/swarm_robot/simulation_ws/src/build/robot_bringup -- -j12 -l12
+[0.341s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/thaoton1910/swarm_robot/simulation_ws/src/build/robot_bringup': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/thaoton1910/swarm_robot/simulation_ws/src/build/robot_bringup
+[0.348s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/thaoton1910/swarm_robot/simulation_ws/src/build/turtlebot3_navigation2' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/thaoton1910/swarm_robot/simulation_ws/src/build/turtlebot3_navigation2 -- -j12 -l12
+[0.355s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(cartographer)
+[0.363s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/thaoton1910/swarm_robot/simulation_ws/src/build/turtlebot3_navigation2': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/thaoton1910/swarm_robot/simulation_ws/src/build/turtlebot3_navigation2
+[0.367s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/thaoton1910/swarm_robot/simulation_ws/src/build/cartographer' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/thaoton1910/swarm_robot/simulation_ws/src/build/cartographer
+[0.368s] Level 1:colcon.colcon_core.environment:checking '/home/thaoton1910/swarm_robot/simulation_ws/src/install/cartographer' for CMake module files
+[0.374s] Level 1:colcon.colcon_core.environment:checking '/home/thaoton1910/swarm_robot/simulation_ws/src/install/cartographer' for CMake config files
+[0.375s] Level 1:colcon.colcon_core.shell:create_environment_hook('cartographer', 'cmake_prefix_path')
+[0.375s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/thaoton1910/swarm_robot/simulation_ws/src/install/cartographer/share/cartographer/hook/cmake_prefix_path.ps1'
+[0.375s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/thaoton1910/swarm_robot/simulation_ws/src/install/cartographer/share/cartographer/hook/cmake_prefix_path.dsv'
+[0.376s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/thaoton1910/swarm_robot/simulation_ws/src/install/cartographer/share/cartographer/hook/cmake_prefix_path.sh'
+[0.376s] Level 1:colcon.colcon_core.environment:checking '/home/thaoton1910/swarm_robot/simulation_ws/src/install/cartographer/bin'
+[0.376s] Level 1:colcon.colcon_core.environment:checking '/home/thaoton1910/swarm_robot/simulation_ws/src/install/cartographer/lib/pkgconfig/cartographer.pc'
+[0.376s] Level 1:colcon.colcon_core.environment:checking '/home/thaoton1910/swarm_robot/simulation_ws/src/install/cartographer/lib/python3.10/site-packages'
+[0.377s] Level 1:colcon.colcon_core.environment:checking '/home/thaoton1910/swarm_robot/simulation_ws/src/install/cartographer/bin'
+[0.377s] INFO:colcon.colcon_core.shell:Creating package script '/home/thaoton1910/swarm_robot/simulation_ws/src/install/cartographer/share/cartographer/package.ps1'
+[0.377s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/thaoton1910/swarm_robot/simulation_ws/src/install/cartographer/share/cartographer/package.dsv'
+[0.378s] INFO:colcon.colcon_core.shell:Creating package script '/home/thaoton1910/swarm_robot/simulation_ws/src/install/cartographer/share/cartographer/package.sh'
+[0.378s] INFO:colcon.colcon_core.shell:Creating package script '/home/thaoton1910/swarm_robot/simulation_ws/src/install/cartographer/share/cartographer/package.bash'
+[0.379s] INFO:colcon.colcon_core.shell:Creating package script '/home/thaoton1910/swarm_robot/simulation_ws/src/install/cartographer/share/cartographer/package.zsh'
+[0.380s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/thaoton1910/swarm_robot/simulation_ws/src/install/cartographer/share/colcon-core/packages/cartographer)
+[0.380s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(cartographer)
+[0.381s] Level 1:colcon.colcon_core.environment:checking '/home/thaoton1910/swarm_robot/simulation_ws/src/install/cartographer' for CMake module files
+[0.381s] Level 1:colcon.colcon_core.environment:checking '/home/thaoton1910/swarm_robot/simulation_ws/src/install/cartographer' for CMake config files
+[0.381s] Level 1:colcon.colcon_core.shell:create_environment_hook('cartographer', 'cmake_prefix_path')
+[0.382s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/thaoton1910/swarm_robot/simulation_ws/src/install/cartographer/share/cartographer/hook/cmake_prefix_path.ps1'
+[0.382s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/thaoton1910/swarm_robot/simulation_ws/src/install/cartographer/share/cartographer/hook/cmake_prefix_path.dsv'
+[0.382s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/thaoton1910/swarm_robot/simulation_ws/src/install/cartographer/share/cartographer/hook/cmake_prefix_path.sh'
+[0.383s] Level 1:colcon.colcon_core.environment:checking '/home/thaoton1910/swarm_robot/simulation_ws/src/install/cartographer/bin'
+[0.383s] Level 1:colcon.colcon_core.environment:checking '/home/thaoton1910/swarm_robot/simulation_ws/src/install/cartographer/lib/pkgconfig/cartographer.pc'
+[0.383s] Level 1:colcon.colcon_core.environment:checking '/home/thaoton1910/swarm_robot/simulation_ws/src/install/cartographer/lib/python3.10/site-packages'
+[0.383s] Level 1:colcon.colcon_core.environment:checking '/home/thaoton1910/swarm_robot/simulation_ws/src/install/cartographer/bin'
+[0.383s] INFO:colcon.colcon_core.shell:Creating package script '/home/thaoton1910/swarm_robot/simulation_ws/src/install/cartographer/share/cartographer/package.ps1'
+[0.384s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/thaoton1910/swarm_robot/simulation_ws/src/install/cartographer/share/cartographer/package.dsv'
+[0.384s] INFO:colcon.colcon_core.shell:Creating package script '/home/thaoton1910/swarm_robot/simulation_ws/src/install/cartographer/share/cartographer/package.sh'
+[0.384s] INFO:colcon.colcon_core.shell:Creating package script '/home/thaoton1910/swarm_robot/simulation_ws/src/install/cartographer/share/cartographer/package.bash'
+[0.384s] INFO:colcon.colcon_core.shell:Creating package script '/home/thaoton1910/swarm_robot/simulation_ws/src/install/cartographer/share/cartographer/package.zsh'
+[0.385s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/thaoton1910/swarm_robot/simulation_ws/src/install/cartographer/share/colcon-core/packages/cartographer)
+[0.386s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(robot_bringup)
+[0.386s] Level 1:colcon.colcon_core.environment:checking '/home/thaoton1910/swarm_robot/simulation_ws/src/install/robot_bringup' for CMake module files
+[0.387s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/thaoton1910/swarm_robot/simulation_ws/src/build/robot_bringup' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/thaoton1910/swarm_robot/simulation_ws/src/build/robot_bringup
+[0.387s] Level 1:colcon.colcon_core.environment:checking '/home/thaoton1910/swarm_robot/simulation_ws/src/install/robot_bringup' for CMake config files
+[0.388s] Level 1:colcon.colcon_core.shell:create_environment_hook('robot_bringup', 'cmake_prefix_path')
+[0.388s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/thaoton1910/swarm_robot/simulation_ws/src/install/robot_bringup/share/robot_bringup/hook/cmake_prefix_path.ps1'
+[0.388s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/thaoton1910/swarm_robot/simulation_ws/src/install/robot_bringup/share/robot_bringup/hook/cmake_prefix_path.dsv'
+[0.389s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/thaoton1910/swarm_robot/simulation_ws/src/install/robot_bringup/share/robot_bringup/hook/cmake_prefix_path.sh'
+[0.389s] Level 1:colcon.colcon_core.environment:checking '/home/thaoton1910/swarm_robot/simulation_ws/src/install/robot_bringup/lib'
+[0.389s] Level 1:colcon.colcon_core.environment:checking '/home/thaoton1910/swarm_robot/simulation_ws/src/install/robot_bringup/bin'
+[0.389s] Level 1:colcon.colcon_core.environment:checking '/home/thaoton1910/swarm_robot/simulation_ws/src/install/robot_bringup/lib/pkgconfig/robot_bringup.pc'
+[0.389s] Level 1:colcon.colcon_core.environment:checking '/home/thaoton1910/swarm_robot/simulation_ws/src/install/robot_bringup/lib/python3.10/site-packages'
+[0.390s] Level 1:colcon.colcon_core.environment:checking '/home/thaoton1910/swarm_robot/simulation_ws/src/install/robot_bringup/bin'
+[0.390s] INFO:colcon.colcon_core.shell:Creating package script '/home/thaoton1910/swarm_robot/simulation_ws/src/install/robot_bringup/share/robot_bringup/package.ps1'
+[0.390s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/thaoton1910/swarm_robot/simulation_ws/src/install/robot_bringup/share/robot_bringup/package.dsv'
+[0.390s] INFO:colcon.colcon_core.shell:Creating package script '/home/thaoton1910/swarm_robot/simulation_ws/src/install/robot_bringup/share/robot_bringup/package.sh'
+[0.391s] INFO:colcon.colcon_core.shell:Creating package script '/home/thaoton1910/swarm_robot/simulation_ws/src/install/robot_bringup/share/robot_bringup/package.bash'
+[0.391s] INFO:colcon.colcon_core.shell:Creating package script '/home/thaoton1910/swarm_robot/simulation_ws/src/install/robot_bringup/share/robot_bringup/package.zsh'
+[0.391s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/thaoton1910/swarm_robot/simulation_ws/src/install/robot_bringup/share/colcon-core/packages/robot_bringup)
+[0.392s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(robot_bringup)
+[0.392s] Level 1:colcon.colcon_core.environment:checking '/home/thaoton1910/swarm_robot/simulation_ws/src/install/robot_bringup' for CMake module files
+[0.392s] Level 1:colcon.colcon_core.environment:checking '/home/thaoton1910/swarm_robot/simulation_ws/src/install/robot_bringup' for CMake config files
+[0.392s] Level 1:colcon.colcon_core.shell:create_environment_hook('robot_bringup', 'cmake_prefix_path')
+[0.392s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/thaoton1910/swarm_robot/simulation_ws/src/install/robot_bringup/share/robot_bringup/hook/cmake_prefix_path.ps1'
+[0.393s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/thaoton1910/swarm_robot/simulation_ws/src/install/robot_bringup/share/robot_bringup/hook/cmake_prefix_path.dsv'
+[0.393s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/thaoton1910/swarm_robot/simulation_ws/src/install/robot_bringup/share/robot_bringup/hook/cmake_prefix_path.sh'
+[0.393s] Level 1:colcon.colcon_core.environment:checking '/home/thaoton1910/swarm_robot/simulation_ws/src/install/robot_bringup/lib'
+[0.393s] Level 1:colcon.colcon_core.environment:checking '/home/thaoton1910/swarm_robot/simulation_ws/src/install/robot_bringup/bin'
+[0.393s] Level 1:colcon.colcon_core.environment:checking '/home/thaoton1910/swarm_robot/simulation_ws/src/install/robot_bringup/lib/pkgconfig/robot_bringup.pc'
+[0.393s] Level 1:colcon.colcon_core.environment:checking '/home/thaoton1910/swarm_robot/simulation_ws/src/install/robot_bringup/lib/python3.10/site-packages'
+[0.394s] Level 1:colcon.colcon_core.environment:checking '/home/thaoton1910/swarm_robot/simulation_ws/src/install/robot_bringup/bin'
+[0.394s] INFO:colcon.colcon_core.shell:Creating package script '/home/thaoton1910/swarm_robot/simulation_ws/src/install/robot_bringup/share/robot_bringup/package.ps1'
+[0.394s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/thaoton1910/swarm_robot/simulation_ws/src/install/robot_bringup/share/robot_bringup/package.dsv'
+[0.395s] INFO:colcon.colcon_core.shell:Creating package script '/home/thaoton1910/swarm_robot/simulation_ws/src/install/robot_bringup/share/robot_bringup/package.sh'
+[0.397s] INFO:colcon.colcon_core.shell:Creating package script '/home/thaoton1910/swarm_robot/simulation_ws/src/install/robot_bringup/share/robot_bringup/package.bash'
+[0.397s] INFO:colcon.colcon_core.shell:Creating package script '/home/thaoton1910/swarm_robot/simulation_ws/src/install/robot_bringup/share/robot_bringup/package.zsh'
+[0.398s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/thaoton1910/swarm_robot/simulation_ws/src/install/robot_bringup/share/colcon-core/packages/robot_bringup)
+[0.398s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(turtlebot3_navigation2)
+[0.399s] Level 1:colcon.colcon_core.environment:checking '/home/thaoton1910/swarm_robot/simulation_ws/src/install/turtlebot3_navigation2' for CMake module files
+[0.399s] Level 1:colcon.colcon_core.environment:checking '/home/thaoton1910/swarm_robot/simulation_ws/src/install/turtlebot3_navigation2' for CMake config files
+[0.400s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/thaoton1910/swarm_robot/simulation_ws/src/build/turtlebot3_navigation2' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/thaoton1910/swarm_robot/simulation_ws/src/build/turtlebot3_navigation2
+[0.401s] Level 1:colcon.colcon_core.shell:create_environment_hook('turtlebot3_navigation2', 'cmake_prefix_path')
+[0.401s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/thaoton1910/swarm_robot/simulation_ws/src/install/turtlebot3_navigation2/share/turtlebot3_navigation2/hook/cmake_prefix_path.ps1'
+[0.401s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/thaoton1910/swarm_robot/simulation_ws/src/install/turtlebot3_navigation2/share/turtlebot3_navigation2/hook/cmake_prefix_path.dsv'
+[0.402s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/thaoton1910/swarm_robot/simulation_ws/src/install/turtlebot3_navigation2/share/turtlebot3_navigation2/hook/cmake_prefix_path.sh'
+[0.402s] Level 1:colcon.colcon_core.environment:checking '/home/thaoton1910/swarm_robot/simulation_ws/src/install/turtlebot3_navigation2/bin'
+[0.402s] Level 1:colcon.colcon_core.environment:checking '/home/thaoton1910/swarm_robot/simulation_ws/src/install/turtlebot3_navigation2/lib/pkgconfig/turtlebot3_navigation2.pc'
+[0.402s] Level 1:colcon.colcon_core.environment:checking '/home/thaoton1910/swarm_robot/simulation_ws/src/install/turtlebot3_navigation2/lib/python3.10/site-packages'
+[0.402s] Level 1:colcon.colcon_core.environment:checking '/home/thaoton1910/swarm_robot/simulation_ws/src/install/turtlebot3_navigation2/bin'
+[0.403s] INFO:colcon.colcon_core.shell:Creating package script '/home/thaoton1910/swarm_robot/simulation_ws/src/install/turtlebot3_navigation2/share/turtlebot3_navigation2/package.ps1'
+[0.403s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/thaoton1910/swarm_robot/simulation_ws/src/install/turtlebot3_navigation2/share/turtlebot3_navigation2/package.dsv'
+[0.403s] INFO:colcon.colcon_core.shell:Creating package script '/home/thaoton1910/swarm_robot/simulation_ws/src/install/turtlebot3_navigation2/share/turtlebot3_navigation2/package.sh'
+[0.404s] INFO:colcon.colcon_core.shell:Creating package script '/home/thaoton1910/swarm_robot/simulation_ws/src/install/turtlebot3_navigation2/share/turtlebot3_navigation2/package.bash'
+[0.404s] INFO:colcon.colcon_core.shell:Creating package script '/home/thaoton1910/swarm_robot/simulation_ws/src/install/turtlebot3_navigation2/share/turtlebot3_navigation2/package.zsh'
+[0.404s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/thaoton1910/swarm_robot/simulation_ws/src/install/turtlebot3_navigation2/share/colcon-core/packages/turtlebot3_navigation2)
+[0.404s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(turtlebot3_navigation2)
+[0.405s] Level 1:colcon.colcon_core.environment:checking '/home/thaoton1910/swarm_robot/simulation_ws/src/install/turtlebot3_navigation2' for CMake module files
+[0.405s] Level 1:colcon.colcon_core.environment:checking '/home/thaoton1910/swarm_robot/simulation_ws/src/install/turtlebot3_navigation2' for CMake config files
+[0.405s] Level 1:colcon.colcon_core.shell:create_environment_hook('turtlebot3_navigation2', 'cmake_prefix_path')
+[0.405s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/thaoton1910/swarm_robot/simulation_ws/src/install/turtlebot3_navigation2/share/turtlebot3_navigation2/hook/cmake_prefix_path.ps1'
+[0.406s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/thaoton1910/swarm_robot/simulation_ws/src/install/turtlebot3_navigation2/share/turtlebot3_navigation2/hook/cmake_prefix_path.dsv'
+[0.406s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/thaoton1910/swarm_robot/simulation_ws/src/install/turtlebot3_navigation2/share/turtlebot3_navigation2/hook/cmake_prefix_path.sh'
+[0.406s] Level 1:colcon.colcon_core.environment:checking '/home/thaoton1910/swarm_robot/simulation_ws/src/install/turtlebot3_navigation2/bin'
+[0.406s] Level 1:colcon.colcon_core.environment:checking '/home/thaoton1910/swarm_robot/simulation_ws/src/install/turtlebot3_navigation2/lib/pkgconfig/turtlebot3_navigation2.pc'
+[0.406s] Level 1:colcon.colcon_core.environment:checking '/home/thaoton1910/swarm_robot/simulation_ws/src/install/turtlebot3_navigation2/lib/python3.10/site-packages'
+[0.406s] Level 1:colcon.colcon_core.environment:checking '/home/thaoton1910/swarm_robot/simulation_ws/src/install/turtlebot3_navigation2/bin'
+[0.407s] INFO:colcon.colcon_core.shell:Creating package script '/home/thaoton1910/swarm_robot/simulation_ws/src/install/turtlebot3_navigation2/share/turtlebot3_navigation2/package.ps1'
+[0.407s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/thaoton1910/swarm_robot/simulation_ws/src/install/turtlebot3_navigation2/share/turtlebot3_navigation2/package.dsv'
+[0.407s] INFO:colcon.colcon_core.shell:Creating package script '/home/thaoton1910/swarm_robot/simulation_ws/src/install/turtlebot3_navigation2/share/turtlebot3_navigation2/package.sh'
+[0.407s] INFO:colcon.colcon_core.shell:Creating package script '/home/thaoton1910/swarm_robot/simulation_ws/src/install/turtlebot3_navigation2/share/turtlebot3_navigation2/package.bash'
+[0.408s] INFO:colcon.colcon_core.shell:Creating package script '/home/thaoton1910/swarm_robot/simulation_ws/src/install/turtlebot3_navigation2/share/turtlebot3_navigation2/package.zsh'
+[0.408s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/thaoton1910/swarm_robot/simulation_ws/src/install/turtlebot3_navigation2/share/colcon-core/packages/turtlebot3_navigation2)
+[0.408s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[0.409s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[0.409s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
+[0.409s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[0.446s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.notify_send': Could not find 'notify-send'
+[0.446s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[0.446s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[0.446s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[0.447s] DEBUG:colcon.colcon_notification.desktop_notification.notify2:Failed to initialize notify2: org.freedesktop.DBus.Error.FileNotFound: Failed to connect to socket /run/user/1000/bus: No such file or directory
+[0.447s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[0.447s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/thaoton1910/swarm_robot/simulation_ws/src/install/local_setup.ps1'
+[0.448s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/thaoton1910/swarm_robot/simulation_ws/src/install/_local_setup_util_ps1.py'
+[0.449s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/thaoton1910/swarm_robot/simulation_ws/src/install/setup.ps1'
+[0.449s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/thaoton1910/swarm_robot/simulation_ws/src/install/local_setup.sh'
+[0.450s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/thaoton1910/swarm_robot/simulation_ws/src/install/_local_setup_util_sh.py'
+[0.450s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/thaoton1910/swarm_robot/simulation_ws/src/install/setup.sh'
+[0.451s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/thaoton1910/swarm_robot/simulation_ws/src/install/local_setup.bash'
+[0.451s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/thaoton1910/swarm_robot/simulation_ws/src/install/setup.bash'
+[0.452s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/thaoton1910/swarm_robot/simulation_ws/src/install/local_setup.zsh'
+[0.452s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/thaoton1910/swarm_robot/simulation_ws/src/install/setup.zsh'

@@ -1,0 +1,51 @@
+[0.025s] Invoking command in '/home/thaoton1910/swarm_robot/simulation_ws/src/build/cartographer': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/thaoton1910/swarm_robot/simulation_ws/src/cartographer -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/thaoton1910/swarm_robot/simulation_ws/src/install/cartographer
+[0.253s] -- The C compiler identification is GNU 11.4.0
+[0.631s] -- The CXX compiler identification is GNU 11.4.0
+[0.924s] -- Detecting C compiler ABI info
+[1.063s] -- Detecting C compiler ABI info - done
+[1.068s] -- Check for working C compiler: /usr/bin/cc - skipped
+[1.068s] -- Detecting C compile features
+[1.069s] -- Detecting C compile features - done
+[1.071s] -- Detecting CXX compiler ABI info
+[1.226s] -- Detecting CXX compiler ABI info - done
+[1.233s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[1.233s] -- Detecting CXX compile features
+[1.233s] -- Detecting CXX compile features - done
+[1.235s] -- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)
+[1.362s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[1.415s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[1.437s] -- Found ament_lint_auto: 0.12.12 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[1.500s] -- Added test 'copyright' to check source files copyright and LICENSE
+[1.502s] -- Added test 'flake8' to check Python code syntax and style conventions
+[1.503s] -- Added test 'lint_cmake' to check CMake code style
+[1.504s] -- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+[1.506s] -- Added test 'xmllint' to check XML markup files
+[1.507s] -- Configuring done
+[1.511s] -- Generating done
+[1.512s] -- Build files have been written to: /home/thaoton1910/swarm_robot/simulation_ws/src/build/cartographer
+[1.518s] Invoked command in '/home/thaoton1910/swarm_robot/simulation_ws/src/build/cartographer' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/thaoton1910/swarm_robot/simulation_ws/src/cartographer -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/thaoton1910/swarm_robot/simulation_ws/src/install/cartographer
+[1.519s] Invoking command in '/home/thaoton1910/swarm_robot/simulation_ws/src/build/cartographer': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/thaoton1910/swarm_robot/simulation_ws/src/build/cartographer -- -j12 -l12
+[1.546s] Invoked command in '/home/thaoton1910/swarm_robot/simulation_ws/src/build/cartographer' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/thaoton1910/swarm_robot/simulation_ws/src/build/cartographer -- -j12 -l12
+[1.550s] Invoking command in '/home/thaoton1910/swarm_robot/simulation_ws/src/build/cartographer': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/thaoton1910/swarm_robot/simulation_ws/src/build/cartographer
+[1.555s] -- Install configuration: ""
+[1.555s] -- Execute custom install script
+[1.555s] -- Symlinking: /home/thaoton1910/swarm_robot/simulation_ws/src/install/cartographer/share/cartographer/config/cartographer_config.lua
+[1.562s] -- Symlinking: /home/thaoton1910/swarm_robot/simulation_ws/src/install/cartographer/share/cartographer/launch/cartographer_launch.py
+[1.568s] -- Symlinking: /home/thaoton1910/swarm_robot/simulation_ws/src/install/cartographer/share/cartographer/launch/occupancy_grid.launch.py
+[1.575s] -- Symlinking: /home/thaoton1910/swarm_robot/simulation_ws/src/install/cartographer/share/cartographer/rviz/cartographer.rviz
+[1.583s] -- Symlinking: /home/thaoton1910/swarm_robot/simulation_ws/src/install/cartographer/share/ament_index/resource_index/package_run_dependencies/cartographer
+[1.592s] -- Symlinking: /home/thaoton1910/swarm_robot/simulation_ws/src/install/cartographer/share/ament_index/resource_index/parent_prefix_path/cartographer
+[1.601s] -- Symlinking: /home/thaoton1910/swarm_robot/simulation_ws/src/install/cartographer/share/cartographer/environment/ament_prefix_path.sh
+[1.607s] -- Symlinking: /home/thaoton1910/swarm_robot/simulation_ws/src/install/cartographer/share/cartographer/environment/ament_prefix_path.dsv
+[1.616s] -- Symlinking: /home/thaoton1910/swarm_robot/simulation_ws/src/install/cartographer/share/cartographer/environment/path.sh
+[1.622s] -- Symlinking: /home/thaoton1910/swarm_robot/simulation_ws/src/install/cartographer/share/cartographer/environment/path.dsv
+[1.631s] -- Symlinking: /home/thaoton1910/swarm_robot/simulation_ws/src/install/cartographer/share/cartographer/local_setup.bash
+[1.639s] -- Symlinking: /home/thaoton1910/swarm_robot/simulation_ws/src/install/cartographer/share/cartographer/local_setup.sh
+[1.646s] -- Symlinking: /home/thaoton1910/swarm_robot/simulation_ws/src/install/cartographer/share/cartographer/local_setup.zsh
+[1.653s] -- Symlinking: /home/thaoton1910/swarm_robot/simulation_ws/src/install/cartographer/share/cartographer/local_setup.dsv
+[1.661s] -- Symlinking: /home/thaoton1910/swarm_robot/simulation_ws/src/install/cartographer/share/cartographer/package.dsv
+[1.668s] -- Symlinking: /home/thaoton1910/swarm_robot/simulation_ws/src/install/cartographer/share/ament_index/resource_index/packages/cartographer
+[1.677s] -- Symlinking: /home/thaoton1910/swarm_robot/simulation_ws/src/install/cartographer/share/cartographer/cmake/cartographerConfig.cmake
+[1.683s] -- Symlinking: /home/thaoton1910/swarm_robot/simulation_ws/src/install/cartographer/share/cartographer/cmake/cartographerConfig-version.cmake
+[1.691s] -- Symlinking: /home/thaoton1910/swarm_robot/simulation_ws/src/install/cartographer/share/cartographer/package.xml
+[1.701s] Invoked command in '/home/thaoton1910/swarm_robot/simulation_ws/src/build/cartographer' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/thaoton1910/swarm_robot/simulation_ws/src/build/cartographer
