@@ -11,6 +11,10 @@ ros2 run teleop_twist_keyboard teleop_twist_keyboard --ros-args -r /cmd_vel:=/Ro
 # navigation2
 ros2 launch turtlebot3_navigation2 navigation2.launch.py use_sim_time:=true map:=/home/thaoton1910/swarm_robot/simulation_ws/src/turtlebot3_navigation2/map/simumap.yaml
 
+# Setup map manually 
+ros2 lifecycle set /map_server configure
+ros2 lifecycle set /map_server activate
+
 # navigation process
 ros2 run slave navigation_process
 
