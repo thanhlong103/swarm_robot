@@ -98,4 +98,15 @@ def generate_launch_description():
         #     ],
         #     output="screen",
         # ),
+        Node(
+            package='nav2_lifecycle_manager',
+            executable='lifecycle_manager',
+            name='lifecycle_manager_localization',
+            output='screen',
+            parameters=[{
+                'use_sim_time': True,
+                'autostart': True,
+                'node_names': ['map_server']
+            }]
+        )
     ])
